@@ -1,0 +1,576 @@
+{
+ "source_url": "https://www.aozora.gr.jp/index_pages/person9.html",
+ "generated_at": "2026-08-24",
+ "works": [
+  {
+   "work_id": 8,
+   "title": "赤毛連盟",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card8.html",
+   "translators": [
+    "大久保 ゆう"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/8_ruby_31219.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』84 回(実測 2026-08-24)",
+   "txt_name": "akage_renmei.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/00008.txt",
+   "n_images": 10
+  },
+  {
+   "work_id": 43522,
+   "title": "空家の冒険",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card43522.html",
+   "translators": [
+    "三上 於菟吉"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/43522_ruby_16831.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』49 回(実測 2026-08-24)",
+   "txt_name": "the_empty_house.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/43522.txt",
+   "n_images": 0
+  },
+  {
+   "work_id": 3392,
+   "title": "悪魔の足",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card3392.html",
+   "translators": [
+    "枯葉"
+   ],
+   "zip_url": "http://www1.bbiq.jp/kareha/trans/txt/devils_foot,_the.zip",
+   "holmes": null,
+   "external_host": true,
+   "needs_review": false,
+   "evidence": "ファイルが aozora.gr.jp 外にホスト(http://www1.bbiq.jp/kareha/trans/txt/devils_foot,_the.zip)。本文取得不能のため判定保留(実測 2026-08-24)"
+  },
+  {
+   "work_id": 45340,
+   "title": "暗号舞踏人の謎",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card45340.html",
+   "translators": [
+    "三上 於菟吉"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/45340_ruby_18659.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』59 回(実測 2026-08-24)",
+   "txt_name": "ango_butojinno_nazo.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/45340.txt",
+   "n_images": 0
+  },
+  {
+   "work_id": 50713,
+   "title": "踊る人形",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card50713.html",
+   "translators": [
+    "大久保 ゆう",
+    "三上 於菟吉"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/50713_ruby_36984.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』82 回(実測 2026-08-24)",
+   "txt_name": "odoru_ningyo.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/50713.txt",
+   "n_images": 15
+  },
+  {
+   "work_id": 43497,
+   "title": "株式仲買店々員",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card43497.html",
+   "translators": [
+    "三上 於菟吉"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/43497_ruby_16274.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』30 回(実測 2026-08-24)",
+   "txt_name": "the_stockbrokers_clerk.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/43497.txt",
+   "n_images": 0
+  },
+  {
+   "work_id": 54912,
+   "title": "株式仲買人",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card54912.html",
+   "translators": [
+    "大久保 ゆう",
+    "三上 於菟吉"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/54912_ruby_47221.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』26 回(実測 2026-08-24)",
+   "txt_name": "kabushiki_nakagainin.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/54912.txt",
+   "n_images": 7
+  },
+  {
+   "work_id": 50715,
+   "title": "患者兼同居人",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card50715.html",
+   "translators": [
+    "大久保 ゆう",
+    "三上 於菟吉"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/50715_ruby_36989.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』52 回(実測 2026-08-24)",
+   "txt_name": "kanja_ken_dokyonin.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/50715.txt",
+   "n_images": 7
+  },
+  {
+   "work_id": 43028,
+   "title": "黄色な顔",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card43028.html",
+   "translators": [
+    "三上 於菟吉"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/43028_ruby_15448.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』22 回(実測 2026-08-24)",
+   "txt_name": "the_yellow_face.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/43028.txt",
+   "n_images": 0
+  },
+  {
+   "work_id": 50712,
+   "title": "唇のねじれた男",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card50712.html",
+   "translators": [
+    "大久保 ゆう"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/50712_ruby_36970.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』45 回(実測 2026-08-24)",
+   "txt_name": "kuchibiruno_nejireta_otoko.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/50712.txt",
+   "n_images": 10
+  },
+  {
+   "work_id": 50716,
+   "title": "グローリア・スコット号",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card50716.html",
+   "translators": [
+    "大久保 ゆう",
+    "三上 於菟吉"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/50716_ruby_36991.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』12 回(実測 2026-08-24)",
+   "txt_name": "gloria_scottgo.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/50716.txt",
+   "n_images": 7
+  },
+  {
+   "work_id": 43498,
+   "title": "グロリア・スコット号",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card43498.html",
+   "translators": [
+    "三上 於菟吉"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/43498_ruby_16423.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』10 回(実測 2026-08-24)",
+   "txt_name": "the_gloria_scott.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/43498.txt",
+   "n_images": 0
+  },
+  {
+   "work_id": 61394,
+   "title": "最後の事件",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card61394.html",
+   "translators": [
+    "大久保 ゆう"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/61394_ruby_75402.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』31 回(実測 2026-08-24)",
+   "txt_name": "saigono_jiken.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/61394.txt",
+   "n_images": 9
+  },
+  {
+   "work_id": 55882,
+   "title": "サセックスの吸血鬼",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card55882.html",
+   "translators": [
+    "大久保 ゆう"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/55882_ruby_50045.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』45 回(実測 2026-08-24)",
+   "txt_name": "sussexno_kyuketsuki.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/55882.txt",
+   "n_images": 4
+  },
+  {
+   "work_id": 54915,
+   "title": "三枚の学生",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card54915.html",
+   "translators": [
+    "大久保 ゆう"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/54915_ruby_47227.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』49 回(実測 2026-08-24)",
+   "txt_name": "sanmaino_gakusei.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/54915.txt",
+   "n_images": 7
+  },
+  {
+   "work_id": 43523,
+   "title": "自転車嬢の危難",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card43523.html",
+   "translators": [
+    "三上 於菟吉"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/43523_ruby_17190.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』55 回(実測 2026-08-24)",
+   "txt_name": "the_adventure.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/43523.txt",
+   "n_images": 0
+  },
+  {
+   "work_id": 54914,
+   "title": "自転車乗りの影",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card54914.html",
+   "translators": [
+    "大久保 ゆう",
+    "三上 於菟吉"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/54914_ruby_47225.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』49 回(実測 2026-08-24)",
+   "txt_name": "jitenshanorino_kage.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/54914.txt",
+   "n_images": 7
+  },
+  {
+   "work_id": 61393,
+   "title": "シルヴァブレイズ",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card61393.html",
+   "translators": [
+    "大久保 ゆう",
+    "三上 於菟吉"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/61393_ruby_75065.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』57 回(実測 2026-08-24)",
+   "txt_name": "silver_blaze.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/61393.txt",
+   "n_images": 9
+  },
+  {
+   "work_id": 42929,
+   "title": "白銀の失踪",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card42929.html",
+   "translators": [
+    "三上 於菟吉"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/42929_ruby_15737.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』72 回(実測 2026-08-24)",
+   "txt_name": "silve_blaze.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/42929.txt",
+   "n_images": 0
+  },
+  {
+   "work_id": 43471,
+   "title": "世界怪談名作集",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card43471.html",
+   "translators": [
+    "岡本 綺堂"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/43471_ruby_16500.zip",
+   "holmes": false,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』0 回(実測 2026-08-24)",
+   "txt_name": "09hokkyokuseigono_sencho.txt",
+   "fetched_at": "2026-08-24"
+  },
+  {
+   "work_id": 50711,
+   "title": "蒼炎石",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card50711.html",
+   "translators": [
+    "大久保 ゆう"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/50711_ruby_36968.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』53 回(実測 2026-08-24)",
+   "txt_name": "soenseki.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/50711.txt",
+   "n_images": 8
+  },
+  {
+   "work_id": 57322,
+   "title": "橙の種五粒",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card57322.html",
+   "translators": [
+    "大久保 ゆう",
+    "加藤 朝鳥"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/57322_ruby_57271.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』26 回(実測 2026-08-24)",
+   "txt_name": "daidaino_tane_5tsubu.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/57322.txt",
+   "n_images": 6
+  },
+  {
+   "work_id": 3393,
+   "title": "チャールズ・オーガスタス・ミルヴァートン",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card3393.html",
+   "translators": [
+    "枯葉"
+   ],
+   "zip_url": "http://www1.bbiq.jp/kareha/trans/txt/charles_augustus_milverton.zip",
+   "holmes": null,
+   "external_host": true,
+   "needs_review": false,
+   "evidence": "ファイルが aozora.gr.jp 外にホスト(http://www1.bbiq.jp/kareha/trans/txt/charles_augustus_milverton.zip)。本文取得不能のため判定保留(実測 2026-08-24)"
+  },
+  {
+   "work_id": 50714,
+   "title": "土色の顔",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card50714.html",
+   "translators": [
+    "大久保 ゆう",
+    "三上 於菟吉"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/50714_ruby_36987.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』23 回(実測 2026-08-24)",
+   "txt_name": "tsuchiirono_kao.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/50714.txt",
+   "n_images": 7
+  },
+  {
+   "work_id": 54910,
+   "title": "同一事件",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card54910.html",
+   "translators": [
+    "大久保 ゆう",
+    "加藤 朝鳥"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/54910_ruby_47217.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』46 回(実測 2026-08-24)",
+   "txt_name": "doitsu_jiken.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/54910.txt",
+   "n_images": 7
+  },
+  {
+   "work_id": 43524,
+   "title": "入院患者",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card43524.html",
+   "translators": [
+    "三上 於菟吉"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/43524_ruby_16422.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』52 回(実測 2026-08-24)",
+   "txt_name": "the_resident_patient.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/43524.txt",
+   "n_images": 0
+  },
+  {
+   "work_id": 3394,
+   "title": "ノーウッドの建築家",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card3394.html",
+   "translators": [
+    "枯葉"
+   ],
+   "zip_url": "http://www1.bbiq.jp/kareha/trans/txt/norwood_builder,_the.zip",
+   "holmes": null,
+   "external_host": true,
+   "needs_review": false,
+   "evidence": "ファイルが aozora.gr.jp 外にホスト(http://www1.bbiq.jp/kareha/trans/txt/norwood_builder,_the.zip)。本文取得不能のため判定保留(実測 2026-08-24)"
+  },
+  {
+   "work_id": 55881,
+   "title": "緋のエチュード",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card55881.html",
+   "translators": [
+    "大久保 ゆう"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/55881_ruby_50043.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』103 回(実測 2026-08-24)",
+   "txt_name": "hino_echudo.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/55881.txt",
+   "n_images": 24
+  },
+  {
+   "work_id": 50718,
+   "title": "瀕死の探偵",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card50718.html",
+   "translators": [
+    "大久保 ゆう",
+    "東 健而"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/50718_ruby_36995.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』69 回(実測 2026-08-24)",
+   "txt_name": "hinshino_tantei.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/50718.txt",
+   "n_images": 4
+  },
+  {
+   "work_id": 3395,
+   "title": "ブルー・カーバンクル",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card3395.html",
+   "translators": [
+    "枯葉"
+   ],
+   "zip_url": "http://www1.bbiq.jp/kareha/trans/txt/blue_carbuncle,_the.zip",
+   "holmes": null,
+   "external_host": true,
+   "needs_review": false,
+   "evidence": "ファイルが aozora.gr.jp 外にホスト(http://www1.bbiq.jp/kareha/trans/txt/blue_carbuncle,_the.zip)。本文取得不能のため判定保留(実測 2026-08-24)"
+  },
+  {
+   "work_id": 226,
+   "title": "ボヘミアの醜聞",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card226.html",
+   "translators": [
+    "大久保 ゆう"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/226_ruby_31221.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』90 回(実測 2026-08-24)",
+   "txt_name": "bohemiano_shubun.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/00226.txt",
+   "n_images": 10
+  },
+  {
+   "work_id": 54911,
+   "title": "曲れる者",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card54911.html",
+   "translators": [
+    "大久保 ゆう",
+    "三上 於菟吉"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/54911_ruby_47219.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』12 回(実測 2026-08-24)",
+   "txt_name": "magarerumono.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/54911.txt",
+   "n_images": 7
+  },
+  {
+   "work_id": 50717,
+   "title": "まだらのひも",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card50717.html",
+   "translators": [
+    "大久保 ゆう",
+    "海野 十三"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/50717_ruby_36993.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』83 回(実測 2026-08-24)",
+   "txt_name": "madarano_himo.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/50717.txt",
+   "n_images": 9
+  },
+  {
+   "work_id": 535,
+   "title": "まだらの紐をめぐる冒険",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card535.html",
+   "translators": [
+    "山本 ゆうじ"
+   ],
+   "zip_url": null,
+   "holmes": null,
+   "external_host": true,
+   "needs_review": false,
+   "evidence": "カード上に取得可能な zip がない(外部サイト公開作品)。判定保留(実測 2026-08-24)"
+  },
+  {
+   "work_id": 54913,
+   "title": "ライギット・パズル",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card54913.html",
+   "translators": [
+    "大久保 ゆう",
+    "三上 於菟吉"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/54913_ruby_47223.zip",
+   "holmes": true,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』52 回(実測 2026-08-24)",
+   "txt_name": "reigate_puzzle.txt",
+   "fetched_at": "2026-08-24",
+   "raw_path": "data/raw/54913.txt",
+   "n_images": 9
+  },
+  {
+   "work_id": 43056,
+   "title": "臨時急行列車の紛失",
+   "card_url": "https://www.aozora.gr.jp/cards/000009/card43056.html",
+   "translators": [
+    "新青年編輯局"
+   ],
+   "zip_url": "https://www.aozora.gr.jp/cards/000009/files/43056_ruby_16830.zip",
+   "holmes": false,
+   "needs_review": false,
+   "evidence": "本文中『ホームズ』0 回(実測 2026-08-24)",
+   "txt_name": "the_lost_special.txt",
+   "fetched_at": "2026-08-24"
+  }
+ ]
+}
