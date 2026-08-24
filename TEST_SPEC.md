@@ -49,5 +49,8 @@
 | T-302 | F-06 | 【validation】本文 JSON の可逆性 | 各 story JSON のセグメントから青空記法本文を再構成すると、パーサーの serialize 本文と一致(表示層まで無損失) |
 | T-303 | F-07 | 【validation】索引の整合 | index.json の事件数・work 参照が canon/aozora と一致。reading_minutes > 0。stats の合計が全数と一致 |
 | T-304 | F-06/07 | web 骨格 | index.html / reader.html が存在し、必須マウント要素とデータパス参照を含む |
+| T-401 | F-08 | 座標の全数付与 | 全 60 事件に site(lat/lon/label/approx)がある。approx は bool、label 非空 |
+| T-402 | F-08 | 座標境界ゲート | 海外=英国 bbox 外 / ロンドン=大ロンドン bbox 内 / 近郊=チャリング・クロスから 60km 以内 / 地方=英国内かつ 25km 超。bbox・基準点は公知の地理定数(2026-08-24 記載) |
+| T-403 | F-08 | 地図ページ骨格 | map.html が存在し Leaflet とデータ参照を含む。index.json の全事件に site が伝搬 |
 | T-102 | F-01 | 【validation】ホームズ判定の解消 | 全 work の holmes フラグが本文実測 evidence 付きで確定、needs_review 残 0 |
 | T-103 | F-02 | 【validation】provenance | 全取得ファイルに取得元 URL・取得日が記録されている |

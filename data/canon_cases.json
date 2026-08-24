@@ -1,71 +1,1487 @@
 {
- "note": "正典60事件メタデータ。構成・初出年は外部権威(Canon of Sherlock Holmes、2026-08-24参照。ボール箱は英国流に最後の挨拶へ)。aozora対応の evidence は header:(先頭6行に実在する原題行)/本文実測:(固有名詞出現、2026-08-24)/題名対応(取得不能)。deaths=事件の調査対象・核心に死者(遺体・死亡)が含まれるか。confidence=check は属性の再確認候補",
+ "note": "正典60事件メタデータ。構成・初出年は外部権威(Canon of Sherlock Holmes、2026-08-24参照。ボール箱は英国流に最後の挨拶へ)。aozora対応の evidence は header:(先頭6行に実在する原題行)/本文実測:(固有名詞出現、2026-08-24)/題名対応(取得不能)。deaths=事件の調査対象・核心に死者(遺体・死亡)が含まれるか。confidence=check は属性の再確認候補。site=事件現場の座標(approx=true は架空地名等の近傍推定、2026-08-24 付与)",
  "generated_at": "2026-08-24",
  "cases": [
-  {"id": "STUD", "title_en": "A Study in Scarlet", "title_ja": "緋のエチュード", "collection": "novel", "pub_year": 1887, "is_novel": true, "case_type": "殺人", "deaths": true, "client": "グレグスン警部(警察)", "motive": "復讐(モルモン開拓地の過去)", "region": "ロンドン", "confidence": "high", "primary_work_id": 55881, "aozora": [{"work_id": 55881, "evidence": "header:A STUDY IN SCARLET"}]},
-  {"id": "SIGN", "title_en": "The Sign of the Four", "title_ja": "四つの署名", "collection": "novel", "pub_year": 1890, "is_novel": true, "case_type": "殺人", "deaths": true, "client": "メアリ・モースタン", "motive": "アグラ財宝と裏切りへの復讐", "region": "ロンドン", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "HOUN", "title_en": "The Hound of the Baskervilles", "title_ja": "バスカヴィル家の犬", "collection": "novel", "pub_year": 1901, "is_novel": true, "case_type": "殺人", "deaths": true, "client": "ジェームズ・モーティマー医師", "motive": "遺産相続", "region": "地方", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "VALL", "title_en": "The Valley of Fear", "title_ja": "恐怖の谷", "collection": "novel", "pub_year": 1914, "is_novel": true, "case_type": "殺人", "deaths": true, "client": "マクドナルド警部(警察)", "motive": "秘密結社の制裁", "region": "地方", "confidence": "high", "primary_work_id": null, "aozora": []},
-
-  {"id": "SCAN", "title_en": "A Scandal in Bohemia", "title_ja": "ボヘミアの醜聞", "collection": "adventures", "pub_year": 1891, "is_novel": false, "case_type": "その他", "deaths": false, "client": "ボヘミア国王", "motive": "自衛(写真は将来の保険)", "region": "ロンドン", "confidence": "high", "primary_work_id": 226, "aozora": [{"work_id": 226, "evidence": "header:A SCANDAL IN BOHEMIA"}]},
-  {"id": "REDH", "title_en": "The Red-Headed League", "title_ja": "赤毛連盟", "collection": "adventures", "pub_year": 1891, "is_novel": false, "case_type": "盗難・強盗", "deaths": false, "client": "ジェイベス・ウィルソン", "motive": "銀行金塊の強奪", "region": "ロンドン", "confidence": "high", "primary_work_id": 8, "aozora": [{"work_id": 8, "evidence": "header:THE RED-HEADED LEAGUE"}]},
-  {"id": "IDEN", "title_en": "A Case of Identity", "title_ja": "同一事件", "collection": "adventures", "pub_year": 1891, "is_novel": false, "case_type": "詐欺・偽装", "deaths": false, "client": "メアリ・サザーランド", "motive": "継娘の持参金収入の確保", "region": "ロンドン", "confidence": "high", "primary_work_id": 54910, "aozora": [{"work_id": 54910, "evidence": "header:A CASE OF IDENTITY"}]},
-  {"id": "BOSC", "title_en": "The Boscombe Valley Mystery", "title_ja": "ボスコム谷の惨劇", "collection": "adventures", "pub_year": 1891, "is_novel": false, "case_type": "殺人", "deaths": true, "client": "アリス・ターナー(レストレード経由)", "motive": "過去の強請の清算と口封じ", "region": "地方", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "FIVE", "title_en": "The Five Orange Pips", "title_ja": "橙の種五粒", "collection": "adventures", "pub_year": 1891, "is_novel": false, "case_type": "殺人", "deaths": true, "client": "ジョン・オープンショー", "motive": "文書回収と組織的報復(KKK)", "region": "地方", "confidence": "high", "primary_work_id": 57322, "aozora": [{"work_id": 57322, "evidence": "header:THE FIVE ORANGE PIPS"}]},
-  {"id": "TWIS", "title_en": "The Man with the Twisted Lip", "title_ja": "唇のねじれた男", "collection": "adventures", "pub_year": 1891, "is_novel": false, "case_type": "失踪・捜索", "deaths": false, "client": "セントクレア夫人", "motive": "高収入の乞食生活の秘匿", "region": "ロンドン", "confidence": "high", "primary_work_id": 50712, "aozora": [{"work_id": 50712, "evidence": "header:THE MAN WITH THE TWISTED LIP"}]},
-  {"id": "BLUE", "title_en": "The Adventure of the Blue Carbuncle", "title_ja": "蒼炎石", "collection": "adventures", "pub_year": 1892, "is_novel": false, "case_type": "盗難・強盗", "deaths": false, "client": "なし(ピータースンの拾得物)", "motive": "宝石の横領と罪の転嫁", "region": "ロンドン", "confidence": "high", "primary_work_id": 50711, "aozora": [{"work_id": 50711, "evidence": "header:THE ADVENTURE OF THE BLUE CARBUNCLE"}, {"work_id": 3395, "evidence": "題名対応(取得不能)"}]},
-  {"id": "SPEC", "title_en": "The Adventure of the Speckled Band", "title_ja": "まだらのひも", "collection": "adventures", "pub_year": 1892, "is_novel": false, "case_type": "殺人", "deaths": true, "client": "ヘレン・ストーナー", "motive": "継娘の遺産の維持", "region": "地方", "confidence": "high", "primary_work_id": 50717, "aozora": [{"work_id": 50717, "evidence": "header:THE ADVENTURE OF THE SPECKLED BAND"}, {"work_id": 535, "evidence": "題名対応(取得不能)"}]},
-  {"id": "ENGR", "title_en": "The Adventure of the Engineer's Thumb", "title_ja": "技師の親指", "collection": "adventures", "pub_year": 1892, "is_novel": false, "case_type": "詐欺・偽装", "deaths": true, "client": "ヴィクター・ハザリー", "motive": "贋貨製造の秘匿", "region": "地方", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "NOBL", "title_en": "The Adventure of the Noble Bachelor", "title_ja": "独身の貴族", "collection": "adventures", "pub_year": 1892, "is_novel": false, "case_type": "失踪・捜索", "deaths": false, "client": "セントサイモン卿", "motive": "(犯罪なし)先夫の生存による自発的失踪", "region": "ロンドン", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "BERY", "title_en": "The Adventure of the Beryl Coronet", "title_ja": "緑柱石の宝冠", "collection": "adventures", "pub_year": 1892, "is_novel": false, "case_type": "盗難・強盗", "deaths": false, "client": "アレグザンダー・ホールダー(銀行家)", "motive": "借金と宝石の横領", "region": "ロンドン近郊", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "COPP", "title_en": "The Adventure of the Copper Beeches", "title_ja": "ぶな屋敷", "collection": "adventures", "pub_year": 1892, "is_novel": false, "case_type": "怪事件", "deaths": false, "client": "ヴァイオレット・ハンター", "motive": "娘の相続財産の支配", "region": "地方", "confidence": "high", "primary_work_id": null, "aozora": []},
-
-  {"id": "SILV", "title_en": "Silver Blaze", "title_ja": "シルヴァブレイズ", "collection": "memoirs", "pub_year": 1892, "is_novel": false, "case_type": "失踪・捜索", "deaths": true, "client": "ロス大佐", "motive": "八百長のための名馬の細工", "region": "地方", "confidence": "check", "primary_work_id": 61393, "aozora": [{"work_id": 61393, "evidence": "header:SILVER BLAZE"}, {"work_id": 42929, "evidence": "header:SILVER BLAZE"}]},
-  {"id": "YELL", "title_en": "The Yellow Face", "title_ja": "土色の顔", "collection": "memoirs", "pub_year": 1893, "is_novel": false, "case_type": "怪事件", "deaths": false, "client": "グラント・マンロー", "motive": "(犯罪なし)前夫の子の秘匿", "region": "ロンドン近郊", "confidence": "high", "primary_work_id": 50714, "aozora": [{"work_id": 50714, "evidence": "header:THE YELLOW FACE"}, {"work_id": 43028, "evidence": "header:THE YELLOW FACE"}]},
-  {"id": "STOC", "title_en": "The Stock-Broker's Clerk", "title_ja": "株式仲買人", "collection": "memoirs", "pub_year": 1893, "is_novel": false, "case_type": "詐欺・偽装", "deaths": true, "client": "ホール・パイクロフト", "motive": "銀行証券強奪のための替え玉工作", "region": "地方", "confidence": "high", "primary_work_id": 54912, "aozora": [{"work_id": 54912, "evidence": "header:THE STOCK-BROKER'S CLERK"}, {"work_id": 43497, "evidence": "本文実測:モーソン×3(2026-08-24)"}]},
-  {"id": "GLOR", "title_en": "The \"Gloria Scott\"", "title_ja": "グローリア・スコット号", "collection": "memoirs", "pub_year": 1893, "is_novel": false, "case_type": "恐喝", "deaths": true, "client": "ヴィクター・トレヴァー(回想)", "motive": "囚人船の過去による恐喝", "region": "地方", "confidence": "high", "primary_work_id": 50716, "aozora": [{"work_id": 50716, "evidence": "header:THE \"GLORIA SCOTT\""}, {"work_id": 43498, "evidence": "本文実測:グロリア×9(2026-08-24)"}]},
-  {"id": "MUSG", "title_en": "The Musgrave Ritual", "title_ja": "マスグレイヴ家の儀式書", "collection": "memoirs", "pub_year": 1893, "is_novel": false, "case_type": "失踪・捜索", "deaths": true, "client": "レジナルド・マスグレイヴ(回想)", "motive": "隠された王冠(財宝)の入手", "region": "地方", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "REIG", "title_en": "The Reigate Squires", "title_ja": "ライギット・パズル", "collection": "memoirs", "pub_year": 1893, "is_novel": false, "case_type": "殺人", "deaths": true, "client": "なし(静養先で遭遇)", "motive": "土地訴訟に関わる文書の奪取と口封じ", "region": "地方", "confidence": "high", "primary_work_id": 54913, "aozora": [{"work_id": 54913, "evidence": "header:THE REIGATE PUZZLE"}]},
-  {"id": "CROO", "title_en": "The Crooked Man", "title_ja": "曲れる者", "collection": "memoirs", "pub_year": 1893, "is_novel": false, "case_type": "殺人", "deaths": true, "client": "なし(ホームズが持ち込む)", "motive": "過去の裏切りの発覚(死は病発作)", "region": "地方", "confidence": "high", "primary_work_id": 54911, "aozora": [{"work_id": 54911, "evidence": "header:THE CROOKED MAN"}]},
-  {"id": "RESI", "title_en": "The Resident Patient", "title_ja": "患者兼同居人", "collection": "memoirs", "pub_year": 1893, "is_novel": false, "case_type": "殺人", "deaths": true, "client": "パーシー・トレヴェリアン医師", "motive": "仲間の裏切りへの復讐(私刑)", "region": "ロンドン", "confidence": "high", "primary_work_id": 50715, "aozora": [{"work_id": 50715, "evidence": "header:THE RESIDENT PATIENT"}, {"work_id": 43524, "evidence": "本文実測:ブレシントン×43(2026-08-24)"}]},
-  {"id": "GREE", "title_en": "The Greek Interpreter", "title_ja": "ギリシャ語通訳", "collection": "memoirs", "pub_year": 1893, "is_novel": false, "case_type": "失踪・捜索", "deaths": true, "client": "マイクロフト(メラス氏)", "motive": "相続財産の強要(監禁)", "region": "ロンドン", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "NAVA", "title_en": "The Naval Treaty", "title_ja": "海軍条約文書", "collection": "memoirs", "pub_year": 1893, "is_novel": false, "case_type": "機密・スパイ", "deaths": false, "client": "パーシー・フェルプス", "motive": "機密文書の売却(金銭)", "region": "ロンドン近郊", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "FINA", "title_en": "The Final Problem", "title_ja": "最後の事件", "collection": "memoirs", "pub_year": 1893, "is_novel": false, "case_type": "その他", "deaths": true, "client": "なし(ホームズ自身)", "motive": "犯罪組織の自己保存(ホームズ抹殺)", "region": "海外", "confidence": "high", "primary_work_id": 61394, "aozora": [{"work_id": 61394, "evidence": "header:THE FINAL PROBLEM"}]},
-
-  {"id": "EMPT", "title_en": "The Adventure of the Empty House", "title_ja": "空家の冒険", "collection": "return", "pub_year": 1903, "is_novel": false, "case_type": "殺人", "deaths": true, "client": "なし(自発調査)", "motive": "賭博の不正の口封じ", "region": "ロンドン", "confidence": "high", "primary_work_id": 43522, "aozora": [{"work_id": 43522, "evidence": "本文実測:モラン×19(2026-08-24)"}]},
-  {"id": "NORW", "title_en": "The Adventure of the Norwood Builder", "title_ja": "ノーウッドの建築家", "collection": "return", "pub_year": 1903, "is_novel": false, "case_type": "詐欺・偽装", "deaths": false, "client": "ジョン・マクファーレン", "motive": "復讐と財産詐取(偽装死)", "region": "ロンドン近郊", "confidence": "high", "primary_work_id": null, "aozora": [{"work_id": 3394, "evidence": "題名対応(取得不能)"}]},
-  {"id": "DANC", "title_en": "The Adventure of the Dancing Men", "title_ja": "踊る人形", "collection": "return", "pub_year": 1903, "is_novel": false, "case_type": "殺人", "deaths": true, "client": "ヒルトン・キュービット", "motive": "元恋人への執着と復縁強要", "region": "地方", "confidence": "high", "primary_work_id": 50713, "aozora": [{"work_id": 50713, "evidence": "header:THE ADVENTURE OF THE DANCING MEN"}, {"work_id": 45340, "evidence": "本文実測:ヒルトン×27(2026-08-24)"}]},
-  {"id": "SOLI", "title_en": "The Adventure of the Solitary Cyclist", "title_ja": "自転車乗りの影", "collection": "return", "pub_year": 1903, "is_novel": false, "case_type": "怪事件", "deaths": false, "client": "ヴァイオレット・スミス", "motive": "遺産目当ての強制結婚", "region": "地方", "confidence": "high", "primary_work_id": 54914, "aozora": [{"work_id": 54914, "evidence": "header:THE ADVENTURE OF THE SOLITARY CYCLIST"}, {"work_id": 43523, "evidence": "本文実測:カラザ×34(2026-08-24)"}]},
-  {"id": "PRIO", "title_en": "The Adventure of the Priory School", "title_ja": "プライオリ・スクール", "collection": "return", "pub_year": 1904, "is_novel": false, "case_type": "失踪・捜索", "deaths": true, "client": "ハクスタブル博士", "motive": "相続権をめぐる誘拐", "region": "地方", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "BLAC", "title_en": "The Adventure of Black Peter", "title_ja": "ブラック・ピーター", "collection": "return", "pub_year": 1904, "is_novel": false, "case_type": "殺人", "deaths": true, "client": "ホプキンズ警部", "motive": "過去の犯罪(証券強奪)の清算", "region": "地方", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "CHAS", "title_en": "The Adventure of Charles Augustus Milverton", "title_ja": "チャールズ・オーガスタス・ミルヴァートン", "collection": "return", "pub_year": 1904, "is_novel": false, "case_type": "恐喝", "deaths": true, "client": "エヴァ・ブラックウェル嬢", "motive": "恐喝ビジネス", "region": "ロンドン", "confidence": "high", "primary_work_id": null, "aozora": [{"work_id": 3393, "evidence": "題名対応(取得不能)"}]},
-  {"id": "SIXN", "title_en": "The Adventure of the Six Napoleons", "title_ja": "六つのナポレオン", "collection": "return", "pub_year": 1904, "is_novel": false, "case_type": "盗難・強盗", "deaths": true, "client": "レストレード警部", "motive": "隠した黒真珠の回収", "region": "ロンドン", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "3STU", "title_en": "The Adventure of the Three Students", "title_ja": "三枚の学生", "collection": "return", "pub_year": 1904, "is_novel": false, "case_type": "その他", "deaths": false, "client": "ヒルトン・ソームズ講師", "motive": "競技出場の危機による出来心(試験問題)", "region": "地方", "confidence": "high", "primary_work_id": 54915, "aozora": [{"work_id": 54915, "evidence": "header:THE ADVENTURE OF THE THREE STUDENTS"}]},
-  {"id": "GOLD", "title_en": "The Adventure of the Golden Pince-Nez", "title_ja": "金縁の鼻眼鏡", "collection": "return", "pub_year": 1904, "is_novel": false, "case_type": "殺人", "deaths": true, "client": "ホプキンズ警部", "motive": "過去の裏切りの清算(文書回収)", "region": "地方", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "MISS", "title_en": "The Adventure of the Missing Three-Quarter", "title_ja": "スリー・クォーターの失踪", "collection": "return", "pub_year": 1904, "is_novel": false, "case_type": "失踪・捜索", "deaths": true, "client": "シリル・オーヴァートン", "motive": "(犯罪なし)秘密の結婚と妻の危篤", "region": "地方", "confidence": "check", "primary_work_id": null, "aozora": []},
-  {"id": "ABBE", "title_en": "The Adventure of the Abbey Grange", "title_ja": "アビイ屋敷", "collection": "return", "pub_year": 1904, "is_novel": false, "case_type": "殺人", "deaths": true, "client": "ホプキンズ警部", "motive": "暴力からの防衛(義侠)", "region": "地方", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "SECO", "title_en": "The Adventure of the Second Stain", "title_ja": "第二の汚点", "collection": "return", "pub_year": 1904, "is_novel": false, "case_type": "機密・スパイ", "deaths": true, "client": "ベリンジャー首相", "motive": "痴情のもつれと書簡の売買", "region": "ロンドン", "confidence": "high", "primary_work_id": null, "aozora": []},
-
-  {"id": "WIST", "title_en": "The Adventure of Wisteria Lodge", "title_ja": "ウィステリア荘", "collection": "his_last_bow", "pub_year": 1908, "is_novel": false, "case_type": "殺人", "deaths": true, "client": "ジョン・スコット・エクルズ", "motive": "独裁者への復讐(暗殺計画)", "region": "ロンドン近郊", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "CARD", "title_en": "The Adventure of the Cardboard Box", "title_ja": "ボール箱", "collection": "his_last_bow", "pub_year": 1893, "is_novel": false, "case_type": "殺人", "deaths": true, "client": "レストレード警部", "motive": "嫉妬による痴情殺人", "region": "ロンドン近郊", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "REDC", "title_en": "The Adventure of the Red Circle", "title_ja": "赤い輪", "collection": "his_last_bow", "pub_year": 1911, "is_novel": false, "case_type": "怪事件", "deaths": true, "client": "ウォーレン夫人", "motive": "犯罪組織の制裁と、組織からの逃亡", "region": "ロンドン", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "BRUC", "title_en": "The Adventure of the Bruce-Partington Plans", "title_ja": "ブルース・パーティントン設計書", "collection": "his_last_bow", "pub_year": 1908, "is_novel": false, "case_type": "機密・スパイ", "deaths": true, "client": "マイクロフト", "motive": "機密の売却(金銭)", "region": "ロンドン", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "DYIN", "title_en": "The Adventure of the Dying Detective", "title_ja": "瀕死の探偵", "collection": "his_last_bow", "pub_year": 1913, "is_novel": false, "case_type": "殺人", "deaths": true, "client": "なし(ホームズの罠)", "motive": "遺産相続のための毒殺", "region": "ロンドン", "confidence": "high", "primary_work_id": 50718, "aozora": [{"work_id": 50718, "evidence": "header:THE ADVENTURE OF THE DYING DETECTIVE"}]},
-  {"id": "LADY", "title_en": "The Disappearance of Lady Frances Carfax", "title_ja": "フランシス・カーファクス姫の失踪", "collection": "his_last_bow", "pub_year": 1911, "is_novel": false, "case_type": "失踪・捜索", "deaths": true, "client": "ドブニー嬢(旧家庭教師)", "motive": "宝石目当ての拉致(信仰を装う)", "region": "海外", "confidence": "check", "primary_work_id": null, "aozora": []},
-  {"id": "DEVI", "title_en": "The Adventure of the Devil's Foot", "title_ja": "悪魔の足", "collection": "his_last_bow", "pub_year": 1910, "is_novel": false, "case_type": "殺人", "deaths": true, "client": "ラウンドヘイ牧師", "motive": "遺産(金銭)、続く事件は復讐", "region": "地方", "confidence": "check", "primary_work_id": null, "aozora": [{"work_id": 3392, "evidence": "題名対応(取得不能)"}]},
-  {"id": "LAST", "title_en": "His Last Bow", "title_ja": "最後の挨拶", "collection": "his_last_bow", "pub_year": 1917, "is_novel": false, "case_type": "機密・スパイ", "deaths": false, "client": "なし(政府任務)", "motive": "対英諜報(開戦準備)", "region": "地方", "confidence": "high", "primary_work_id": null, "aozora": []},
-
-  {"id": "ILLU", "title_en": "The Adventure of the Illustrious Client", "title_ja": "高名な依頼人", "collection": "casebook", "pub_year": 1924, "is_novel": false, "case_type": "その他", "deaths": false, "client": "ジェームズ・デイマリー卿(代理)", "motive": "過去の隠蔽と女性の支配", "region": "ロンドン", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "BLAN", "title_en": "The Adventure of the Blanched Soldier", "title_ja": "白面の兵士", "collection": "casebook", "pub_year": 1926, "is_novel": false, "case_type": "失踪・捜索", "deaths": false, "client": "ジェームズ・ドッド", "motive": "(犯罪なし)病気の秘匿", "region": "地方", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "MAZA", "title_en": "The Adventure of the Mazarin Stone", "title_ja": "マザリンの宝石", "collection": "casebook", "pub_year": 1921, "is_novel": false, "case_type": "盗難・強盗", "deaths": false, "client": "首相・内相(政府)", "motive": "宝石の売却(金銭)", "region": "ロンドン", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "3GAB", "title_en": "The Adventure of the Three Gables", "title_ja": "三破風館", "collection": "casebook", "pub_year": 1926, "is_novel": false, "case_type": "盗難・強盗", "deaths": false, "client": "メアリー・メイバリー夫人", "motive": "醜聞原稿の隠滅", "region": "ロンドン近郊", "confidence": "check", "primary_work_id": null, "aozora": []},
-  {"id": "SUSS", "title_en": "The Adventure of the Sussex Vampire", "title_ja": "サセックスの吸血鬼", "collection": "casebook", "pub_year": 1924, "is_novel": false, "case_type": "怪事件", "deaths": false, "client": "ロバート・ファーガスン", "motive": "連れ子の嫉妬(毒矢)", "region": "地方", "confidence": "high", "primary_work_id": 55882, "aozora": [{"work_id": 55882, "evidence": "header:THE ADVENTURE OF THE SUSSEX VAMPIRE"}]},
-  {"id": "3GAR", "title_en": "The Adventure of the Three Garridebs", "title_ja": "三人ガリデブ", "collection": "casebook", "pub_year": 1924, "is_novel": false, "case_type": "詐欺・偽装", "deaths": false, "client": "ネイサン・ガリデブ", "motive": "隠された贋札印刷機の回収", "region": "ロンドン", "confidence": "check", "primary_work_id": null, "aozora": []},
-  {"id": "THOR", "title_en": "The Problem of Thor Bridge", "title_ja": "ソア橋", "collection": "casebook", "pub_year": 1922, "is_novel": false, "case_type": "殺人", "deaths": true, "client": "ニール・ギブスン", "motive": "恋敵への冤罪工作(自殺)", "region": "地方", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "CREE", "title_en": "The Adventure of the Creeping Man", "title_ja": "這う男", "collection": "casebook", "pub_year": 1923, "is_novel": false, "case_type": "怪事件", "deaths": false, "client": "トレヴァー・ベネット(秘書)", "motive": "(犯罪なし)若返りへの執着", "region": "地方", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "LION", "title_en": "The Adventure of the Lion's Mane", "title_ja": "ライオンのたてがみ", "collection": "casebook", "pub_year": 1926, "is_novel": false, "case_type": "殺人", "deaths": true, "client": "なし(隠退後に遭遇)", "motive": "なし(自然の生物による事故)", "region": "地方", "confidence": "check", "primary_work_id": null, "aozora": []},
-  {"id": "VEIL", "title_en": "The Adventure of the Veiled Lodger", "title_ja": "覆面の下宿人", "collection": "casebook", "pub_year": 1927, "is_novel": false, "case_type": "その他", "deaths": true, "client": "メリロー夫人(下宿の女主人)", "motive": "虐待からの解放(過去の共謀)", "region": "ロンドン", "confidence": "check", "primary_work_id": null, "aozora": []},
-  {"id": "SHOS", "title_en": "The Adventure of Shoscombe Old Place", "title_ja": "ショスコム荘", "collection": "casebook", "pub_year": 1927, "is_novel": false, "case_type": "怪事件", "deaths": true, "client": "ジョン・メイスン(調教師頭)", "motive": "債権者対策(姉の死の隠蔽)", "region": "地方", "confidence": "high", "primary_work_id": null, "aozora": []},
-  {"id": "RETI", "title_en": "The Adventure of the Retired Colourman", "title_ja": "隠居絵具師", "collection": "casebook", "pub_year": 1926, "is_novel": false, "case_type": "殺人", "deaths": true, "client": "ジョサイア・アンバリー(実は犯人)", "motive": "嫉妬(妻と友人の殺害)", "region": "ロンドン近郊", "confidence": "high", "primary_work_id": null, "aozora": []}
+  {
+   "id": "STUD",
+   "title_en": "A Study in Scarlet",
+   "title_ja": "緋のエチュード",
+   "collection": "novel",
+   "pub_year": 1887,
+   "is_novel": true,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "グレグスン警部(警察)",
+   "motive": "復讐(モルモン開拓地の過去)",
+   "region": "ロンドン",
+   "confidence": "high",
+   "primary_work_id": 55881,
+   "aozora": [
+    {
+     "work_id": 55881,
+     "evidence": "header:A STUDY IN SCARLET"
+    }
+   ],
+   "site": {
+    "lat": 51.463,
+    "lon": -0.115,
+    "label": "ローリストン・ガーデンズ(ブリクストン)",
+    "approx": true
+   }
+  },
+  {
+   "id": "SIGN",
+   "title_en": "The Sign of the Four",
+   "title_ja": "四つの署名",
+   "collection": "novel",
+   "pub_year": 1890,
+   "is_novel": true,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "メアリ・モースタン",
+   "motive": "アグラ財宝と裏切りへの復讐",
+   "region": "ロンドン",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.418,
+    "lon": -0.085,
+    "label": "ポンディシェリ・ロッジ(アッパー・ノーウッド)",
+    "approx": true
+   }
+  },
+  {
+   "id": "HOUN",
+   "title_en": "The Hound of the Baskervilles",
+   "title_ja": "バスカヴィル家の犬",
+   "collection": "novel",
+   "pub_year": 1901,
+   "is_novel": true,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "ジェームズ・モーティマー医師",
+   "motive": "遺産相続",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 50.57,
+    "lon": -3.92,
+    "label": "バスカヴィル館(ダートムア)",
+    "approx": true
+   }
+  },
+  {
+   "id": "VALL",
+   "title_en": "The Valley of Fear",
+   "title_ja": "恐怖の谷",
+   "collection": "novel",
+   "pub_year": 1914,
+   "is_novel": true,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "マクドナルド警部(警察)",
+   "motive": "秘密結社の制裁",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.15,
+    "lon": 0.05,
+    "label": "バールストン館(サセックス)",
+    "approx": true
+   }
+  },
+  {
+   "id": "SCAN",
+   "title_en": "A Scandal in Bohemia",
+   "title_ja": "ボヘミアの醜聞",
+   "collection": "adventures",
+   "pub_year": 1891,
+   "is_novel": false,
+   "case_type": "その他",
+   "deaths": false,
+   "client": "ボヘミア国王",
+   "motive": "自衛(写真は将来の保険)",
+   "region": "ロンドン",
+   "confidence": "high",
+   "primary_work_id": 226,
+   "aozora": [
+    {
+     "work_id": 226,
+     "evidence": "header:A SCANDAL IN BOHEMIA"
+    }
+   ],
+   "site": {
+    "lat": 51.533,
+    "lon": -0.174,
+    "label": "ブライオニ・ロッジ(セント・ジョンズ・ウッド)",
+    "approx": true
+   }
+  },
+  {
+   "id": "REDH",
+   "title_en": "The Red-Headed League",
+   "title_ja": "赤毛連盟",
+   "collection": "adventures",
+   "pub_year": 1891,
+   "is_novel": false,
+   "case_type": "盗難・強盗",
+   "deaths": false,
+   "client": "ジェイベス・ウィルソン",
+   "motive": "銀行金塊の強奪",
+   "region": "ロンドン",
+   "confidence": "high",
+   "primary_work_id": 8,
+   "aozora": [
+    {
+     "work_id": 8,
+     "evidence": "header:THE RED-HEADED LEAGUE"
+    }
+   ],
+   "site": {
+    "lat": 51.516,
+    "lon": -0.09,
+    "label": "サクス・コバーグ広場(シティ)",
+    "approx": true
+   }
+  },
+  {
+   "id": "IDEN",
+   "title_en": "A Case of Identity",
+   "title_ja": "同一事件",
+   "collection": "adventures",
+   "pub_year": 1891,
+   "is_novel": false,
+   "case_type": "詐欺・偽装",
+   "deaths": false,
+   "client": "メアリ・サザーランド",
+   "motive": "継娘の持参金収入の確保",
+   "region": "ロンドン",
+   "confidence": "high",
+   "primary_work_id": 54910,
+   "aozora": [
+    {
+     "work_id": 54910,
+     "evidence": "header:A CASE OF IDENTITY"
+    }
+   ],
+   "site": {
+    "lat": 51.474,
+    "lon": -0.092,
+    "label": "依頼人宅(カンバーウェル)",
+    "approx": true
+   }
+  },
+  {
+   "id": "BOSC",
+   "title_en": "The Boscombe Valley Mystery",
+   "title_ja": "ボスコム谷の惨劇",
+   "collection": "adventures",
+   "pub_year": 1891,
+   "is_novel": false,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "アリス・ターナー(レストレード経由)",
+   "motive": "過去の強請の清算と口封じ",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.914,
+    "lon": -2.585,
+    "label": "ボスコム池(ヘレフォードシャー)",
+    "approx": true
+   }
+  },
+  {
+   "id": "FIVE",
+   "title_en": "The Five Orange Pips",
+   "title_ja": "橙の種五粒",
+   "collection": "adventures",
+   "pub_year": 1891,
+   "is_novel": false,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "ジョン・オープンショー",
+   "motive": "文書回収と組織的報復(KKK)",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": 57322,
+   "aozora": [
+    {
+     "work_id": 57322,
+     "evidence": "header:THE FIVE ORANGE PIPS"
+    }
+   ],
+   "site": {
+    "lat": 51.062,
+    "lon": -0.325,
+    "label": "オープンショー家(ホーシャム)",
+    "approx": true
+   }
+  },
+  {
+   "id": "TWIS",
+   "title_en": "The Man with the Twisted Lip",
+   "title_ja": "唇のねじれた男",
+   "collection": "adventures",
+   "pub_year": 1891,
+   "is_novel": false,
+   "case_type": "失踪・捜索",
+   "deaths": false,
+   "client": "セントクレア夫人",
+   "motive": "高収入の乞食生活の秘匿",
+   "region": "ロンドン",
+   "confidence": "high",
+   "primary_work_id": 50712,
+   "aozora": [
+    {
+     "work_id": 50712,
+     "evidence": "header:THE MAN WITH THE TWISTED LIP"
+    }
+   ],
+   "site": {
+    "lat": 51.507,
+    "lon": -0.087,
+    "label": "アッパー・スワンダム小路(ロンドン橋際)",
+    "approx": true
+   }
+  },
+  {
+   "id": "BLUE",
+   "title_en": "The Adventure of the Blue Carbuncle",
+   "title_ja": "蒼炎石",
+   "collection": "adventures",
+   "pub_year": 1892,
+   "is_novel": false,
+   "case_type": "盗難・強盗",
+   "deaths": false,
+   "client": "なし(ピータースンの拾得物)",
+   "motive": "宝石の横領と罪の転嫁",
+   "region": "ロンドン",
+   "confidence": "high",
+   "primary_work_id": 50711,
+   "aozora": [
+    {
+     "work_id": 50711,
+     "evidence": "header:THE ADVENTURE OF THE BLUE CARBUNCLE"
+    },
+    {
+     "work_id": 3395,
+     "evidence": "題名対応(取得不能)"
+    }
+   ],
+   "site": {
+    "lat": 51.52,
+    "lon": -0.134,
+    "label": "グッジ街角(帽子と鵞鳥の落とし物)",
+    "approx": true
+   }
+  },
+  {
+   "id": "SPEC",
+   "title_en": "The Adventure of the Speckled Band",
+   "title_ja": "まだらのひも",
+   "collection": "adventures",
+   "pub_year": 1892,
+   "is_novel": false,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "ヘレン・ストーナー",
+   "motive": "継娘の遺産の維持",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": 50717,
+   "aozora": [
+    {
+     "work_id": 50717,
+     "evidence": "header:THE ADVENTURE OF THE SPECKLED BAND"
+    },
+    {
+     "work_id": 535,
+     "evidence": "題名対応(取得不能)"
+    }
+   ],
+   "site": {
+    "lat": 51.28,
+    "lon": -0.4,
+    "label": "ストーク・モラン館(サリー西縁)",
+    "approx": true
+   }
+  },
+  {
+   "id": "ENGR",
+   "title_en": "The Adventure of the Engineer's Thumb",
+   "title_ja": "技師の親指",
+   "collection": "adventures",
+   "pub_year": 1892,
+   "is_novel": false,
+   "case_type": "詐欺・偽装",
+   "deaths": true,
+   "client": "ヴィクター・ハザリー",
+   "motive": "贋貨製造の秘匿",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.42,
+    "lon": -1.1,
+    "label": "アイフォード(バークシャー)",
+    "approx": true
+   }
+  },
+  {
+   "id": "NOBL",
+   "title_en": "The Adventure of the Noble Bachelor",
+   "title_ja": "独身の貴族",
+   "collection": "adventures",
+   "pub_year": 1892,
+   "is_novel": false,
+   "case_type": "失踪・捜索",
+   "deaths": false,
+   "client": "セントサイモン卿",
+   "motive": "(犯罪なし)先夫の生存による自発的失踪",
+   "region": "ロンドン",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.512,
+    "lon": -0.143,
+    "label": "ハノーヴァー広場(セント・ジョージ教会)",
+    "approx": true
+   }
+  },
+  {
+   "id": "BERY",
+   "title_en": "The Adventure of the Beryl Coronet",
+   "title_ja": "緑柱石の宝冠",
+   "collection": "adventures",
+   "pub_year": 1892,
+   "is_novel": false,
+   "case_type": "盗難・強盗",
+   "deaths": false,
+   "client": "アレグザンダー・ホールダー(銀行家)",
+   "motive": "借金と宝石の横領",
+   "region": "ロンドン近郊",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.428,
+    "lon": -0.127,
+    "label": "フェアバンク(ストリーサム)",
+    "approx": true
+   }
+  },
+  {
+   "id": "COPP",
+   "title_en": "The Adventure of the Copper Beeches",
+   "title_ja": "ぶな屋敷",
+   "collection": "adventures",
+   "pub_year": 1892,
+   "is_novel": false,
+   "case_type": "怪事件",
+   "deaths": false,
+   "client": "ヴァイオレット・ハンター",
+   "motive": "娘の相続財産の支配",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.063,
+    "lon": -1.318,
+    "label": "ぶな屋敷(ウィンチェスター近郊)",
+    "approx": true
+   }
+  },
+  {
+   "id": "SILV",
+   "title_en": "Silver Blaze",
+   "title_ja": "シルヴァブレイズ",
+   "collection": "memoirs",
+   "pub_year": 1892,
+   "is_novel": false,
+   "case_type": "失踪・捜索",
+   "deaths": true,
+   "client": "ロス大佐",
+   "motive": "八百長のための名馬の細工",
+   "region": "地方",
+   "confidence": "check",
+   "primary_work_id": 61393,
+   "aozora": [
+    {
+     "work_id": 61393,
+     "evidence": "header:SILVER BLAZE"
+    },
+    {
+     "work_id": 42929,
+     "evidence": "header:SILVER BLAZE"
+    }
+   ],
+   "site": {
+    "lat": 50.55,
+    "lon": -3.95,
+    "label": "キングズ・パイランド厩舎(ダートムア)",
+    "approx": true
+   }
+  },
+  {
+   "id": "YELL",
+   "title_en": "The Yellow Face",
+   "title_ja": "土色の顔",
+   "collection": "memoirs",
+   "pub_year": 1893,
+   "is_novel": false,
+   "case_type": "怪事件",
+   "deaths": false,
+   "client": "グラント・マンロー",
+   "motive": "(犯罪なし)前夫の子の秘匿",
+   "region": "ロンドン近郊",
+   "confidence": "high",
+   "primary_work_id": 50714,
+   "aozora": [
+    {
+     "work_id": 50714,
+     "evidence": "header:THE YELLOW FACE"
+    },
+    {
+     "work_id": 43028,
+     "evidence": "header:THE YELLOW FACE"
+    }
+   ],
+   "site": {
+    "lat": 51.411,
+    "lon": -0.122,
+    "label": "ノーベリの家",
+    "approx": true
+   }
+  },
+  {
+   "id": "STOC",
+   "title_en": "The Stock-Broker's Clerk",
+   "title_ja": "株式仲買人",
+   "collection": "memoirs",
+   "pub_year": 1893,
+   "is_novel": false,
+   "case_type": "詐欺・偽装",
+   "deaths": true,
+   "client": "ホール・パイクロフト",
+   "motive": "銀行証券強奪のための替え玉工作",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": 54912,
+   "aozora": [
+    {
+     "work_id": 54912,
+     "evidence": "header:THE STOCK-BROKER'S CLERK"
+    },
+    {
+     "work_id": 43497,
+     "evidence": "本文実測:モーソン×3(2026-08-24)"
+    }
+   ],
+   "site": {
+    "lat": 52.482,
+    "lon": -1.894,
+    "label": "バーミンガム(コーポレーション街)",
+    "approx": true
+   }
+  },
+  {
+   "id": "GLOR",
+   "title_en": "The \"Gloria Scott\"",
+   "title_ja": "グローリア・スコット号",
+   "collection": "memoirs",
+   "pub_year": 1893,
+   "is_novel": false,
+   "case_type": "恐喝",
+   "deaths": true,
+   "client": "ヴィクター・トレヴァー(回想)",
+   "motive": "囚人船の過去による恐喝",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": 50716,
+   "aozora": [
+    {
+     "work_id": 50716,
+     "evidence": "header:THE \"GLORIA SCOTT\""
+    },
+    {
+     "work_id": 43498,
+     "evidence": "本文実測:グロリア×9(2026-08-24)"
+    }
+   ],
+   "site": {
+    "lat": 52.75,
+    "lon": 1.15,
+    "label": "ドニソープ(ノーフォーク)",
+    "approx": true
+   }
+  },
+  {
+   "id": "MUSG",
+   "title_en": "The Musgrave Ritual",
+   "title_ja": "マスグレイヴ家の儀式書",
+   "collection": "memoirs",
+   "pub_year": 1893,
+   "is_novel": false,
+   "case_type": "失踪・捜索",
+   "deaths": true,
+   "client": "レジナルド・マスグレイヴ(回想)",
+   "motive": "隠された王冠(財宝)の入手",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 50.95,
+    "lon": -0.45,
+    "label": "ハールストン館(西サセックス)",
+    "approx": true
+   }
+  },
+  {
+   "id": "REIG",
+   "title_en": "The Reigate Squires",
+   "title_ja": "ライギット・パズル",
+   "collection": "memoirs",
+   "pub_year": 1893,
+   "is_novel": false,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "なし(静養先で遭遇)",
+   "motive": "土地訴訟に関わる文書の奪取と口封じ",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": 54913,
+   "aozora": [
+    {
+     "work_id": 54913,
+     "evidence": "header:THE REIGATE PUZZLE"
+    }
+   ],
+   "site": {
+    "lat": 51.237,
+    "lon": -0.206,
+    "label": "ライゲート(サリー)",
+    "approx": false
+   }
+  },
+  {
+   "id": "CROO",
+   "title_en": "The Crooked Man",
+   "title_ja": "曲れる者",
+   "collection": "memoirs",
+   "pub_year": 1893,
+   "is_novel": false,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "なし(ホームズが持ち込む)",
+   "motive": "過去の裏切りの発覚(死は病発作)",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": 54911,
+   "aozora": [
+    {
+     "work_id": 54911,
+     "evidence": "header:THE CROOKED MAN"
+    }
+   ],
+   "site": {
+    "lat": 51.248,
+    "lon": -0.756,
+    "label": "オールダーショット駐屯地",
+    "approx": false
+   }
+  },
+  {
+   "id": "RESI",
+   "title_en": "The Resident Patient",
+   "title_ja": "患者兼同居人",
+   "collection": "memoirs",
+   "pub_year": 1893,
+   "is_novel": false,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "パーシー・トレヴェリアン医師",
+   "motive": "仲間の裏切りへの復讐(私刑)",
+   "region": "ロンドン",
+   "confidence": "high",
+   "primary_work_id": 50715,
+   "aozora": [
+    {
+     "work_id": 50715,
+     "evidence": "header:THE RESIDENT PATIENT"
+    },
+    {
+     "work_id": 43524,
+     "evidence": "本文実測:ブレシントン×43(2026-08-24)"
+    }
+   ],
+   "site": {
+    "lat": 51.512,
+    "lon": -0.148,
+    "label": "ブルック街の診療所",
+    "approx": true
+   }
+  },
+  {
+   "id": "GREE",
+   "title_en": "The Greek Interpreter",
+   "title_ja": "ギリシャ語通訳",
+   "collection": "memoirs",
+   "pub_year": 1893,
+   "is_novel": false,
+   "case_type": "失踪・捜索",
+   "deaths": true,
+   "client": "マイクロフト(メラス氏)",
+   "motive": "相続財産の強要(監禁)",
+   "region": "ロンドン",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.408,
+    "lon": -0.026,
+    "label": "マートルズ館(ベッケナム)",
+    "approx": true
+   }
+  },
+  {
+   "id": "NAVA",
+   "title_en": "The Naval Treaty",
+   "title_ja": "海軍条約文書",
+   "collection": "memoirs",
+   "pub_year": 1893,
+   "is_novel": false,
+   "case_type": "機密・スパイ",
+   "deaths": false,
+   "client": "パーシー・フェルプス",
+   "motive": "機密文書の売却(金銭)",
+   "region": "ロンドン近郊",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.319,
+    "lon": -0.559,
+    "label": "ブライアブレイ(ウォーキング)",
+    "approx": true
+   }
+  },
+  {
+   "id": "FINA",
+   "title_en": "The Final Problem",
+   "title_ja": "最後の事件",
+   "collection": "memoirs",
+   "pub_year": 1893,
+   "is_novel": false,
+   "case_type": "その他",
+   "deaths": true,
+   "client": "なし(ホームズ自身)",
+   "motive": "犯罪組織の自己保存(ホームズ抹殺)",
+   "region": "海外",
+   "confidence": "high",
+   "primary_work_id": 61394,
+   "aozora": [
+    {
+     "work_id": 61394,
+     "evidence": "header:THE FINAL PROBLEM"
+    }
+   ],
+   "site": {
+    "lat": 46.734,
+    "lon": 8.182,
+    "label": "ライヘンバッハの滝(マイリンゲン)",
+    "approx": false
+   }
+  },
+  {
+   "id": "EMPT",
+   "title_en": "The Adventure of the Empty House",
+   "title_ja": "空家の冒険",
+   "collection": "return",
+   "pub_year": 1903,
+   "is_novel": false,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "なし(自発調査)",
+   "motive": "賭博の不正の口封じ",
+   "region": "ロンドン",
+   "confidence": "high",
+   "primary_work_id": 43522,
+   "aozora": [
+    {
+     "work_id": 43522,
+     "evidence": "本文実測:モラン×19(2026-08-24)"
+    }
+   ],
+   "site": {
+    "lat": 51.509,
+    "lon": -0.151,
+    "label": "パーク・レーン427番地",
+    "approx": true
+   }
+  },
+  {
+   "id": "NORW",
+   "title_en": "The Adventure of the Norwood Builder",
+   "title_ja": "ノーウッドの建築家",
+   "collection": "return",
+   "pub_year": 1903,
+   "is_novel": false,
+   "case_type": "詐欺・偽装",
+   "deaths": false,
+   "client": "ジョン・マクファーレン",
+   "motive": "復讐と財産詐取(偽装死)",
+   "region": "ロンドン近郊",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [
+    {
+     "work_id": 3394,
+     "evidence": "題名対応(取得不能)"
+    }
+   ],
+   "site": {
+    "lat": 51.432,
+    "lon": -0.103,
+    "label": "ディープ・ディーン館(ロウワー・ノーウッド)",
+    "approx": true
+   }
+  },
+  {
+   "id": "DANC",
+   "title_en": "The Adventure of the Dancing Men",
+   "title_ja": "踊る人形",
+   "collection": "return",
+   "pub_year": 1903,
+   "is_novel": false,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "ヒルトン・キュービット",
+   "motive": "元恋人への執着と復縁強要",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": 50713,
+   "aozora": [
+    {
+     "work_id": 50713,
+     "evidence": "header:THE ADVENTURE OF THE DANCING MEN"
+    },
+    {
+     "work_id": 45340,
+     "evidence": "本文実測:ヒルトン×27(2026-08-24)"
+    }
+   ],
+   "site": {
+    "lat": 52.82,
+    "lon": 1.42,
+    "label": "リドリング・ソープ館(ノーフォーク)",
+    "approx": true
+   }
+  },
+  {
+   "id": "SOLI",
+   "title_en": "The Adventure of the Solitary Cyclist",
+   "title_ja": "自転車乗りの影",
+   "collection": "return",
+   "pub_year": 1903,
+   "is_novel": false,
+   "case_type": "怪事件",
+   "deaths": false,
+   "client": "ヴァイオレット・スミス",
+   "motive": "遺産目当ての強制結婚",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": 54914,
+   "aozora": [
+    {
+     "work_id": 54914,
+     "evidence": "header:THE ADVENTURE OF THE SOLITARY CYCLIST"
+    },
+    {
+     "work_id": 43523,
+     "evidence": "本文実測:カラザ×34(2026-08-24)"
+    }
+   ],
+   "site": {
+    "lat": 51.19,
+    "lon": -0.77,
+    "label": "チャールトン館(ファーナム近郊)",
+    "approx": true
+   }
+  },
+  {
+   "id": "PRIO",
+   "title_en": "The Adventure of the Priory School",
+   "title_ja": "プライオリ・スクール",
+   "collection": "return",
+   "pub_year": 1904,
+   "is_novel": false,
+   "case_type": "失踪・捜索",
+   "deaths": true,
+   "client": "ハクスタブル博士",
+   "motive": "相続権をめぐる誘拐",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 53.25,
+    "lon": -1.7,
+    "label": "プライオリ・スクール(ピーク地方)",
+    "approx": true
+   }
+  },
+  {
+   "id": "BLAC",
+   "title_en": "The Adventure of Black Peter",
+   "title_ja": "ブラック・ピーター",
+   "collection": "return",
+   "pub_year": 1904,
+   "is_novel": false,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "ホプキンズ警部",
+   "motive": "過去の犯罪(証券強奪)の清算",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.1,
+    "lon": 0.03,
+    "label": "ウッドマンズ・リー(フォレスト・ロウ近郊)",
+    "approx": true
+   }
+  },
+  {
+   "id": "CHAS",
+   "title_en": "The Adventure of Charles Augustus Milverton",
+   "title_ja": "チャールズ・オーガスタス・ミルヴァートン",
+   "collection": "return",
+   "pub_year": 1904,
+   "is_novel": false,
+   "case_type": "恐喝",
+   "deaths": true,
+   "client": "エヴァ・ブラックウェル嬢",
+   "motive": "恐喝ビジネス",
+   "region": "ロンドン",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [
+    {
+     "work_id": 3393,
+     "evidence": "題名対応(取得不能)"
+    }
+   ],
+   "site": {
+    "lat": 51.556,
+    "lon": -0.178,
+    "label": "アップルドア・タワーズ(ハムステッド)",
+    "approx": true
+   }
+  },
+  {
+   "id": "SIXN",
+   "title_en": "The Adventure of the Six Napoleons",
+   "title_ja": "六つのナポレオン",
+   "collection": "return",
+   "pub_year": 1904,
+   "is_novel": false,
+   "case_type": "盗難・強盗",
+   "deaths": true,
+   "client": "レストレード警部",
+   "motive": "隠した黒真珠の回収",
+   "region": "ロンドン",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.5,
+    "lon": -0.192,
+    "label": "ケンジントン(ピット街ほか)",
+    "approx": true
+   }
+  },
+  {
+   "id": "3STU",
+   "title_en": "The Adventure of the Three Students",
+   "title_ja": "三枚の学生",
+   "collection": "return",
+   "pub_year": 1904,
+   "is_novel": false,
+   "case_type": "その他",
+   "deaths": false,
+   "client": "ヒルトン・ソームズ講師",
+   "motive": "競技出場の危機による出来心(試験問題)",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": 54915,
+   "aozora": [
+    {
+     "work_id": 54915,
+     "evidence": "header:THE ADVENTURE OF THE THREE STUDENTS"
+    }
+   ],
+   "site": {
+    "lat": 52.205,
+    "lon": 0.119,
+    "label": "大学町(所在は作中不特定)",
+    "approx": true
+   }
+  },
+  {
+   "id": "GOLD",
+   "title_en": "The Adventure of the Golden Pince-Nez",
+   "title_ja": "金縁の鼻眼鏡",
+   "collection": "return",
+   "pub_year": 1904,
+   "is_novel": false,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "ホプキンズ警部",
+   "motive": "過去の裏切りの清算(文書回収)",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.27,
+    "lon": 0.52,
+    "label": "ヨックスリー・オールド・プレイス(ケント)",
+    "approx": true
+   }
+  },
+  {
+   "id": "MISS",
+   "title_en": "The Adventure of the Missing Three-Quarter",
+   "title_ja": "スリー・クォーターの失踪",
+   "collection": "return",
+   "pub_year": 1904,
+   "is_novel": false,
+   "case_type": "失踪・捜索",
+   "deaths": true,
+   "client": "シリル・オーヴァートン",
+   "motive": "(犯罪なし)秘密の結婚と妻の危篤",
+   "region": "地方",
+   "confidence": "check",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 52.205,
+    "lon": 0.119,
+    "label": "ケンブリッジ",
+    "approx": false
+   }
+  },
+  {
+   "id": "ABBE",
+   "title_en": "The Adventure of the Abbey Grange",
+   "title_ja": "アビイ屋敷",
+   "collection": "return",
+   "pub_year": 1904,
+   "is_novel": false,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "ホプキンズ警部",
+   "motive": "暴力からの防衛(義侠)",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.27,
+    "lon": 0.3,
+    "label": "アビイ屋敷(ケント・マーシャム)",
+    "approx": true
+   }
+  },
+  {
+   "id": "SECO",
+   "title_en": "The Adventure of the Second Stain",
+   "title_ja": "第二の汚点",
+   "collection": "return",
+   "pub_year": 1904,
+   "is_novel": false,
+   "case_type": "機密・スパイ",
+   "deaths": true,
+   "client": "ベリンジャー首相",
+   "motive": "痴情のもつれと書簡の売買",
+   "region": "ロンドン",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.499,
+    "lon": -0.127,
+    "label": "ゴドルフィン街(ウェストミンスター)",
+    "approx": true
+   }
+  },
+  {
+   "id": "WIST",
+   "title_en": "The Adventure of Wisteria Lodge",
+   "title_ja": "ウィステリア荘",
+   "collection": "his_last_bow",
+   "pub_year": 1908,
+   "is_novel": false,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "ジョン・スコット・エクルズ",
+   "motive": "独裁者への復讐(暗殺計画)",
+   "region": "ロンドン近郊",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.369,
+    "lon": -0.365,
+    "label": "ウィステリア荘(エッシャー近郊)",
+    "approx": true
+   }
+  },
+  {
+   "id": "CARD",
+   "title_en": "The Adventure of the Cardboard Box",
+   "title_ja": "ボール箱",
+   "collection": "his_last_bow",
+   "pub_year": 1893,
+   "is_novel": false,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "レストレード警部",
+   "motive": "嫉妬による痴情殺人",
+   "region": "ロンドン近郊",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.376,
+    "lon": -0.1,
+    "label": "クロス街(クロイドン)",
+    "approx": true
+   }
+  },
+  {
+   "id": "REDC",
+   "title_en": "The Adventure of the Red Circle",
+   "title_ja": "赤い輪",
+   "collection": "his_last_bow",
+   "pub_year": 1911,
+   "is_novel": false,
+   "case_type": "怪事件",
+   "deaths": true,
+   "client": "ウォーレン夫人",
+   "motive": "犯罪組織の制裁と、組織からの逃亡",
+   "region": "ロンドン",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.52,
+    "lon": -0.122,
+    "label": "グレート・オーム街の下宿",
+    "approx": true
+   }
+  },
+  {
+   "id": "BRUC",
+   "title_en": "The Adventure of the Bruce-Partington Plans",
+   "title_ja": "ブルース・パーティントン設計書",
+   "collection": "his_last_bow",
+   "pub_year": 1908,
+   "is_novel": false,
+   "case_type": "機密・スパイ",
+   "deaths": true,
+   "client": "マイクロフト",
+   "motive": "機密の売却(金銭)",
+   "region": "ロンドン",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.514,
+    "lon": -0.076,
+    "label": "オールドゲイト駅(遺体発見現場)",
+    "approx": false
+   }
+  },
+  {
+   "id": "DYIN",
+   "title_en": "The Adventure of the Dying Detective",
+   "title_ja": "瀕死の探偵",
+   "collection": "his_last_bow",
+   "pub_year": 1913,
+   "is_novel": false,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "なし(ホームズの罠)",
+   "motive": "遺産相続のための毒殺",
+   "region": "ロンドン",
+   "confidence": "high",
+   "primary_work_id": 50718,
+   "aozora": [
+    {
+     "work_id": 50718,
+     "evidence": "header:THE ADVENTURE OF THE DYING DETECTIVE"
+    }
+   ],
+   "site": {
+    "lat": 51.5238,
+    "lon": -0.1586,
+    "label": "ベーカー街221B(病室の芝居)",
+    "approx": false
+   }
+  },
+  {
+   "id": "LADY",
+   "title_en": "The Disappearance of Lady Frances Carfax",
+   "title_ja": "フランシス・カーファクス姫の失踪",
+   "collection": "his_last_bow",
+   "pub_year": 1911,
+   "is_novel": false,
+   "case_type": "失踪・捜索",
+   "deaths": true,
+   "client": "ドブニー嬢(旧家庭教師)",
+   "motive": "宝石目当ての拉致(信仰を装う)",
+   "region": "海外",
+   "confidence": "check",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 46.52,
+    "lon": 6.633,
+    "label": "ローザンヌ(捜索の起点)",
+    "approx": false
+   }
+  },
+  {
+   "id": "DEVI",
+   "title_en": "The Adventure of the Devil's Foot",
+   "title_ja": "悪魔の足",
+   "collection": "his_last_bow",
+   "pub_year": 1910,
+   "is_novel": false,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "ラウンドヘイ牧師",
+   "motive": "遺産(金銭)、続く事件は復讐",
+   "region": "地方",
+   "confidence": "check",
+   "primary_work_id": null,
+   "aozora": [
+    {
+     "work_id": 3392,
+     "evidence": "題名対応(取得不能)"
+    }
+   ],
+   "site": {
+    "lat": 50.05,
+    "lon": -5.25,
+    "label": "トレダニック・ウォラス(コーンウォール)",
+    "approx": true
+   }
+  },
+  {
+   "id": "LAST",
+   "title_en": "His Last Bow",
+   "title_ja": "最後の挨拶",
+   "collection": "his_last_bow",
+   "pub_year": 1917,
+   "is_novel": false,
+   "case_type": "機密・スパイ",
+   "deaths": false,
+   "client": "なし(政府任務)",
+   "motive": "対英諜報(開戦準備)",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.945,
+    "lon": 1.28,
+    "label": "ハリッジ近郊の海岸",
+    "approx": true
+   }
+  },
+  {
+   "id": "ILLU",
+   "title_en": "The Adventure of the Illustrious Client",
+   "title_ja": "高名な依頼人",
+   "collection": "casebook",
+   "pub_year": 1924,
+   "is_novel": false,
+   "case_type": "その他",
+   "deaths": false,
+   "client": "ジェームズ・デイマリー卿(代理)",
+   "motive": "過去の隠蔽と女性の支配",
+   "region": "ロンドン",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.41,
+    "lon": -0.3,
+    "label": "ヴァーノン・ロッジ(キングストン近郊)",
+    "approx": true
+   }
+  },
+  {
+   "id": "BLAN",
+   "title_en": "The Adventure of the Blanched Soldier",
+   "title_ja": "白面の兵士",
+   "collection": "casebook",
+   "pub_year": 1926,
+   "is_novel": false,
+   "case_type": "失踪・捜索",
+   "deaths": false,
+   "client": "ジェームズ・ドッド",
+   "motive": "(犯罪なし)病気の秘匿",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 52.08,
+    "lon": -0.47,
+    "label": "タックスベリー・オールド・パーク(ベッドフォードシャー)",
+    "approx": true
+   }
+  },
+  {
+   "id": "MAZA",
+   "title_en": "The Adventure of the Mazarin Stone",
+   "title_ja": "マザリンの宝石",
+   "collection": "casebook",
+   "pub_year": 1921,
+   "is_novel": false,
+   "case_type": "盗難・強盗",
+   "deaths": false,
+   "client": "首相・内相(政府)",
+   "motive": "宝石の売却(金銭)",
+   "region": "ロンドン",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.5238,
+    "lon": -0.1586,
+    "label": "ベーカー街221B",
+    "approx": false
+   }
+  },
+  {
+   "id": "3GAB",
+   "title_en": "The Adventure of the Three Gables",
+   "title_ja": "三破風館",
+   "collection": "casebook",
+   "pub_year": 1926,
+   "is_novel": false,
+   "case_type": "盗難・強盗",
+   "deaths": false,
+   "client": "メアリー・メイバリー夫人",
+   "motive": "醜聞原稿の隠滅",
+   "region": "ロンドン近郊",
+   "confidence": "check",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.6,
+    "lon": -0.34,
+    "label": "三破風館(ハロー・ウィールド)",
+    "approx": true
+   }
+  },
+  {
+   "id": "SUSS",
+   "title_en": "The Adventure of the Sussex Vampire",
+   "title_ja": "サセックスの吸血鬼",
+   "collection": "casebook",
+   "pub_year": 1924,
+   "is_novel": false,
+   "case_type": "怪事件",
+   "deaths": false,
+   "client": "ロバート・ファーガスン",
+   "motive": "連れ子の嫉妬(毒矢)",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": 55882,
+   "aozora": [
+    {
+     "work_id": 55882,
+     "evidence": "header:THE ADVENTURE OF THE SUSSEX VAMPIRE"
+    }
+   ],
+   "site": {
+    "lat": 51.02,
+    "lon": -0.36,
+    "label": "ラムバリー(サセックス)",
+    "approx": true
+   }
+  },
+  {
+   "id": "3GAR",
+   "title_en": "The Adventure of the Three Garridebs",
+   "title_ja": "三人ガリデブ",
+   "collection": "casebook",
+   "pub_year": 1924,
+   "is_novel": false,
+   "case_type": "詐欺・偽装",
+   "deaths": false,
+   "client": "ネイサン・ガリデブ",
+   "motive": "隠された贋札印刷機の回収",
+   "region": "ロンドン",
+   "confidence": "check",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.507,
+    "lon": -0.141,
+    "label": "リトル・ライダー街",
+    "approx": true
+   }
+  },
+  {
+   "id": "THOR",
+   "title_en": "The Problem of Thor Bridge",
+   "title_ja": "ソア橋",
+   "collection": "casebook",
+   "pub_year": 1922,
+   "is_novel": false,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "ニール・ギブスン",
+   "motive": "恋敵への冤罪工作(自殺)",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.15,
+    "lon": -1.15,
+    "label": "ソア・プレイス(ハンプシャー)",
+    "approx": true
+   }
+  },
+  {
+   "id": "CREE",
+   "title_en": "The Adventure of the Creeping Man",
+   "title_ja": "這う男",
+   "collection": "casebook",
+   "pub_year": 1923,
+   "is_novel": false,
+   "case_type": "怪事件",
+   "deaths": false,
+   "client": "トレヴァー・ベネット(秘書)",
+   "motive": "(犯罪なし)若返りへの執着",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.754,
+    "lon": -1.254,
+    "label": "大学町カムフォード(作中の架空地名)",
+    "approx": true
+   }
+  },
+  {
+   "id": "LION",
+   "title_en": "The Adventure of the Lion's Mane",
+   "title_ja": "ライオンのたてがみ",
+   "collection": "casebook",
+   "pub_year": 1926,
+   "is_novel": false,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "なし(隠退後に遭遇)",
+   "motive": "なし(自然の生物による事故)",
+   "region": "地方",
+   "confidence": "check",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 50.743,
+    "lon": 0.201,
+    "label": "フルワース入江(サセックス海岸)",
+    "approx": true
+   }
+  },
+  {
+   "id": "VEIL",
+   "title_en": "The Adventure of the Veiled Lodger",
+   "title_ja": "覆面の下宿人",
+   "collection": "casebook",
+   "pub_year": 1927,
+   "is_novel": false,
+   "case_type": "その他",
+   "deaths": true,
+   "client": "メリロー夫人(下宿の女主人)",
+   "motive": "虐待からの解放(過去の共謀)",
+   "region": "ロンドン",
+   "confidence": "check",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.453,
+    "lon": -0.115,
+    "label": "サウス・ブリクストンの下宿",
+    "approx": true
+   }
+  },
+  {
+   "id": "SHOS",
+   "title_en": "The Adventure of Shoscombe Old Place",
+   "title_ja": "ショスコム荘",
+   "collection": "casebook",
+   "pub_year": 1927,
+   "is_novel": false,
+   "case_type": "怪事件",
+   "deaths": true,
+   "client": "ジョン・メイスン(調教師頭)",
+   "motive": "債権者対策(姉の死の隠蔽)",
+   "region": "地方",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.45,
+    "lon": -1.35,
+    "label": "ショスコム・オールド・プレイス(バークシャー)",
+    "approx": true
+   }
+  },
+  {
+   "id": "RETI",
+   "title_en": "The Adventure of the Retired Colourman",
+   "title_ja": "隠居絵具師",
+   "collection": "casebook",
+   "pub_year": 1926,
+   "is_novel": false,
+   "case_type": "殺人",
+   "deaths": true,
+   "client": "ジョサイア・アンバリー(実は犯人)",
+   "motive": "嫉妬(妻と友人の殺害)",
+   "region": "ロンドン近郊",
+   "confidence": "high",
+   "primary_work_id": null,
+   "aozora": [],
+   "site": {
+    "lat": 51.457,
+    "lon": -0.012,
+    "label": "ザ・ヘイヴン(ルイシャム)",
+    "approx": true
+   }
+  }
  ]
 }

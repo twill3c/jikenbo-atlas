@@ -73,7 +73,7 @@ def main():
             iworks.append(iw)
         entry = {k: c[k] for k in (
             "id", "title_en", "title_ja", "collection", "pub_year", "is_novel",
-            "case_type", "deaths", "client", "motive", "region", "primary_work_id")}
+            "case_type", "deaths", "client", "motive", "region", "primary_work_id", "site")}
         entry["works"] = iworks
         index_cases.append(entry)
 
