@@ -9,7 +9,10 @@ import json
 import math
 from pathlib import Path
 
-from aozora_parser import parse
+try:
+    from .aozora_parser import parse
+except ImportError:  # スクリプト直接実行時
+    from aozora_parser import parse
 
 ROOT = Path(__file__).parent.parent
 OUT = ROOT / "web" / "data"

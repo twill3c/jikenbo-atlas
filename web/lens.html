@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>人物と文体のレンズ — 事件簿アトラス</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  section.block { margin: 28px 0; }
+  section.block > h2 { font-size: 1.1rem; letter-spacing: .08em; border-left: 4px solid var(--accent); padding-left: 10px; }
+  section.block .note { color: var(--ink-3); font-size: .78rem; }
+  #network svg { width: 100%; height: 560px; background: var(--card); border: 1px solid var(--line); border-radius: 8px; }
+  .pair { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px; margin: 10px 0; }
+  .pair h4 { margin: 0 0 8px; font-size: .95rem; }
+  .pair .row { display: grid; grid-template-columns: 11em 1fr; gap: 8px; align-items: center; font-size: .82rem; margin: 4px 0; }
+  .pair .lbl { color: var(--ink-2); text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .pair .meta { color: var(--ink-3); font-size: .75rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <h1><a href="./">事件簿アトラス</a></h1>
+    <div class="sub">人物と文体のレンズ — 青空文庫収録テキストの実測分析</div>
+    <nav style="font-size:.88rem;margin-top:8px"><a href="./">事件簿</a> ｜ <a href="map.html">地図</a> ｜ <a href="lens.html" style="color:var(--ink);font-weight:600">レンズ</a></nav>
+  </header>
+
+  <section class="block">
+    <h2>再登場人物 × 事件ネットワーク</h2>
+    <p class="note">辺は本文中の言及回数の実測(収録 25 事件のみ。推定辺は描かない)。●=人物、○=事件(クリックで本文へ)。ハドスン夫人は「夫人」表記のみ計上 — グローリア・スコット号の船員ハドソンは別人。</p>
+    <div id="network"></div>
+  </section>
+
+  <section class="block">
+    <h2>台詞の濃さ — 作品別台詞比率</h2>
+    <p class="note">本文に占める鉤括弧内の割合。ホームズものの「会話劇」ぶりの実測。</p>
+    <div id="ratios" class="chart"></div>
+  </section>
+
+  <section class="block">
+    <h2>同じ事件、ふたつの訳 — 訳者間比較</h2>
+    <p class="note">同一原作に複数訳がある 7 事件。台詞比率・分量・ルビ密度で訳風を比べる。</p>
+    <div id="pairs"></div>
+  </section>
+</div>
+<div id="tip" role="tooltip"></div>
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js"></script>
+<script src="lens.js"></script>
+</body>
+</html>

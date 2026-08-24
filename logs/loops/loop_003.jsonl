@@ -5,3 +5,6 @@
 {"v": "1.2", "ts": "2026-08-24T22:03:32+09:00", "project": "jikenbo-atlas", "loop_id": "loop_003", "event": "stage_end", "data": {"stage": 4, "stage_name": "実装", "result": "pass", "notes": "60事件へ座標注入(approx明示)、build_webへsite伝搬、Leaflet地図(死者2色+推定白抜き+221B星)"}}
 {"v": "1.2", "ts": "2026-08-24T22:03:32+09:00", "project": "jikenbo-atlas", "loop_id": "loop_003", "event": "stage_end", "data": {"stage": 5, "stage_name": "検証", "result": "pass", "notes": "境界ゲートT-402全数合格+ヘッドレスEdgeで地図描画を目視確認"}}
 {"v": "1.2", "ts": "2026-08-24T22:03:58+09:00", "project": "jikenbo-atlas", "loop_id": "loop_003", "event": "stage_end", "data": {"stage": 6, "stage_name": "文書同期", "result": "pass", "notes": "SPEC F-08/README進捗を同期"}}
+{"v": "1.2", "ts": "2026-08-24T22:03:59+09:00", "project": "jikenbo-atlas", "loop_id": "loop_003", "event": "commit", "data": {"kind": "feat", "sha": "35f0bb3", "summary": "L4: 座標+境界ゲート+地図ビュー"}}
+{"v": "1.2", "ts": "2026-08-24T22:03:59+09:00", "project": "jikenbo-atlas", "loop_id": "loop_003", "event": "stage_end", "data": {"stage": 7, "stage_name": "完了", "result": "pass", "notes": "全25テスト緑・地図目視確認・専用コミット"}}
+{"v": "1.2", "ts": "2026-08-24T22:03:59+09:00", "project": "jikenbo-atlas", "loop_id": "loop_003", "event": "loop_end", "data": {"outcome": "success", "failure_count": 0, "summary": "L4完了: 60事件の座標付与と境界ゲート、Leaflet地図ビュー。相互リンク(地図→リーダー)動作"}}
