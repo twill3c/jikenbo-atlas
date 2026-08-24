@@ -52,5 +52,6 @@
 | T-401 | F-08 | 座標の全数付与 | 全 60 事件に site(lat/lon/label/approx)がある。approx は bool、label 非空 |
 | T-402 | F-08 | 座標境界ゲート | 海外=英国 bbox 外 / ロンドン=大ロンドン bbox 内 / 近郊=チャリング・クロスから 60km 以内 / 地方=英国内かつ 25km 超。bbox・基準点は公知の地理定数(2026-08-24 記載) |
 | T-403 | F-08 | 地図ページ骨格 | map.html が存在し Leaflet とデータ参照を含む。index.json の全事件に site が伝搬 |
+| T-601 | F-12 | 固定フッタ | 全 4 ページに app-footer があり、歩き方/設計図アーティファクト・GitHub・App Menu へのリンクを含む。style.css に fixed 配置と本文の逃げ(padding-bottom)がある |
 | T-102 | F-01 | 【validation】ホームズ判定の解消 | 全 work の holmes フラグが本文実測 evidence 付きで確定、needs_review 残 0 |
 | T-103 | F-02 | 【validation】provenance | 全取得ファイルに取得元 URL・取得日が記録されている |

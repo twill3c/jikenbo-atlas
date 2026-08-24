@@ -24,6 +24,7 @@
 | F-09 | 人物ネットワーク(`web/lens.html`): 再登場人物 10 名 × 収録 25 事件の D3 force グラフ。辺=本文言及回数の実測のみ(推定辺なし)。表記ゆれは実測正規表現、ハドスン夫人は「夫人」表記限定(GLOR の船員ハドソンとの同名誤帰属防止) | should | L5 |
 | F-10 | 文体レンズ(同ページ): 台詞比率(「…」内文字数比。閉じ無し行は行末まで)・ルビ密度・訳者ペア 7 事件の比較。抽出器は手計算フィクスチャで較正してから全展開(T-501) | should | L5 |
 | F-11 | 相互リンク統合(3 ビュー間ナビ+各ビューからリーダーへ)・Vercel デプロイ(本番 jikenbo-atlas.vercel.app、`vercel deploy --prod` の CLI 経路)・app-menu 文学・翻訳カテゴリ掲載・GitHub twill3c/jikenbo-atlas 公開 | must | L6 |
+| F-12 | kiko-atlas 準拠の下部固定フッタ(全 4 ページ): © / GitHub / 歩き方 / 設計図 / App Menu。歩き方 = claude.ai/code/artifact/b86e776b-0192-4883-8d22-09c72c272e27、設計図 = claude.ai/code/artifact/f86403ca-7333-45a6-839f-3c2a25de6cc7。fixed 配置+body padding-bottom で本文が隠れない(T-601) | must | L7 |
 
 ## 3. 非機能要求
 

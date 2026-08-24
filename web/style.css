@@ -25,12 +25,29 @@
     --chip: #322d25;
   }
 }
+:root { --footer-h: 3.2rem; }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0; background: var(--paper); color: var(--ink);
   font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
   line-height: 1.7;
+  padding-bottom: calc(var(--footer-h) + 1rem);
+}
+
+/* 下部固定フッタ(F-12、kiko-atlas 準拠) */
+.app-footer {
+  position: fixed; left: 0; right: 0; bottom: 0; height: var(--footer-h);
+  display: flex; align-items: center; justify-content: center;
+  gap: 1.1rem; flex-wrap: wrap;
+  background: var(--ink); color: var(--paper); font-size: .75rem;
+  padding: 0 1rem; z-index: 1200;
+}
+.app-footer a { color: var(--paper); text-decoration: none; }
+.app-footer a:hover { text-decoration: underline; }
+@media (max-width: 700px) {
+  body { padding-bottom: calc(var(--footer-h) + 3.5rem); }
+  .app-footer { height: auto; padding: .4rem 1rem; }
 }
 a { color: var(--accent-2); text-decoration: none; }
 a:hover { text-decoration: underline; }
