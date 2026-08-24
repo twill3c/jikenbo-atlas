@@ -6,3 +6,6 @@
 {"v": "1.2", "ts": "2026-08-24T22:29:28+09:00", "project": "jikenbo-atlas", "loop_id": "loop_006", "event": "stage_end", "data": {"stage": 4, "stage_name": "実装", "result": "pass", "notes": "歩き方+設計図の2アーティファクト公開、全4ページに固定フッタ(kiko準拠・トークン化配色)"}}
 {"v": "1.2", "ts": "2026-08-24T22:29:29+09:00", "project": "jikenbo-atlas", "loop_id": "loop_006", "event": "stage_end", "data": {"stage": 5, "stage_name": "検証", "result": "pass", "notes": "32テスト緑+リーダーでフッタ固定表示を目視+本番反映をcurlで確認"}}
 {"v": "1.2", "ts": "2026-08-24T22:29:29+09:00", "project": "jikenbo-atlas", "loop_id": "loop_006", "event": "stage_end", "data": {"stage": 6, "stage_name": "文書同期", "result": "pass", "notes": "SPEC F-12追記(アーティファクトURL記録)"}}
+{"v": "1.2", "ts": "2026-08-24T22:29:33+09:00", "project": "jikenbo-atlas", "loop_id": "loop_006", "event": "commit", "data": {"kind": "feat", "sha": "f80651a", "summary": "L7: アーティファクト2本+固定フッタ"}}
+{"v": "1.2", "ts": "2026-08-24T22:29:33+09:00", "project": "jikenbo-atlas", "loop_id": "loop_006", "event": "stage_end", "data": {"stage": 7, "stage_name": "完了", "result": "pass", "notes": "本番反映確認済み"}}
+{"v": "1.2", "ts": "2026-08-24T22:29:33+09:00", "project": "jikenbo-atlas", "loop_id": "loop_006", "event": "loop_end", "data": {"outcome": "success", "failure_count": 1, "summary": "L7完了: 歩き方/設計図アーティファクト公開、全4ページに固定フッタ、本番反映"}}
