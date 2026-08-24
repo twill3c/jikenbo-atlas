@@ -6,3 +6,6 @@
 {"v": "1.2", "ts": "2026-08-24T20:59:56+09:00", "project": "jikenbo-atlas", "loop_id": "loop_001", "event": "stage_end", "data": {"stage": 4, "stage_name": "実装", "result": "pass", "notes": "canon_cases.json(60事件)作成。三上訳6件は本文キーワード実測で同定、外部5件は題名対応"}}
 {"v": "1.2", "ts": "2026-08-24T20:59:56+09:00", "project": "jikenbo-atlas", "loop_id": "loop_001", "event": "stage_end", "data": {"stage": 5, "stage_name": "検証", "result": "pass", "notes": "全18テスト緑+分布サマリ目視(死者なし短編21/56、corpus対応25事件34作品、check 8件)"}}
 {"v": "1.2", "ts": "2026-08-24T20:59:56+09:00", "project": "jikenbo-atlas", "loop_id": "loop_001", "event": "stage_end", "data": {"stage": 6, "stage_name": "文書同期", "result": "pass", "notes": "SPEC F-05に統制語彙とdeaths定義を同期"}}
+{"v": "1.2", "ts": "2026-08-24T20:59:57+09:00", "project": "jikenbo-atlas", "loop_id": "loop_001", "event": "commit", "data": {"kind": "feat", "sha": "df62625", "summary": "L2: 正典60事件メタデータ+整合ゲート"}}
+{"v": "1.2", "ts": "2026-08-24T20:59:57+09:00", "project": "jikenbo-atlas", "loop_id": "loop_001", "event": "stage_end", "data": {"stage": 7, "stage_name": "完了", "result": "pass", "notes": "全18テスト緑、専用コミット済み"}}
+{"v": "1.2", "ts": "2026-08-24T20:59:57+09:00", "project": "jikenbo-atlas", "loop_id": "loop_001", "event": "loop_end", "data": {"outcome": "success", "failure_count": 0, "summary": "L2完了: 60事件メタデータ+ゲート6本全緑。34作品→25事件の対応を実測根拠付きで確定"}}

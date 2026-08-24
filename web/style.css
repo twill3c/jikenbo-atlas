@@ -1,0 +1,125 @@
+/* 事件簿アトラス 共通スタイル — 生成りの紙+墨、蘇芳/藍の二系(dataviz 検証済み) */
+:root {
+  --paper: #f7f3ea;
+  --card: #fffdf7;
+  --ink: #2b2722;
+  --ink-2: #5c554b;
+  --ink-3: #8a8175;
+  --line: #d9d2c4;
+  --accent: #9e3d3f;   /* 蘇芳 */
+  --accent-2: #1f5fa8; /* 藍 */
+  --remain: #c9c1b2;   /* 残余(非強調) */
+  --chip: #efe9db;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1e1b17;
+    --card: #26221d;
+    --ink: #e8e2d6;
+    --ink-2: #b3aa9a;
+    --ink-3: #837b6d;
+    --line: #3b352c;
+    --accent: #c4686a;
+    --accent-2: #5b8fd4;
+    --remain: #4a4337;
+    --chip: #322d25;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  line-height: 1.7;
+}
+a { color: var(--accent-2); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px 64px; }
+header.site {
+  border-bottom: 1px solid var(--line); margin-bottom: 24px;
+  padding: 28px 0 18px;
+}
+header.site h1 { margin: 0; font-size: 1.7rem; letter-spacing: .14em; }
+header.site h1 a { color: var(--ink); }
+header.site .sub { color: var(--ink-2); font-size: .9rem; margin-top: 6px; }
+
+/* stat tiles */
+#stats { display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0; }
+.tile {
+  flex: 1 1 150px; background: var(--card); border: 1px solid var(--line);
+  border-radius: 8px; padding: 12px 16px;
+}
+.tile .num { font-size: 1.7rem; color: var(--accent); font-variant-numeric: tabular-nums; }
+.tile .lbl { font-size: .8rem; color: var(--ink-2); }
+
+/* filters */
+#filters {
+  display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+  padding: 12px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  margin-bottom: 20px; font-size: .88rem;
+}
+#filters select, #filters input[type=search] {
+  font: inherit; font-size: .88rem; color: var(--ink); background: var(--card);
+  border: 1px solid var(--line); border-radius: 6px; padding: 5px 8px;
+}
+#filters .count { margin-left: auto; color: var(--ink-2); }
+
+/* charts */
+#charts { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 28px; }
+@media (max-width: 760px) { #charts { grid-template-columns: 1fr; } }
+.chart {
+  background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px 10px;
+}
+.chart h3 { margin: 0 0 10px; font-size: .95rem; font-weight: 600; letter-spacing: .06em; }
+.chart .legend { display: flex; gap: 14px; font-size: .78rem; color: var(--ink-2); margin-bottom: 8px; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 5px; vertical-align: -1px; }
+.bar-row { display: grid; grid-template-columns: 7.5em 1fr; align-items: center; gap: 8px; margin: 6px 0; font-size: .82rem; }
+.bar-row .lbl { color: var(--ink-2); text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bar-track { display: flex; align-items: center; gap: 2px; min-height: 16px; }
+.bar {
+  height: 14px; border-radius: 0 4px 4px 0; background: var(--accent);
+  min-width: 2px; transition: width .25s;
+}
+.bar.b2 { background: var(--accent-2); border-radius: 0; }
+.bar.rem { background: var(--remain); border-radius: 0 4px 4px 0; }
+.bar-val { font-size: .78rem; color: var(--ink-2); padding-left: 4px; font-variant-numeric: tabular-nums; }
+
+/* tooltip */
+#tip {
+  position: fixed; pointer-events: none; z-index: 50; display: none;
+  background: var(--ink); color: var(--paper); font-size: .78rem;
+  padding: 5px 9px; border-radius: 6px; max-width: 260px;
+}
+
+/* case list */
+#case-list { display: grid; gap: 10px; }
+.case {
+  background: var(--card); border: 1px solid var(--line); border-radius: 8px;
+  padding: 12px 16px; display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline;
+}
+.case .ttl { font-size: 1.02rem; font-weight: 600; }
+.case .en { color: var(--ink-3); font-size: .78rem; font-style: italic; }
+.case .meta { font-size: .78rem; color: var(--ink-2); display: flex; flex-wrap: wrap; gap: 6px; width: 100%; }
+.chip { background: var(--chip); border-radius: 10px; padding: 1px 9px; }
+.chip.death { color: var(--accent); }
+.case .read { margin-left: auto; font-size: .85rem; white-space: nowrap; }
+.case .noread { margin-left: auto; font-size: .78rem; color: var(--ink-3); white-space: nowrap; }
+
+/* reader */
+#reader-head { border-bottom: 1px solid var(--line); padding: 26px 0 16px; margin-bottom: 26px; }
+#reader-head h1 { margin: 0 0 4px; font-size: 1.5rem; letter-spacing: .1em; }
+#reader-head .meta { color: var(--ink-2); font-size: .85rem; }
+#reader-body { max-width: 720px; margin: 0 auto; font-size: 1.02rem; }
+#reader-body p { margin: 0 0 .2em; text-indent: 0; }
+#reader-body .indent { padding-left: 2em; }
+#reader-body h2.mid { font-size: 1.15rem; margin: 1.6em 0 .8em; letter-spacing: .1em; }
+#reader-body .em-dots { text-emphasis: filled sesame; -webkit-text-emphasis: filled sesame; }
+#reader-body .right { text-align: right; }
+#reader-body hr.pagebreak { border: 0; border-top: 1px dashed var(--line); margin: 2em 10%; }
+#reader-body .sashie { color: var(--ink-3); font-size: .82rem; text-align: center; margin: 1em 0; }
+#reader-body ruby rt { font-size: .55em; color: var(--ink-2); }
+#reader-foot {
+  max-width: 720px; margin: 40px auto 0; padding-top: 14px; border-top: 1px solid var(--line);
+  color: var(--ink-3); font-size: .78rem; white-space: pre-wrap;
+}
+.backlink { font-size: .85rem; }

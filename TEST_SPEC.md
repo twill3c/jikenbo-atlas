@@ -45,5 +45,9 @@
 | T-204 | F-05 | コーパス対応の全単射 | canon 側の work_id 集合 == aozora_works の {holmes==true ∪ external_host} 集合。1 つの work_id は 1 事件にのみ属す |
 | T-205 | F-05 | 対応の証拠 | evidence が header: のものは、引用行が当該ファイル先頭 6 行に実在する(実測の再現)。それ以外は 本文実測: / 題名対応(取得不能) のいずれか |
 | T-206 | F-05 | 主訳の選好 | corpus ありの事件の primary_work_id は、大久保訳が存在すればそれを指す |
+| T-301 | F-06 | 【validation】本文 JSON の網羅 | web/data/stories/ に holmes==true 全作品の JSON が存在し、余剰がない(集合一致) |
+| T-302 | F-06 | 【validation】本文 JSON の可逆性 | 各 story JSON のセグメントから青空記法本文を再構成すると、パーサーの serialize 本文と一致(表示層まで無損失) |
+| T-303 | F-07 | 【validation】索引の整合 | index.json の事件数・work 参照が canon/aozora と一致。reading_minutes > 0。stats の合計が全数と一致 |
+| T-304 | F-06/07 | web 骨格 | index.html / reader.html が存在し、必須マウント要素とデータパス参照を含む |
 | T-102 | F-01 | 【validation】ホームズ判定の解消 | 全 work の holmes フラグが本文実測 evidence 付きで確定、needs_review 残 0 |
 | T-103 | F-02 | 【validation】provenance | 全取得ファイルに取得元 URL・取得日が記録されている |

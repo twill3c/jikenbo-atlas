@@ -30,8 +30,21 @@
 
 ```bash
 python pipeline/fetch_aozora.py   # コーパス取得(キャッシュがあれば HTTP アクセスなし)
-python -m pytest -q               # 往復検査含む全テスト
+python pipeline/build_web.py      # web 配信データ生成(web/data/)
+python -m pytest -q               # 往復検査・整合ゲート含む全テスト
+python -m http.server 8341 --directory web   # ローカル閲覧
 ```
+
+## 進捗
+
+| ループ | 内容 | 状態 |
+|---|---|---|
+| L1 | コーパス実測・取得 29 件+記法パーサー+往復検査 100% | 完了 |
+| L2 | 正典 60 事件メタデータ+整合ゲート 6 本 | 完了 |
+| L3 | リーダー+事件簿ダッシュボード(静的 web) | 完了 |
+| L4 | ロンドン地図(Leaflet+座標境界ゲート) | 未着手 |
+| L5 | 人物ネットワーク+文体レンズ | 未着手 |
+| L6 | 相互リンク統合・Vercel デプロイ・app-menu 掲載 | 未着手 |
 
 ## ライセンス
 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>事件簿アトラス — シャーロック・ホームズ正典60事件</title>
+<meta name="description" content="青空文庫のホームズ翻訳群を土台に、正典60事件をメタデータと本文の二層で俯瞰する。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <h1><a href="./">事件簿アトラス</a></h1>
+    <div class="sub">シャーロック・ホームズ正典 60 事件 — 青空文庫翻訳群による俯瞰(大久保ゆう訳ほか)</div>
+  </header>
+
+  <section id="stats" aria-label="統計"></section>
+
+  <section id="filters" aria-label="絞り込み">
+    <select id="f-col" aria-label="短編集"></select>
+    <select id="f-type" aria-label="事件種別"></select>
+    <select id="f-region" aria-label="舞台"></select>
+    <select id="f-death" aria-label="死者">
+      <option value="">死者: すべて</option>
+      <option value="yes">死者あり</option>
+      <option value="no">死者なし</option>
+    </select>
+    <select id="f-text" aria-label="本文">
+      <option value="">本文: すべて</option>
+      <option value="yes">本文あり</option>
+      <option value="no">本文なし</option>
+    </select>
+    <input type="search" id="f-q" placeholder="題名で検索" aria-label="題名検索">
+    <span class="count" id="f-count"></span>
+  </section>
+
+  <section id="charts" aria-label="分布"></section>
+
+  <section id="case-list" aria-label="事件一覧"></section>
+
+  <footer style="margin-top:40px;color:var(--ink-3);font-size:.75rem">
+    本文: 青空文庫(大久保ゆう訳は CC BY 2.1 JP、旧訳はパブリックドメイン)。メタデータ・コードは本プロジェクトによる。
+  </footer>
+</div>
+<div id="tip" role="tooltip"></div>
+<script src="app.js"></script>
+</body>
+</html>
