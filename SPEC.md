@@ -23,7 +23,7 @@
 | F-08 | ロンドン地図(`web/map.html`): Leaflet+OSM タイルによる事件現場プロット。座標は canon_cases の site(架空地名は近傍推定、approx=true でポップアップに明示)。境界ゲート T-402(海外=UK bbox 外 / ロンドン=大ロンドン bbox 内 / 近郊≤60km / 地方>25km)。色は死者有無の 2 系、推定は白抜き、221B に星 | must | L4 |
 | F-09 | 人物ネットワーク(`web/lens.html`): 再登場人物 10 名 × 収録 25 事件の D3 force グラフ。辺=本文言及回数の実測のみ(推定辺なし)。表記ゆれは実測正規表現、ハドスン夫人は「夫人」表記限定(GLOR の船員ハドソンとの同名誤帰属防止) | should | L5 |
 | F-10 | 文体レンズ(同ページ): 台詞比率(「…」内文字数比。閉じ無し行は行末まで)・ルビ密度・訳者ペア 7 事件の比較。抽出器は手計算フィクスチャで較正してから全展開(T-501) | should | L5 |
-| F-11 | 相互リンク統合・Vercel デプロイ・app-menu 掲載 | must | L6 |
+| F-11 | 相互リンク統合(3 ビュー間ナビ+各ビューからリーダーへ)・Vercel デプロイ(本番 jikenbo-atlas.vercel.app、`vercel deploy --prod` の CLI 経路)・app-menu 文学・翻訳カテゴリ掲載・GitHub twill3c/jikenbo-atlas 公開 | must | L6 |
 
 ## 3. 非機能要求
 
