@@ -4,7 +4,7 @@ from pathlib import Path
 import pytest
 
 ROOT = Path(__file__).parent.parent
-PAGES = ["index.html", "map.html", "lens.html", "reader.html"]
+PAGES = ["index.html", "map.html", "lens.html", "reader.html", "taiyaku.html"]
 LINKS = [
     "https://claude.ai/code/artifact/b86e776b-0192-4883-8d22-09c72c272e27",  # 歩き方
     "https://claude.ai/code/artifact/f86403ca-7333-45a6-839f-3c2a25de6cc7",  # 設計図

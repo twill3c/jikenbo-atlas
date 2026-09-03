@@ -143,6 +143,16 @@ function renderList(list) {
       a.href = `reader.html?w=${wid}`;
       a.textContent = `読む${min ? `(約${min}分)` : ""} →`;
       card.append(a);
+    } else if (c.pg) {
+      // 青空文庫に本文が無い事件は PG 原文の自前和訳へ(F-16)。
+      // 充填率をその場に出す — 訳了かどうかを開く前に分かるようにする
+      const a = el("a", "read");
+      a.href = `taiyaku.html?c=${c.id}`;
+      const done = c.pg.n_translated === c.pg.n_paragraphs;
+      const pct = Math.round((c.pg.n_translated / c.pg.n_paragraphs) * 100);
+      a.textContent = done ? "対訳で読む →" : `対訳(和訳 ${pct}%) →`;
+      if (!done) a.classList.add("partial");
+      card.append(a);
     } else {
       card.append(el("span", "noread", "本文未収録"));
     }

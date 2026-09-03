@@ -1,0 +1,2174 @@
+{
+ "case_id": "3GAB",
+ "ebook_id": "69700",
+ "volume_title": "The Case-Book of Sherlock Holmes",
+ "title_en": "IV  The Adventure of the Three Gables",
+ "title_en_display": "The Adventure of the Three Gables",
+ "heading": "IV  The Adventure of the Three Gables",
+ "start_line": 2924,
+ "end_line": 3730,
+ "tail_blanks": 4,
+ "n_paragraphs": 227,
+ "n_words": 6049,
+ "paragraphs": [
+  {
+   "i": 0,
+   "before": 0,
+   "lines": [
+    "IV"
+   ],
+   "text": "IV"
+  },
+  {
+   "i": 1,
+   "before": 1,
+   "lines": [
+    "THE ADVENTURE OF THE THREE GABLES"
+   ],
+   "text": "THE ADVENTURE OF THE THREE GABLES"
+  },
+  {
+   "i": 2,
+   "before": 1,
+   "lines": [
+    "I don't think that any of my adventures with Mr. Sherlock Holmes opened",
+    "quite so abruptly, or so dramatically, as that which I associate with",
+    "The Three Gables.  I had not seen Holmes for some days, and had no idea",
+    "of the new channel into which his activities had been directed.  He was",
+    "in a chatty mood that morning, however, and had just settled me into",
+    "the well-worn low arm-chair on one side of the fire, while he had",
+    "curled down with his pipe in his mouth upon the opposite chair, when",
+    "our visitor arrived.  If I had said that a mad bull had arrived, it",
+    "would give a clearer impression of what occurred."
+   ],
+   "text": "I don't think that any of my adventures with Mr. Sherlock Holmes opened quite so abruptly, or so dramatically, as that which I associate with The Three Gables.  I had not seen Holmes for some days, and had no idea of the new channel into which his activities had been directed.  He was in a chatty mood that morning, however, and had just settled me into the well-worn low arm-chair on one side of the fire, while he had curled down with his pipe in his mouth upon the opposite chair, when our visitor arrived.  If I had said that a mad bull had arrived, it would give a clearer impression of what occurred."
+  },
+  {
+   "i": 3,
+   "before": 1,
+   "lines": [
+    "The door had flown open and a huge negro had burst into the room.  He",
+    "would have been a comic figure if he had not been terrific, for he was",
+    "dressed in a very loud grey check suit with a flowing salmon-coloured",
+    "tie.  His broad face and flattened nose were thrust forward, as his",
+    "sullen dark eyes, with a smouldering gleam of malice in them, turned",
+    "from one of us to the other."
+   ],
+   "text": "The door had flown open and a huge negro had burst into the room.  He would have been a comic figure if he had not been terrific, for he was dressed in a very loud grey check suit with a flowing salmon-coloured tie.  His broad face and flattened nose were thrust forward, as his sullen dark eyes, with a smouldering gleam of malice in them, turned from one of us to the other."
+  },
+  {
+   "i": 4,
+   "before": 1,
+   "lines": [
+    "\"Which of you genelmen is Masser Holmes?\" he asked."
+   ],
+   "text": "\"Which of you genelmen is Masser Holmes?\" he asked."
+  },
+  {
+   "i": 5,
+   "before": 1,
+   "lines": [
+    "Holmes raised his pipe with a languid smile."
+   ],
+   "text": "Holmes raised his pipe with a languid smile."
+  },
+  {
+   "i": 6,
+   "before": 1,
+   "lines": [
+    "\"Oh! it's you, is it?\" said our visitor, coming with an unpleasant,",
+    "stealthy step round the angle of the table.  \"See here, Masser Holmes,",
+    "you keep your hands out of other folks' business.  Leave folks to",
+    "manage their own affairs.  Got that, Masser Holmes?\""
+   ],
+   "text": "\"Oh! it's you, is it?\" said our visitor, coming with an unpleasant, stealthy step round the angle of the table.  \"See here, Masser Holmes, you keep your hands out of other folks' business.  Leave folks to manage their own affairs.  Got that, Masser Holmes?\""
+  },
+  {
+   "i": 7,
+   "before": 1,
+   "lines": [
+    "\"Keep on talking,\" said Holmes.  \"It's fine.\""
+   ],
+   "text": "\"Keep on talking,\" said Holmes.  \"It's fine.\""
+  },
+  {
+   "i": 8,
+   "before": 1,
+   "lines": [
+    "\"Oh! it's fine, is it?\" growled the savage.  \"It won't be so damn fine",
+    "if I have to trim you up a bit.  I've handled your kind before now, and",
+    "they didn't look fine when I was through with them.  Look at that,",
+    "Masser Holmes!\""
+   ],
+   "text": "\"Oh! it's fine, is it?\" growled the savage.  \"It won't be so damn fine if I have to trim you up a bit.  I've handled your kind before now, and they didn't look fine when I was through with them.  Look at that, Masser Holmes!\""
+  },
+  {
+   "i": 9,
+   "before": 1,
+   "lines": [
+    "He swung a huge knotted lump of a fist under my friend's nose.  Holmes",
+    "examined it closely with an air of great interest.  \"Were you born so?\"",
+    "he asked.  \"Or did it come by degrees?\""
+   ],
+   "text": "He swung a huge knotted lump of a fist under my friend's nose.  Holmes examined it closely with an air of great interest.  \"Were you born so?\" he asked.  \"Or did it come by degrees?\""
+  },
+  {
+   "i": 10,
+   "before": 1,
+   "lines": [
+    "It may have been the icy coolness of my friend, or it may have been the",
+    "slight clatter which I made as I picked up the poker.  In any case, our",
+    "visitor's manner became less flamboyant."
+   ],
+   "text": "It may have been the icy coolness of my friend, or it may have been the slight clatter which I made as I picked up the poker.  In any case, our visitor's manner became less flamboyant."
+  },
+  {
+   "i": 11,
+   "before": 1,
+   "lines": [
+    "\"Well, I've given you fair warnin',\" said he.  \"I've a friend that's",
+    "interested out Harrow way--you know what I'm meaning--and he don't",
+    "intend to have no buttin' in by you.  Got that?  You ain't the law, and",
+    "I ain't the law either, and if you come in I'll be on hand also.  Don't",
+    "you forget it.\""
+   ],
+   "text": "\"Well, I've given you fair warnin',\" said he.  \"I've a friend that's interested out Harrow way--you know what I'm meaning--and he don't intend to have no buttin' in by you.  Got that?  You ain't the law, and I ain't the law either, and if you come in I'll be on hand also.  Don't you forget it.\""
+  },
+  {
+   "i": 12,
+   "before": 1,
+   "lines": [
+    "\"I've wanted to meet you for some time,\" said Holmes.  \"I won't ask you",
+    "to sit down, for I don't like the smell of you, but aren't you Steve",
+    "Dixie, the bruiser?"
+   ],
+   "text": "\"I've wanted to meet you for some time,\" said Holmes.  \"I won't ask you to sit down, for I don't like the smell of you, but aren't you Steve Dixie, the bruiser?"
+  },
+  {
+   "i": 13,
+   "before": 1,
+   "lines": [
+    "\"That's my name, Masser Holmes, and you'll get put through it for sure",
+    "if you give me any lip.\""
+   ],
+   "text": "\"That's my name, Masser Holmes, and you'll get put through it for sure if you give me any lip.\""
+  },
+  {
+   "i": 14,
+   "before": 1,
+   "lines": [
+    "\"It is certainly the last thing you need,\" said Holmes, staring at our",
+    "visitor's hideous mouth.  \"But it was the killing of young Perkins",
+    "outside the Holborn Bar----  What! you're not going?\""
+   ],
+   "text": "\"It is certainly the last thing you need,\" said Holmes, staring at our visitor's hideous mouth.  \"But it was the killing of young Perkins outside the Holborn Bar----  What! you're not going?\""
+  },
+  {
+   "i": 15,
+   "before": 1,
+   "lines": [
+    "The negro had sprung back, and his face was leaden.  \"I won't listen to",
+    "no such talk,\" said he.  \"What have I to do with this 'ere Perkins,",
+    "Masser Holmes?  I was trainin' at the Bull Ring in Birmingham when this",
+    "boy done gone get into trouble.\""
+   ],
+   "text": "The negro had sprung back, and his face was leaden.  \"I won't listen to no such talk,\" said he.  \"What have I to do with this 'ere Perkins, Masser Holmes?  I was trainin' at the Bull Ring in Birmingham when this boy done gone get into trouble.\""
+  },
+  {
+   "i": 16,
+   "before": 1,
+   "lines": [
+    "\"Yes, you'll tell the magistrate about it, Steve,\" said Holmes.  \"I've",
+    "been watching you and Barney Stockdale----\""
+   ],
+   "text": "\"Yes, you'll tell the magistrate about it, Steve,\" said Holmes.  \"I've been watching you and Barney Stockdale----\""
+  },
+  {
+   "i": 17,
+   "before": 1,
+   "lines": [
+    "\"So help me the Lord!  Masser Holmes----\""
+   ],
+   "text": "\"So help me the Lord!  Masser Holmes----\""
+  },
+  {
+   "i": 18,
+   "before": 1,
+   "lines": [
+    "\"That's enough.  Get out of it.  I'll pick you up when I want you.\""
+   ],
+   "text": "\"That's enough.  Get out of it.  I'll pick you up when I want you.\""
+  },
+  {
+   "i": 19,
+   "before": 1,
+   "lines": [
+    "\"Good mornin', Masser Holmes.  I hope there ain't no hard feelin's",
+    "about this 'ere visit?\""
+   ],
+   "text": "\"Good mornin', Masser Holmes.  I hope there ain't no hard feelin's about this 'ere visit?\""
+  },
+  {
+   "i": 20,
+   "before": 1,
+   "lines": [
+    "\"There will be unless you tell me who sent you.\""
+   ],
+   "text": "\"There will be unless you tell me who sent you.\""
+  },
+  {
+   "i": 21,
+   "before": 1,
+   "lines": [
+    "\"Why, there ain't no secret about that, Masser Holmes.  It was that",
+    "same genelman that you have just done gone mention.\""
+   ],
+   "text": "\"Why, there ain't no secret about that, Masser Holmes.  It was that same genelman that you have just done gone mention.\""
+  },
+  {
+   "i": 22,
+   "before": 1,
+   "lines": [
+    "\"And who set him on to it?\""
+   ],
+   "text": "\"And who set him on to it?\""
+  },
+  {
+   "i": 23,
+   "before": 1,
+   "lines": [
+    "\"S'elp me.  I don't know, Masser Holmes.  He just say, 'Steve, you go",
+    "see Mr. Holmes, and tell him his life ain't safe if he go down Harrow",
+    "way.'  That's the whole truth.\""
+   ],
+   "text": "\"S'elp me.  I don't know, Masser Holmes.  He just say, 'Steve, you go see Mr. Holmes, and tell him his life ain't safe if he go down Harrow way.'  That's the whole truth.\""
+  },
+  {
+   "i": 24,
+   "before": 1,
+   "lines": [
+    "Without waiting for any further questioning, our visitor bolted out of",
+    "the room almost as precipitately as he had entered.  Holmes knocked out",
+    "the ashes of his pipe with a quiet chuckle."
+   ],
+   "text": "Without waiting for any further questioning, our visitor bolted out of the room almost as precipitately as he had entered.  Holmes knocked out the ashes of his pipe with a quiet chuckle."
+  },
+  {
+   "i": 25,
+   "before": 1,
+   "lines": [
+    "\"I am glad you were not forced to break his woolly head, Watson.  I",
+    "observed your manoeuvres with the poker.  But he is really rather a",
+    "harmless fellow, a great muscular, foolish, blustering baby, and easily",
+    "cowed, as you have seen.  He is one of the Spencer John gang and has",
+    "taken part in some dirty work of late which I may clear up when I have",
+    "time.  His immediate principal, Barney, is a more astute person.  They",
+    "specialize in assaults, intimidation, and the like.  What I want to",
+    "know is, who is at the back of them on this particular occasion?\""
+   ],
+   "text": "\"I am glad you were not forced to break his woolly head, Watson.  I observed your manoeuvres with the poker.  But he is really rather a harmless fellow, a great muscular, foolish, blustering baby, and easily cowed, as you have seen.  He is one of the Spencer John gang and has taken part in some dirty work of late which I may clear up when I have time.  His immediate principal, Barney, is a more astute person.  They specialize in assaults, intimidation, and the like.  What I want to know is, who is at the back of them on this particular occasion?\""
+  },
+  {
+   "i": 26,
+   "before": 1,
+   "lines": [
+    "\"But why do they want to intimidate you?\""
+   ],
+   "text": "\"But why do they want to intimidate you?\""
+  },
+  {
+   "i": 27,
+   "before": 1,
+   "lines": [
+    "\"It is this Harrow Weald case.  It decides me to look into the matter,",
+    "for if it is worth anyone's while to take so much trouble, there must",
+    "be something in it.\""
+   ],
+   "text": "\"It is this Harrow Weald case.  It decides me to look into the matter, for if it is worth anyone's while to take so much trouble, there must be something in it.\""
+  },
+  {
+   "i": 28,
+   "before": 1,
+   "lines": [
+    "\"But what is it?\""
+   ],
+   "text": "\"But what is it?\""
+  },
+  {
+   "i": 29,
+   "before": 1,
+   "lines": [
+    "\"I was going to tell you when we had this comic interlude.  Here is",
+    "Mrs. Maberley's note.  If you care to come with me we will wire her and",
+    "go out at once.\""
+   ],
+   "text": "\"I was going to tell you when we had this comic interlude.  Here is Mrs. Maberley's note.  If you care to come with me we will wire her and go out at once.\""
+  },
+  {
+   "i": 30,
+   "before": 2,
+   "lines": [
+    "DEAR MR. SHERLOCK HOLMES, (I read)--"
+   ],
+   "text": "DEAR MR. SHERLOCK HOLMES, (I read)--"
+  },
+  {
+   "i": 31,
+   "before": 1,
+   "lines": [
+    "I have had a succession of strange incidents occur to me in connection",
+    "with this house, and I should much value your advice.  You would find",
+    "me at home any time to-morrow.  The house is within a short walk of the",
+    "Weald Station.  I believe that my late husband, Mortimer Maberley, was",
+    "one of your early clients."
+   ],
+   "text": "I have had a succession of strange incidents occur to me in connection with this house, and I should much value your advice.  You would find me at home any time to-morrow.  The house is within a short walk of the Weald Station.  I believe that my late husband, Mortimer Maberley, was one of your early clients."
+  },
+  {
+   "i": 32,
+   "before": 1,
+   "lines": [
+    "Yours faithfully,",
+    "   MARY MABERLEY."
+   ],
+   "text": "Yours faithfully, MARY MABERLEY."
+  },
+  {
+   "i": 33,
+   "before": 2,
+   "lines": [
+    "The address was \"The Three Gables, Harrow Weald.\""
+   ],
+   "text": "The address was \"The Three Gables, Harrow Weald.\""
+  },
+  {
+   "i": 34,
+   "before": 1,
+   "lines": [
+    "\"So that's that!\" said Holmes.  \"And now, if you can spare the time,",
+    "Watson, we will get upon our way.\""
+   ],
+   "text": "\"So that's that!\" said Holmes.  \"And now, if you can spare the time, Watson, we will get upon our way.\""
+  },
+  {
+   "i": 35,
+   "before": 1,
+   "lines": [
+    "A short railway journey, and a shorter drive, brought us to the house,",
+    "a brick and timber villa, standing in its own acre of undeveloped",
+    "grassland.  Three small projections above the upper windows made a",
+    "feeble attempt to justify its name.  Behind was a grove of melancholy,",
+    "half-grown pines, and the whole aspect of the place was poor and",
+    "depressing.  None the less, we found the house to be well furnished,",
+    "and the lady who received us was a most engaging elderly person, who",
+    "bore every mark of refinement and culture."
+   ],
+   "text": "A short railway journey, and a shorter drive, brought us to the house, a brick and timber villa, standing in its own acre of undeveloped grassland.  Three small projections above the upper windows made a feeble attempt to justify its name.  Behind was a grove of melancholy, half-grown pines, and the whole aspect of the place was poor and depressing.  None the less, we found the house to be well furnished, and the lady who received us was a most engaging elderly person, who bore every mark of refinement and culture."
+  },
+  {
+   "i": 36,
+   "before": 1,
+   "lines": [
+    "\"I remember your husband well, madam,\" said Holmes, \"though it is some",
+    "years since he used my services in some trifling matter.\""
+   ],
+   "text": "\"I remember your husband well, madam,\" said Holmes, \"though it is some years since he used my services in some trifling matter.\""
+  },
+  {
+   "i": 37,
+   "before": 1,
+   "lines": [
+    "\"Probably you would be more familiar with the name of my son Douglas.\""
+   ],
+   "text": "\"Probably you would be more familiar with the name of my son Douglas.\""
+  },
+  {
+   "i": 38,
+   "before": 1,
+   "lines": [
+    "Holmes looked at her with great interest."
+   ],
+   "text": "Holmes looked at her with great interest."
+  },
+  {
+   "i": 39,
+   "before": 1,
+   "lines": [
+    "\"Dear me!  Are you the mother of Douglas Maberley?  I knew him",
+    "slightly.  But, of course, all London knew him.  What a magnificent",
+    "creature he was!  Where is he now?\""
+   ],
+   "text": "\"Dear me!  Are you the mother of Douglas Maberley?  I knew him slightly.  But, of course, all London knew him.  What a magnificent creature he was!  Where is he now?\""
+  },
+  {
+   "i": 40,
+   "before": 1,
+   "lines": [
+    "\"Dead, Mr. Holmes, dead!  He was Attaché at Rome, and he died there of",
+    "pneumonia last month.\""
+   ],
+   "text": "\"Dead, Mr. Holmes, dead!  He was Attaché at Rome, and he died there of pneumonia last month.\""
+  },
+  {
+   "i": 41,
+   "before": 1,
+   "lines": [
+    "\"I am sorry.  One could not connect death with such a man.  I have",
+    "never known anyone so vitally alive.  He lived intensely--every fibre",
+    "of him!\""
+   ],
+   "text": "\"I am sorry.  One could not connect death with such a man.  I have never known anyone so vitally alive.  He lived intensely--every fibre of him!\""
+  },
+  {
+   "i": 42,
+   "before": 1,
+   "lines": [
+    "\"Too intensely, Mr. Holmes.  That was the ruin of him.  You remember",
+    "him as he was--debonair and splendid.  You did not see the moody,",
+    "morose, brooding creature into which he developed.  His heart was",
+    "broken.  In a single month I seemed to see my gallant boy turn into a",
+    "worn-out cynical man.\""
+   ],
+   "text": "\"Too intensely, Mr. Holmes.  That was the ruin of him.  You remember him as he was--debonair and splendid.  You did not see the moody, morose, brooding creature into which he developed.  His heart was broken.  In a single month I seemed to see my gallant boy turn into a worn-out cynical man.\""
+  },
+  {
+   "i": 43,
+   "before": 1,
+   "lines": [
+    "\"A love affair--a woman?\""
+   ],
+   "text": "\"A love affair--a woman?\""
+  },
+  {
+   "i": 44,
+   "before": 1,
+   "lines": [
+    "\"Or a fiend.  Well, it was not to talk of my poor lad that I asked you",
+    "to come, Mr. Holmes.\""
+   ],
+   "text": "\"Or a fiend.  Well, it was not to talk of my poor lad that I asked you to come, Mr. Holmes.\""
+  },
+  {
+   "i": 45,
+   "before": 1,
+   "lines": [
+    "\"Dr. Watson and I are at your service.\""
+   ],
+   "text": "\"Dr. Watson and I are at your service.\""
+  },
+  {
+   "i": 46,
+   "before": 1,
+   "lines": [
+    "\"There have been some very strange happenings.  I have been in this",
+    "house more than a year now, and as I wished to lead a retired life I",
+    "have seen little of my neighbours.  Three days ago I had a call from a",
+    "man who said that he was a house agent.  He said that this house would",
+    "exactly suit a client of his and that if I would part with it money",
+    "would be no object.  It seemed to me very strange, as there are several",
+    "empty houses on the market which appear to be equally eligible, but",
+    "naturally I was interested in what he said.  I therefore named a price",
+    "which was five hundred pounds more than I gave.  He at once closed with",
+    "the offer, but added that his client desired to buy the furniture as",
+    "well and would I put a price upon it.  Some of this furniture is from",
+    "my old home, and it is, as you see, very good, so that I named a good",
+    "round sum.  To this also he at once agreed.  I had always wanted to",
+    "travel, and the bargain was so good a one that it really seemed that I",
+    "should be my own mistress for the rest of my life."
+   ],
+   "text": "\"There have been some very strange happenings.  I have been in this house more than a year now, and as I wished to lead a retired life I have seen little of my neighbours.  Three days ago I had a call from a man who said that he was a house agent.  He said that this house would exactly suit a client of his and that if I would part with it money would be no object.  It seemed to me very strange, as there are several empty houses on the market which appear to be equally eligible, but naturally I was interested in what he said.  I therefore named a price which was five hundred pounds more than I gave.  He at once closed with the offer, but added that his client desired to buy the furniture as well and would I put a price upon it.  Some of this furniture is from my old home, and it is, as you see, very good, so that I named a good round sum.  To this also he at once agreed.  I had always wanted to travel, and the bargain was so good a one that it really seemed that I should be my own mistress for the rest of my life."
+  },
+  {
+   "i": 47,
+   "before": 1,
+   "lines": [
+    "\"Yesterday the man arrived with the agreement all drawn out.  Luckily I",
+    "showed it to Mr. Sutro, my lawyer, who lives in Harrow.  He said to me,",
+    "'This is a very strange document.  Are you aware that if you sign it",
+    "you could not legally take _anything_ out of the house--not even your",
+    "own private possessions?'  When the man came again in the evening I",
+    "pointed this out, and I said that I meant only to sell the furniture."
+   ],
+   "text": "\"Yesterday the man arrived with the agreement all drawn out.  Luckily I showed it to Mr. Sutro, my lawyer, who lives in Harrow.  He said to me, 'This is a very strange document.  Are you aware that if you sign it you could not legally take _anything_ out of the house--not even your own private possessions?'  When the man came again in the evening I pointed this out, and I said that I meant only to sell the furniture."
+  },
+  {
+   "i": 48,
+   "before": 1,
+   "lines": [
+    "\"'No, no; everything,' said he."
+   ],
+   "text": "\"'No, no; everything,' said he."
+  },
+  {
+   "i": 49,
+   "before": 1,
+   "lines": [
+    "\"'But my clothes?  My jewels?'"
+   ],
+   "text": "\"'But my clothes?  My jewels?'"
+  },
+  {
+   "i": 50,
+   "before": 1,
+   "lines": [
+    "\"'Well, well, some concession might be made for your personal effects.",
+    "But nothing shall go out of the house unchecked.  My client is a very",
+    "liberal man, but he has his fads and his own way of doing things.  It",
+    "is everything or nothing with him.'"
+   ],
+   "text": "\"'Well, well, some concession might be made for your personal effects. But nothing shall go out of the house unchecked.  My client is a very liberal man, but he has his fads and his own way of doing things.  It is everything or nothing with him.'"
+  },
+  {
+   "i": 51,
+   "before": 1,
+   "lines": [
+    "\"'Then it must be nothing,' said I.  And there the matter was left, but",
+    "the whole thing seemed to me to be so unusual that I thought----\""
+   ],
+   "text": "\"'Then it must be nothing,' said I.  And there the matter was left, but the whole thing seemed to me to be so unusual that I thought----\""
+  },
+  {
+   "i": 52,
+   "before": 1,
+   "lines": [
+    "Here we had a very extraordinary interruption."
+   ],
+   "text": "Here we had a very extraordinary interruption."
+  },
+  {
+   "i": 53,
+   "before": 1,
+   "lines": [
+    "Holmes raised his hand for silence.  Then he strode across the room,",
+    "flung open the door, and dragged in a great gaunt woman whom he had",
+    "seized by the shoulder.  She entered with ungainly struggles, like some",
+    "huge awkward chicken, torn squawking out of its coop."
+   ],
+   "text": "Holmes raised his hand for silence.  Then he strode across the room, flung open the door, and dragged in a great gaunt woman whom he had seized by the shoulder.  She entered with ungainly struggles, like some huge awkward chicken, torn squawking out of its coop."
+  },
+  {
+   "i": 54,
+   "before": 1,
+   "lines": [
+    "\"Leave me alone!  What are you a-doin' of?\" she screeched."
+   ],
+   "text": "\"Leave me alone!  What are you a-doin' of?\" she screeched."
+  },
+  {
+   "i": 55,
+   "before": 1,
+   "lines": [
+    "\"Why, Susan, what is this?\""
+   ],
+   "text": "\"Why, Susan, what is this?\""
+  },
+  {
+   "i": 56,
+   "before": 1,
+   "lines": [
+    "\"Well, ma'am, I was comin' in to ask if the visitors was stayin' for",
+    "lunch when this man jumped out at me.\""
+   ],
+   "text": "\"Well, ma'am, I was comin' in to ask if the visitors was stayin' for lunch when this man jumped out at me.\""
+  },
+  {
+   "i": 57,
+   "before": 1,
+   "lines": [
+    "\"I have been listening to her for the last five minutes, but did not",
+    "wish to interrupt your most interesting narrative.  Just a little",
+    "wheezy, Susan, are you not?  You breathe too heavily for that kind of",
+    "work.\""
+   ],
+   "text": "\"I have been listening to her for the last five minutes, but did not wish to interrupt your most interesting narrative.  Just a little wheezy, Susan, are you not?  You breathe too heavily for that kind of work.\""
+  },
+  {
+   "i": 58,
+   "before": 1,
+   "lines": [
+    "Susan turned a sulky but amazed face upon her captor.  \"Who be you,",
+    "anyhow, and what right have you a-pullin' me about like this?\""
+   ],
+   "text": "Susan turned a sulky but amazed face upon her captor.  \"Who be you, anyhow, and what right have you a-pullin' me about like this?\""
+  },
+  {
+   "i": 59,
+   "before": 1,
+   "lines": [
+    "\"It was merely that I wished to ask a question in your presence.  Did",
+    "you, Mrs. Maberley, mention to anyone that you were going to write to",
+    "me and consult me?\""
+   ],
+   "text": "\"It was merely that I wished to ask a question in your presence.  Did you, Mrs. Maberley, mention to anyone that you were going to write to me and consult me?\""
+  },
+  {
+   "i": 60,
+   "before": 1,
+   "lines": [
+    "\"No, Mr. Holmes, I did not.\""
+   ],
+   "text": "\"No, Mr. Holmes, I did not.\""
+  },
+  {
+   "i": 61,
+   "before": 1,
+   "lines": [
+    "\"Who posted your letter?\""
+   ],
+   "text": "\"Who posted your letter?\""
+  },
+  {
+   "i": 62,
+   "before": 1,
+   "lines": [
+    "\"Susan did.\""
+   ],
+   "text": "\"Susan did.\""
+  },
+  {
+   "i": 63,
+   "before": 1,
+   "lines": [
+    "\"Exactly.  Now, Susan, to whom was it that you wrote or sent a message",
+    "to say that your mistress was asking advice from me?\""
+   ],
+   "text": "\"Exactly.  Now, Susan, to whom was it that you wrote or sent a message to say that your mistress was asking advice from me?\""
+  },
+  {
+   "i": 64,
+   "before": 1,
+   "lines": [
+    "\"It's a lie.  I sent no message.\""
+   ],
+   "text": "\"It's a lie.  I sent no message.\""
+  },
+  {
+   "i": 65,
+   "before": 1,
+   "lines": [
+    "\"Now, Susan, wheezy people may not live long, you know.  It's a wicked",
+    "thing to tell fibs.  Whom did you tell?\""
+   ],
+   "text": "\"Now, Susan, wheezy people may not live long, you know.  It's a wicked thing to tell fibs.  Whom did you tell?\""
+  },
+  {
+   "i": 66,
+   "before": 1,
+   "lines": [
+    "\"Susan!\" cried her mistress, \"I believe you are a bad, treacherous",
+    "woman.  I remember now that I saw you speaking to someone over the",
+    "hedge.\""
+   ],
+   "text": "\"Susan!\" cried her mistress, \"I believe you are a bad, treacherous woman.  I remember now that I saw you speaking to someone over the hedge.\""
+  },
+  {
+   "i": 67,
+   "before": 1,
+   "lines": [
+    "\"That was my own business,\" said the woman sullenly."
+   ],
+   "text": "\"That was my own business,\" said the woman sullenly."
+  },
+  {
+   "i": 68,
+   "before": 1,
+   "lines": [
+    "\"Suppose I tell you that it was Barney Stockdale to whom you spoke?\"",
+    "said Holmes."
+   ],
+   "text": "\"Suppose I tell you that it was Barney Stockdale to whom you spoke?\" said Holmes."
+  },
+  {
+   "i": 69,
+   "before": 1,
+   "lines": [
+    "\"Well, if you know, what do you want to ask for?\""
+   ],
+   "text": "\"Well, if you know, what do you want to ask for?\""
+  },
+  {
+   "i": 70,
+   "before": 1,
+   "lines": [
+    "\"I was not sure, but I know now.  Well now, Susan, it will be worth ten",
+    "pounds to you if you will tell me who is at the back of Barney.\""
+   ],
+   "text": "\"I was not sure, but I know now.  Well now, Susan, it will be worth ten pounds to you if you will tell me who is at the back of Barney.\""
+  },
+  {
+   "i": 71,
+   "before": 1,
+   "lines": [
+    "\"Someone that could lay down a thousand pounds for every ten you have",
+    "in the world.\""
+   ],
+   "text": "\"Someone that could lay down a thousand pounds for every ten you have in the world.\""
+  },
+  {
+   "i": 72,
+   "before": 1,
+   "lines": [
+    "\"So, a rich man?  No; you smiled--a rich woman.  Now we have got so",
+    "far, you may as well give the name and earn the tenner.\""
+   ],
+   "text": "\"So, a rich man?  No; you smiled--a rich woman.  Now we have got so far, you may as well give the name and earn the tenner.\""
+  },
+  {
+   "i": 73,
+   "before": 1,
+   "lines": [
+    "\"I'll see you in hell first.\""
+   ],
+   "text": "\"I'll see you in hell first.\""
+  },
+  {
+   "i": 74,
+   "before": 1,
+   "lines": [
+    "\"Oh, Susan!  Language!\""
+   ],
+   "text": "\"Oh, Susan!  Language!\""
+  },
+  {
+   "i": 75,
+   "before": 1,
+   "lines": [
+    "\"I am clearing out of here.  I've had enough of you all.  I'll send for",
+    "my box to-morrow.\"  She flounced for the door."
+   ],
+   "text": "\"I am clearing out of here.  I've had enough of you all.  I'll send for my box to-morrow.\"  She flounced for the door."
+  },
+  {
+   "i": 76,
+   "before": 1,
+   "lines": [
+    "\"Good-bye, Susan.  Paregoric is the stuff....  Now,\" he continued,",
+    "turning suddenly from lively to severe when the door had closed behind",
+    "the flushed and angry woman, \"this gang means business.  Look how close",
+    "they play the game.  Your letter to me had the 10 p.m. postmark.  And",
+    "yet Susan passes the word to Barney.  Barney has time to go to his",
+    "employer and get instructions; he or she--I incline to the latter from",
+    "Susan's grin when she thought I had blundered--forms a plan.  Black",
+    "Steve is called in, and I am warned off by eleven o'clock next morning.",
+    "That's quick work, you know.\""
+   ],
+   "text": "\"Good-bye, Susan.  Paregoric is the stuff....  Now,\" he continued, turning suddenly from lively to severe when the door had closed behind the flushed and angry woman, \"this gang means business.  Look how close they play the game.  Your letter to me had the 10 p.m. postmark.  And yet Susan passes the word to Barney.  Barney has time to go to his employer and get instructions; he or she--I incline to the latter from Susan's grin when she thought I had blundered--forms a plan.  Black Steve is called in, and I am warned off by eleven o'clock next morning. That's quick work, you know.\""
+  },
+  {
+   "i": 77,
+   "before": 1,
+   "lines": [
+    "\"But what do they want?\""
+   ],
+   "text": "\"But what do they want?\""
+  },
+  {
+   "i": 78,
+   "before": 1,
+   "lines": [
+    "\"Yes, that's the question.  Who had the house before you?\""
+   ],
+   "text": "\"Yes, that's the question.  Who had the house before you?\""
+  },
+  {
+   "i": 79,
+   "before": 1,
+   "lines": [
+    "\"A retired sea captain, called Ferguson.\""
+   ],
+   "text": "\"A retired sea captain, called Ferguson.\""
+  },
+  {
+   "i": 80,
+   "before": 1,
+   "lines": [
+    "\"Anything remarkable about him?\""
+   ],
+   "text": "\"Anything remarkable about him?\""
+  },
+  {
+   "i": 81,
+   "before": 1,
+   "lines": [
+    "\"Not that ever I heard of.\""
+   ],
+   "text": "\"Not that ever I heard of.\""
+  },
+  {
+   "i": 82,
+   "before": 1,
+   "lines": [
+    "\"I was wondering whether he could have buried something.  Of course,",
+    "when people bury treasure nowadays they do it in the Post Office bank.",
+    "But there are always some lunatics about.  It would be a dull world",
+    "without them.  At first I thought of some buried valuable.  But why, in",
+    "that case, should they want your furniture?  You don't happen to have a",
+    "Raphael or a first folio Shakespeare without knowing it?\""
+   ],
+   "text": "\"I was wondering whether he could have buried something.  Of course, when people bury treasure nowadays they do it in the Post Office bank. But there are always some lunatics about.  It would be a dull world without them.  At first I thought of some buried valuable.  But why, in that case, should they want your furniture?  You don't happen to have a Raphael or a first folio Shakespeare without knowing it?\""
+  },
+  {
+   "i": 83,
+   "before": 1,
+   "lines": [
+    "\"No, I don't think I have anything rarer than a Crown Derby tea-set.\""
+   ],
+   "text": "\"No, I don't think I have anything rarer than a Crown Derby tea-set.\""
+  },
+  {
+   "i": 84,
+   "before": 1,
+   "lines": [
+    "\"That would hardly justify all this mystery.  Besides, why should they",
+    "not openly state what they want?  If they covet your tea-set, they can",
+    "surely offer a price for it without buying you out, lock, stock, and",
+    "barrel.  No, as I read it, there is something which you do not know",
+    "that you have, and which you would not give up if you did know.\""
+   ],
+   "text": "\"That would hardly justify all this mystery.  Besides, why should they not openly state what they want?  If they covet your tea-set, they can surely offer a price for it without buying you out, lock, stock, and barrel.  No, as I read it, there is something which you do not know that you have, and which you would not give up if you did know.\""
+  },
+  {
+   "i": 85,
+   "before": 1,
+   "lines": [
+    "\"That is how I read it,\" said I."
+   ],
+   "text": "\"That is how I read it,\" said I."
+  },
+  {
+   "i": 86,
+   "before": 1,
+   "lines": [
+    "\"Dr. Watson agrees, so that settles it.\""
+   ],
+   "text": "\"Dr. Watson agrees, so that settles it.\""
+  },
+  {
+   "i": 87,
+   "before": 1,
+   "lines": [
+    "\"Well, Mr. Holmes, what can it be?\""
+   ],
+   "text": "\"Well, Mr. Holmes, what can it be?\""
+  },
+  {
+   "i": 88,
+   "before": 1,
+   "lines": [
+    "\"Let us see whether by this purely mental analysis we can get it to a",
+    "finer point.  You have been in this house a year.\""
+   ],
+   "text": "\"Let us see whether by this purely mental analysis we can get it to a finer point.  You have been in this house a year.\""
+  },
+  {
+   "i": 89,
+   "before": 1,
+   "lines": [
+    "\"Nearly two.\""
+   ],
+   "text": "\"Nearly two.\""
+  },
+  {
+   "i": 90,
+   "before": 1,
+   "lines": [
+    "\"All the better.  During this long period no one wants anything from",
+    "you.  Now suddenly within three or four days you have urgent demands.",
+    "What would you gather from that?\""
+   ],
+   "text": "\"All the better.  During this long period no one wants anything from you.  Now suddenly within three or four days you have urgent demands. What would you gather from that?\""
+  },
+  {
+   "i": 91,
+   "before": 1,
+   "lines": [
+    "\"It can only mean,\" said I, \"that the object, whatever it may be, has",
+    "only just come into the house.\""
+   ],
+   "text": "\"It can only mean,\" said I, \"that the object, whatever it may be, has only just come into the house.\""
+  },
+  {
+   "i": 92,
+   "before": 1,
+   "lines": [
+    "\"Settled once again,\" said Holmes.  \"Now, Mrs. Maberley, has any object",
+    "just arrived?\""
+   ],
+   "text": "\"Settled once again,\" said Holmes.  \"Now, Mrs. Maberley, has any object just arrived?\""
+  },
+  {
+   "i": 93,
+   "before": 1,
+   "lines": [
+    "\"No; I have bought nothing new this year.\""
+   ],
+   "text": "\"No; I have bought nothing new this year.\""
+  },
+  {
+   "i": 94,
+   "before": 1,
+   "lines": [
+    "\"Indeed!  That is very remarkable.  Well, I think we had best let",
+    "matters develop a little further until we have clearer data.  Is that",
+    "lawyer of yours a capable man?\""
+   ],
+   "text": "\"Indeed!  That is very remarkable.  Well, I think we had best let matters develop a little further until we have clearer data.  Is that lawyer of yours a capable man?\""
+  },
+  {
+   "i": 95,
+   "before": 1,
+   "lines": [
+    "\"Mr. Sutro is most capable.\""
+   ],
+   "text": "\"Mr. Sutro is most capable.\""
+  },
+  {
+   "i": 96,
+   "before": 1,
+   "lines": [
+    "\"Have you another maid, or was the fair Susan, who has just banged your",
+    "front door, alone?\""
+   ],
+   "text": "\"Have you another maid, or was the fair Susan, who has just banged your front door, alone?\""
+  },
+  {
+   "i": 97,
+   "before": 1,
+   "lines": [
+    "\"I have a young girl.\""
+   ],
+   "text": "\"I have a young girl.\""
+  },
+  {
+   "i": 98,
+   "before": 1,
+   "lines": [
+    "\"Try and get Sutro to spend a night or two in the house.  You might",
+    "possibly want protection.\""
+   ],
+   "text": "\"Try and get Sutro to spend a night or two in the house.  You might possibly want protection.\""
+  },
+  {
+   "i": 99,
+   "before": 1,
+   "lines": [
+    "\"Against whom?\""
+   ],
+   "text": "\"Against whom?\""
+  },
+  {
+   "i": 100,
+   "before": 1,
+   "lines": [
+    "\"Who knows?  The matter is certainly obscure.  If I can't find what",
+    "they are after, I must approach the matter from the other end, and try",
+    "to get at the principal.  Did this house-agent man give any address?\""
+   ],
+   "text": "\"Who knows?  The matter is certainly obscure.  If I can't find what they are after, I must approach the matter from the other end, and try to get at the principal.  Did this house-agent man give any address?\""
+  },
+  {
+   "i": 101,
+   "before": 1,
+   "lines": [
+    "\"Simply his card and occupation.  Haines-Johnson, Auctioneer and",
+    "Valuer.\""
+   ],
+   "text": "\"Simply his card and occupation.  Haines-Johnson, Auctioneer and Valuer.\""
+  },
+  {
+   "i": 102,
+   "before": 1,
+   "lines": [
+    "\"I don't think we shall find him in the Directory.  Honest business men",
+    "don't conceal their place of business.  Well, you will let me know any",
+    "fresh development.  I have taken up your case, and you may rely upon it",
+    "that I shall see it through.\""
+   ],
+   "text": "\"I don't think we shall find him in the Directory.  Honest business men don't conceal their place of business.  Well, you will let me know any fresh development.  I have taken up your case, and you may rely upon it that I shall see it through.\""
+  },
+  {
+   "i": 103,
+   "before": 1,
+   "lines": [
+    "As we passed through the hall Holmes's eyes, which missed nothing,",
+    "lighted upon several trunks and cases which were piled in the corner.",
+    "The labels shone out upon them."
+   ],
+   "text": "As we passed through the hall Holmes's eyes, which missed nothing, lighted upon several trunks and cases which were piled in the corner. The labels shone out upon them."
+  },
+  {
+   "i": 104,
+   "before": 1,
+   "lines": [
+    "\"'Milano.'  'Lucerne.'  These are from Italy.\""
+   ],
+   "text": "\"'Milano.'  'Lucerne.'  These are from Italy.\""
+  },
+  {
+   "i": 105,
+   "before": 1,
+   "lines": [
+    "\"They are poor Douglas's things.\""
+   ],
+   "text": "\"They are poor Douglas's things.\""
+  },
+  {
+   "i": 106,
+   "before": 1,
+   "lines": [
+    "\"You have not unpacked them?  How long have you had them?\""
+   ],
+   "text": "\"You have not unpacked them?  How long have you had them?\""
+  },
+  {
+   "i": 107,
+   "before": 1,
+   "lines": [
+    "\"They arrived last week.\""
+   ],
+   "text": "\"They arrived last week.\""
+  },
+  {
+   "i": 108,
+   "before": 1,
+   "lines": [
+    "\"But you said--why, surely this might be the missing link.  How do we",
+    "know that there is not something of value there?\""
+   ],
+   "text": "\"But you said--why, surely this might be the missing link.  How do we know that there is not something of value there?\""
+  },
+  {
+   "i": 109,
+   "before": 1,
+   "lines": [
+    "\"There could not possibly be, Mr. Holmes.  Poor Douglas had only his",
+    "pay and a small annuity.  What could he have of value?\""
+   ],
+   "text": "\"There could not possibly be, Mr. Holmes.  Poor Douglas had only his pay and a small annuity.  What could he have of value?\""
+  },
+  {
+   "i": 110,
+   "before": 1,
+   "lines": [
+    "Holmes was lost in thought."
+   ],
+   "text": "Holmes was lost in thought."
+  },
+  {
+   "i": 111,
+   "before": 1,
+   "lines": [
+    "\"Delay no longer, Mrs. Maberley,\" he said at last.  \"Have these things",
+    "taken upstairs to your bedroom.  Examine them as soon as possible and",
+    "see what they contain.  I will come to-morrow and hear your report.\""
+   ],
+   "text": "\"Delay no longer, Mrs. Maberley,\" he said at last.  \"Have these things taken upstairs to your bedroom.  Examine them as soon as possible and see what they contain.  I will come to-morrow and hear your report.\""
+  },
+  {
+   "i": 112,
+   "before": 1,
+   "lines": [
+    "It was quite evident that The Three Gables was under very close",
+    "surveillance, for as we came round the high hedge at the end of the",
+    "lane there was the negro prize-fighter standing in the shadow.  We came",
+    "on him quite suddenly, and a grim and menacing figure he looked in that",
+    "lonely place.  Holmes clapped his hand to his pocket."
+   ],
+   "text": "It was quite evident that The Three Gables was under very close surveillance, for as we came round the high hedge at the end of the lane there was the negro prize-fighter standing in the shadow.  We came on him quite suddenly, and a grim and menacing figure he looked in that lonely place.  Holmes clapped his hand to his pocket."
+  },
+  {
+   "i": 113,
+   "before": 1,
+   "lines": [
+    "\"Lookin' for your gun, Masser Holmes?\""
+   ],
+   "text": "\"Lookin' for your gun, Masser Holmes?\""
+  },
+  {
+   "i": 114,
+   "before": 1,
+   "lines": [
+    "\"No; for my scent-bottle, Steve.\""
+   ],
+   "text": "\"No; for my scent-bottle, Steve.\""
+  },
+  {
+   "i": 115,
+   "before": 1,
+   "lines": [
+    "\"You are funny, Masser Holmes, ain't you?\""
+   ],
+   "text": "\"You are funny, Masser Holmes, ain't you?\""
+  },
+  {
+   "i": 116,
+   "before": 1,
+   "lines": [
+    "\"It won't be funny for you, Steve, if I get after you.  I gave you fair",
+    "warning this morning.\""
+   ],
+   "text": "\"It won't be funny for you, Steve, if I get after you.  I gave you fair warning this morning.\""
+  },
+  {
+   "i": 117,
+   "before": 1,
+   "lines": [
+    "\"Well, Masser Holmes, I done gone think over what you said, and I don't",
+    "want no more talk about that affair of Masser Perkins.  S'pose I can",
+    "help you, Masser Holmes, I will.\""
+   ],
+   "text": "\"Well, Masser Holmes, I done gone think over what you said, and I don't want no more talk about that affair of Masser Perkins.  S'pose I can help you, Masser Holmes, I will.\""
+  },
+  {
+   "i": 118,
+   "before": 1,
+   "lines": [
+    "\"Well, then, tell me who is behind you on this job?\""
+   ],
+   "text": "\"Well, then, tell me who is behind you on this job?\""
+  },
+  {
+   "i": 119,
+   "before": 1,
+   "lines": [
+    "\"So help me the Lord!  Masser Holmes, I told you the truth before.  I",
+    "don't know.  My boss Barney gives me orders and that's all.\""
+   ],
+   "text": "\"So help me the Lord!  Masser Holmes, I told you the truth before.  I don't know.  My boss Barney gives me orders and that's all.\""
+  },
+  {
+   "i": 120,
+   "before": 1,
+   "lines": [
+    "\"Well, just bear in mind, Steve, that the lady in that house, and",
+    "everything under that roof, is under my protection.  Don't you forget",
+    "it.\""
+   ],
+   "text": "\"Well, just bear in mind, Steve, that the lady in that house, and everything under that roof, is under my protection.  Don't you forget it.\""
+  },
+  {
+   "i": 121,
+   "before": 1,
+   "lines": [
+    "\"All right, Masser Holmes.  I'll remember.'"
+   ],
+   "text": "\"All right, Masser Holmes.  I'll remember.'"
+  },
+  {
+   "i": 122,
+   "before": 1,
+   "lines": [
+    "\"I've got him thoroughly frightened for his own skin, Watson,\" Holmes",
+    "remarked as we walked on.  \"I think he would double-cross his employer",
+    "if he knew who he was.  It was lucky I had some knowledge of the",
+    "Spencer John crowd, and that Steve was one of them.  Now, Watson, this",
+    "is a case for Langdale Pike, and I am going to see him now.  When I get",
+    "back I may be clearer in the matter.\""
+   ],
+   "text": "\"I've got him thoroughly frightened for his own skin, Watson,\" Holmes remarked as we walked on.  \"I think he would double-cross his employer if he knew who he was.  It was lucky I had some knowledge of the Spencer John crowd, and that Steve was one of them.  Now, Watson, this is a case for Langdale Pike, and I am going to see him now.  When I get back I may be clearer in the matter.\""
+  },
+  {
+   "i": 123,
+   "before": 1,
+   "lines": [
+    "I saw no more of Holmes during the day, but I could well imagine how he",
+    "spent it, for Langdale Pike was his human book of reference upon all",
+    "matters of social scandal.  This strange, languid creature spent his",
+    "waking hours in the bow window of a St. James's Street club, and was",
+    "the receiving-station, as well as the transmitter, for all the gossip",
+    "of the Metropolis.  He made, it was said, a four-figure income by the",
+    "paragraphs which he contributed every week to the garbage papers which",
+    "cater for an inquisitive public.  If ever, far down in the turbid",
+    "depths of London life, there was some strange swirl or eddy, it was",
+    "marked with automatic exactness by this human dial upon the surface.",
+    "Holmes discreetly helped Langdale to knowledge, and on occasion was",
+    "helped in turn."
+   ],
+   "text": "I saw no more of Holmes during the day, but I could well imagine how he spent it, for Langdale Pike was his human book of reference upon all matters of social scandal.  This strange, languid creature spent his waking hours in the bow window of a St. James's Street club, and was the receiving-station, as well as the transmitter, for all the gossip of the Metropolis.  He made, it was said, a four-figure income by the paragraphs which he contributed every week to the garbage papers which cater for an inquisitive public.  If ever, far down in the turbid depths of London life, there was some strange swirl or eddy, it was marked with automatic exactness by this human dial upon the surface. Holmes discreetly helped Langdale to knowledge, and on occasion was helped in turn."
+  },
+  {
+   "i": 124,
+   "before": 1,
+   "lines": [
+    "When I met my friend in his room early next morning, I was conscious",
+    "from his bearing that all was well, but none the less a most unpleasant",
+    "surprise was awaiting us.  It took the shape of the following telegram:"
+   ],
+   "text": "When I met my friend in his room early next morning, I was conscious from his bearing that all was well, but none the less a most unpleasant surprise was awaiting us.  It took the shape of the following telegram:"
+  },
+  {
+   "i": 125,
+   "before": 2,
+   "lines": [
+    "\"Please come out at once.  Client's house burgled in the night.  Police",
+    "in possession."
+   ],
+   "text": "\"Please come out at once.  Client's house burgled in the night.  Police in possession."
+  },
+  {
+   "i": 126,
+   "before": 1,
+   "lines": [
+    "\"SUTRO.\""
+   ],
+   "text": "\"SUTRO.\""
+  },
+  {
+   "i": 127,
+   "before": 2,
+   "lines": [
+    "Holmes whistled.  \"The drama has come to a crisis, and quicker than I",
+    "had expected.  There is a great driving-power at the back of this",
+    "business, Watson, which does not surprise me after what I have heard.",
+    "This Sutro, of course, is her lawyer.  I made a mistake, I fear, in not",
+    "asking you to spend the night on guard.  This fellow has clearly proved",
+    "a broken reed.  Well, there is nothing for it but another journey to",
+    "Harrow Weald.\""
+   ],
+   "text": "Holmes whistled.  \"The drama has come to a crisis, and quicker than I had expected.  There is a great driving-power at the back of this business, Watson, which does not surprise me after what I have heard. This Sutro, of course, is her lawyer.  I made a mistake, I fear, in not asking you to spend the night on guard.  This fellow has clearly proved a broken reed.  Well, there is nothing for it but another journey to Harrow Weald.\""
+  },
+  {
+   "i": 128,
+   "before": 1,
+   "lines": [
+    "We found The Three Gables a very different establishment to the orderly",
+    "household of the previous day.  A small group of idlers had assembled",
+    "at the garden gate, while a couple of constables were examining the",
+    "windows and the geranium beds.  Within we met a grey old gentleman, who",
+    "introduced himself as the lawyer, together with a bustling, rubicund",
+    "Inspector, who greeted Holmes as an old friend."
+   ],
+   "text": "We found The Three Gables a very different establishment to the orderly household of the previous day.  A small group of idlers had assembled at the garden gate, while a couple of constables were examining the windows and the geranium beds.  Within we met a grey old gentleman, who introduced himself as the lawyer, together with a bustling, rubicund Inspector, who greeted Holmes as an old friend."
+  },
+  {
+   "i": 129,
+   "before": 1,
+   "lines": [
+    "\"Well, Mr. Holmes, no chance for you in this case, I'm afraid.  Just a",
+    "common, ordinary burglary, and well within the capacity of the poor old",
+    "police.  No experts need apply.\""
+   ],
+   "text": "\"Well, Mr. Holmes, no chance for you in this case, I'm afraid.  Just a common, ordinary burglary, and well within the capacity of the poor old police.  No experts need apply.\""
+  },
+  {
+   "i": 130,
+   "before": 1,
+   "lines": [
+    "\"I am sure the case is in very good hands,\" said Holmes.  \"Merely a",
+    "common burglary, you say?\""
+   ],
+   "text": "\"I am sure the case is in very good hands,\" said Holmes.  \"Merely a common burglary, you say?\""
+  },
+  {
+   "i": 131,
+   "before": 1,
+   "lines": [
+    "\"Quite so.  We know pretty well who the men are and where to find them.",
+    "It is that gang of Barney Stockdale, with the big nigger in it--they've",
+    "been seen about here.\""
+   ],
+   "text": "\"Quite so.  We know pretty well who the men are and where to find them. It is that gang of Barney Stockdale, with the big nigger in it--they've been seen about here.\""
+  },
+  {
+   "i": 132,
+   "before": 1,
+   "lines": [
+    "\"Excellent!  What did they get?\""
+   ],
+   "text": "\"Excellent!  What did they get?\""
+  },
+  {
+   "i": 133,
+   "before": 1,
+   "lines": [
+    "\"Well, they don't seem to have got much.  Mrs. Maberley was",
+    "chloroformed and the house was----  Ah! here is the lady herself.\""
+   ],
+   "text": "\"Well, they don't seem to have got much.  Mrs. Maberley was chloroformed and the house was----  Ah! here is the lady herself.\""
+  },
+  {
+   "i": 134,
+   "before": 1,
+   "lines": [
+    "Our friend of yesterday, looking very pale and ill, had entered the",
+    "room, leaning upon a little maid-servant."
+   ],
+   "text": "Our friend of yesterday, looking very pale and ill, had entered the room, leaning upon a little maid-servant."
+  },
+  {
+   "i": 135,
+   "before": 1,
+   "lines": [
+    "\"You gave me good advice, Mr. Holmes,\" said she, smiling ruefully.",
+    "\"Alas, I did not take it!  I did not wish to trouble Mr. Sutro, and so",
+    "I was unprotected.\""
+   ],
+   "text": "\"You gave me good advice, Mr. Holmes,\" said she, smiling ruefully. \"Alas, I did not take it!  I did not wish to trouble Mr. Sutro, and so I was unprotected.\""
+  },
+  {
+   "i": 136,
+   "before": 1,
+   "lines": [
+    "\"I only heard of it this morning,\" the lawyer explained."
+   ],
+   "text": "\"I only heard of it this morning,\" the lawyer explained."
+  },
+  {
+   "i": 137,
+   "before": 1,
+   "lines": [
+    "\"Mr. Holmes advised me to have some friend in the house.  I neglected",
+    "his advice, and I have paid for it.\""
+   ],
+   "text": "\"Mr. Holmes advised me to have some friend in the house.  I neglected his advice, and I have paid for it.\""
+  },
+  {
+   "i": 138,
+   "before": 1,
+   "lines": [
+    "\"You look wretchedly ill,\" said Holmes.  \"Perhaps you are hardly equal",
+    "to telling me what occurred.\""
+   ],
+   "text": "\"You look wretchedly ill,\" said Holmes.  \"Perhaps you are hardly equal to telling me what occurred.\""
+  },
+  {
+   "i": 139,
+   "before": 1,
+   "lines": [
+    "\"It is all here,\" said the Inspector, tapping a bulky notebook."
+   ],
+   "text": "\"It is all here,\" said the Inspector, tapping a bulky notebook."
+  },
+  {
+   "i": 140,
+   "before": 1,
+   "lines": [
+    "\"Still, if the lady is not too exhausted----\""
+   ],
+   "text": "\"Still, if the lady is not too exhausted----\""
+  },
+  {
+   "i": 141,
+   "before": 1,
+   "lines": [
+    "\"There is really so little to tell.  I have no doubt that wicked Susan",
+    "had planned an entrance for them.  They must have known the house to an",
+    "inch.  I was conscious for a moment of the chloroform rag which was",
+    "thrust over my mouth, but I have no notion how long I may have been",
+    "senseless.  When I woke, one man was at the bedside and another was",
+    "rising with a bundle in his hand from among my son's baggage, which was",
+    "partially opened and littered over the floor.  Before he could get away",
+    "I sprang up and seized him.\""
+   ],
+   "text": "\"There is really so little to tell.  I have no doubt that wicked Susan had planned an entrance for them.  They must have known the house to an inch.  I was conscious for a moment of the chloroform rag which was thrust over my mouth, but I have no notion how long I may have been senseless.  When I woke, one man was at the bedside and another was rising with a bundle in his hand from among my son's baggage, which was partially opened and littered over the floor.  Before he could get away I sprang up and seized him.\""
+  },
+  {
+   "i": 142,
+   "before": 1,
+   "lines": [
+    "\"You took a big risk,\" said the Inspector."
+   ],
+   "text": "\"You took a big risk,\" said the Inspector."
+  },
+  {
+   "i": 143,
+   "before": 1,
+   "lines": [
+    "\"I clung to him, but he shook me off, and the other may have struck me,",
+    "for I can remember no more.  Mary the maid heard the noise and began",
+    "screaming out of the window.  That brought the police, but the rascals",
+    "had got away.\""
+   ],
+   "text": "\"I clung to him, but he shook me off, and the other may have struck me, for I can remember no more.  Mary the maid heard the noise and began screaming out of the window.  That brought the police, but the rascals had got away.\""
+  },
+  {
+   "i": 144,
+   "before": 1,
+   "lines": [
+    "\"What did they take?\""
+   ],
+   "text": "\"What did they take?\""
+  },
+  {
+   "i": 145,
+   "before": 1,
+   "lines": [
+    "\"Well, I don't think there is anything of value missing.  I am sure",
+    "there was nothing in my son's trunks.\""
+   ],
+   "text": "\"Well, I don't think there is anything of value missing.  I am sure there was nothing in my son's trunks.\""
+  },
+  {
+   "i": 146,
+   "before": 1,
+   "lines": [
+    "\"Did the men leave no clue?\""
+   ],
+   "text": "\"Did the men leave no clue?\""
+  },
+  {
+   "i": 147,
+   "before": 1,
+   "lines": [
+    "\"There was one sheet of paper which I may have torn from the man that I",
+    "grasped.  It was lying all crumpled on the floor.  It is in my son's",
+    "handwriting.\""
+   ],
+   "text": "\"There was one sheet of paper which I may have torn from the man that I grasped.  It was lying all crumpled on the floor.  It is in my son's handwriting.\""
+  },
+  {
+   "i": 148,
+   "before": 1,
+   "lines": [
+    "\"Which means that it is not of much use,\" said the Inspector.  \"Now if",
+    "it had been in the burglar's----\""
+   ],
+   "text": "\"Which means that it is not of much use,\" said the Inspector.  \"Now if it had been in the burglar's----\""
+  },
+  {
+   "i": 149,
+   "before": 1,
+   "lines": [
+    "\"Exactly,\" said Holmes.  \"What rugged common sense!  None the less, I",
+    "should be curious to see it.\""
+   ],
+   "text": "\"Exactly,\" said Holmes.  \"What rugged common sense!  None the less, I should be curious to see it.\""
+  },
+  {
+   "i": 150,
+   "before": 1,
+   "lines": [
+    "The Inspector drew a folded sheet of foolscap from his pocket-book."
+   ],
+   "text": "The Inspector drew a folded sheet of foolscap from his pocket-book."
+  },
+  {
+   "i": 151,
+   "before": 1,
+   "lines": [
+    "\"I never pass anything, however trifling,\" said he, with some",
+    "pomposity.  \"That is my advice to you, Mr. Holmes.  In twenty-five",
+    "years' experience I have learned my lesson.  There is always the chance",
+    "of finger-marks or something.\""
+   ],
+   "text": "\"I never pass anything, however trifling,\" said he, with some pomposity.  \"That is my advice to you, Mr. Holmes.  In twenty-five years' experience I have learned my lesson.  There is always the chance of finger-marks or something.\""
+  },
+  {
+   "i": 152,
+   "before": 1,
+   "lines": [
+    "Holmes inspected the sheet of paper."
+   ],
+   "text": "Holmes inspected the sheet of paper."
+  },
+  {
+   "i": 153,
+   "before": 1,
+   "lines": [
+    "\"What do you make of it, Inspector?\""
+   ],
+   "text": "\"What do you make of it, Inspector?\""
+  },
+  {
+   "i": 154,
+   "before": 1,
+   "lines": [
+    "\"Seems to be the end of some queer novel, so far as I can see.\""
+   ],
+   "text": "\"Seems to be the end of some queer novel, so far as I can see.\""
+  },
+  {
+   "i": 155,
+   "before": 1,
+   "lines": [
+    "\"It may certainly prove to be the end of a queer tale,\" said Holmes.",
+    "\"You have noticed the number on the top of the page.  It is two hundred",
+    "and forty-five.  Where are the odd two hundred and forty-four pages?\""
+   ],
+   "text": "\"It may certainly prove to be the end of a queer tale,\" said Holmes. \"You have noticed the number on the top of the page.  It is two hundred and forty-five.  Where are the odd two hundred and forty-four pages?\""
+  },
+  {
+   "i": 156,
+   "before": 1,
+   "lines": [
+    "\"Well, I suppose the burglars got those.  Much good may it do them!\""
+   ],
+   "text": "\"Well, I suppose the burglars got those.  Much good may it do them!\""
+  },
+  {
+   "i": 157,
+   "before": 1,
+   "lines": [
+    "\"It seems a queer thing to break into a house in order to steal such",
+    "papers as that.  Does it suggest anything to you, Inspector?\""
+   ],
+   "text": "\"It seems a queer thing to break into a house in order to steal such papers as that.  Does it suggest anything to you, Inspector?\""
+  },
+  {
+   "i": 158,
+   "before": 1,
+   "lines": [
+    "\"Yes, sir; it suggests that in their hurry the rascals just grabbed at",
+    "what came first to hand.  I wish them joy of what they got.\""
+   ],
+   "text": "\"Yes, sir; it suggests that in their hurry the rascals just grabbed at what came first to hand.  I wish them joy of what they got.\""
+  },
+  {
+   "i": 159,
+   "before": 1,
+   "lines": [
+    "\"Why should they go to my son's things?\" asked Mrs. Maberley."
+   ],
+   "text": "\"Why should they go to my son's things?\" asked Mrs. Maberley."
+  },
+  {
+   "i": 160,
+   "before": 1,
+   "lines": [
+    "\"Well, they found nothing valuable downstairs, so they tried their luck",
+    "upstairs.  That is how I read it.  What do you make of it, Mr. Holmes?\""
+   ],
+   "text": "\"Well, they found nothing valuable downstairs, so they tried their luck upstairs.  That is how I read it.  What do you make of it, Mr. Holmes?\""
+  },
+  {
+   "i": 161,
+   "before": 1,
+   "lines": [
+    "\"I must think it over, Inspector.  Come to the window, Watson.\"  Then,",
+    "as we stood together, he read over the fragment of paper.  It began in",
+    "the middle of a sentence and ran like this:"
+   ],
+   "text": "\"I must think it over, Inspector.  Come to the window, Watson.\"  Then, as we stood together, he read over the fragment of paper.  It began in the middle of a sentence and ran like this:"
+  },
+  {
+   "i": 162,
+   "before": 2,
+   "lines": [
+    "\"... face bled considerably from the cuts and blows, but it was nothing",
+    "to the bleeding of his heart as he saw that lovely face, the face for",
+    "which he had been prepared to sacrifice his very life, looking out at",
+    "his agony and humiliation.  She smiled--yes, by Heaven! she smiled,",
+    "like the heartless fiend she was, as he looked up at her.  It was at",
+    "that moment that love died and hate was born.  Man must live for",
+    "something.  If it is not for your embrace, my lady, then it shall",
+    "surely be for your undoing and my complete revenge.\""
+   ],
+   "text": "\"... face bled considerably from the cuts and blows, but it was nothing to the bleeding of his heart as he saw that lovely face, the face for which he had been prepared to sacrifice his very life, looking out at his agony and humiliation.  She smiled--yes, by Heaven! she smiled, like the heartless fiend she was, as he looked up at her.  It was at that moment that love died and hate was born.  Man must live for something.  If it is not for your embrace, my lady, then it shall surely be for your undoing and my complete revenge.\""
+  },
+  {
+   "i": 163,
+   "before": 2,
+   "lines": [
+    "\"Queer grammar!\" said Holmes, with a smile, as he handed the paper back",
+    "to the Inspector.  \"Did you notice how the 'he' suddenly changed to",
+    "'my.'  The writer was so carried away by his own story that he imagined",
+    "himself at the supreme moment to be the hero.\""
+   ],
+   "text": "\"Queer grammar!\" said Holmes, with a smile, as he handed the paper back to the Inspector.  \"Did you notice how the 'he' suddenly changed to 'my.'  The writer was so carried away by his own story that he imagined himself at the supreme moment to be the hero.\""
+  },
+  {
+   "i": 164,
+   "before": 1,
+   "lines": [
+    "\"It seemed mighty poor stuff,\" said the Inspector, as he replaced it in",
+    "his book.  \"What! are you off, Mr. Holmes?\""
+   ],
+   "text": "\"It seemed mighty poor stuff,\" said the Inspector, as he replaced it in his book.  \"What! are you off, Mr. Holmes?\""
+  },
+  {
+   "i": 165,
+   "before": 1,
+   "lines": [
+    "\"I don't think there is anything more for me to do now that the case is",
+    "in such capable hands.  By the way, Mrs. Maberley, did you say you",
+    "wished to travel?\""
+   ],
+   "text": "\"I don't think there is anything more for me to do now that the case is in such capable hands.  By the way, Mrs. Maberley, did you say you wished to travel?\""
+  },
+  {
+   "i": 166,
+   "before": 1,
+   "lines": [
+    "\"It has always been my dream, Mr. Holmes.\""
+   ],
+   "text": "\"It has always been my dream, Mr. Holmes.\""
+  },
+  {
+   "i": 167,
+   "before": 1,
+   "lines": [
+    "\"Where would you like to go--Cairo, Madeira, the Riviera?\""
+   ],
+   "text": "\"Where would you like to go--Cairo, Madeira, the Riviera?\""
+  },
+  {
+   "i": 168,
+   "before": 1,
+   "lines": [
+    "\"Oh! if I had the money I would go round the world.\""
+   ],
+   "text": "\"Oh! if I had the money I would go round the world.\""
+  },
+  {
+   "i": 169,
+   "before": 1,
+   "lines": [
+    "\"Quite so.  Round the world.  Well, good morning.  I may drop you a",
+    "line in the evening.\"  As we passed the window I caught a glimpse of",
+    "the Inspector's smile and shake of the head.  \"These clever fellows",
+    "have always a touch of madness.\"  That was what I read in the",
+    "Inspector's smile."
+   ],
+   "text": "\"Quite so.  Round the world.  Well, good morning.  I may drop you a line in the evening.\"  As we passed the window I caught a glimpse of the Inspector's smile and shake of the head.  \"These clever fellows have always a touch of madness.\"  That was what I read in the Inspector's smile."
+  },
+  {
+   "i": 170,
+   "before": 1,
+   "lines": [
+    "\"Now, Watson, we are at the last lap of our little journey,\" said",
+    "Holmes, when we were back in the roar of Central London once more.  \"I",
+    "think we had best clear the matter up at once, and it would be well",
+    "that you should come with me, for it is safer to have a witness when",
+    "you are dealing with such a lady as Isadora Klein.\""
+   ],
+   "text": "\"Now, Watson, we are at the last lap of our little journey,\" said Holmes, when we were back in the roar of Central London once more.  \"I think we had best clear the matter up at once, and it would be well that you should come with me, for it is safer to have a witness when you are dealing with such a lady as Isadora Klein.\""
+  },
+  {
+   "i": 171,
+   "before": 1,
+   "lines": [
+    "We had taken a cab and were speeding to some address in Grosvenor",
+    "Square.  Holmes had been sunk in thought, but he roused himself",
+    "suddenly."
+   ],
+   "text": "We had taken a cab and were speeding to some address in Grosvenor Square.  Holmes had been sunk in thought, but he roused himself suddenly."
+  },
+  {
+   "i": 172,
+   "before": 1,
+   "lines": [
+    "\"By the way, Watson, I suppose you see it all clearly?\""
+   ],
+   "text": "\"By the way, Watson, I suppose you see it all clearly?\""
+  },
+  {
+   "i": 173,
+   "before": 1,
+   "lines": [
+    "\"No, I can't say that I do.  I only gather that we are going to see the",
+    "lady who is behind all this mischief.\""
+   ],
+   "text": "\"No, I can't say that I do.  I only gather that we are going to see the lady who is behind all this mischief.\""
+  },
+  {
+   "i": 174,
+   "before": 1,
+   "lines": [
+    "\"Exactly!  But does the name Isadora Klein convey nothing to you?  She",
+    "was, of course, the celebrated beauty.  There was never a woman to",
+    "touch her.  She is pure Spanish, the real blood of the masterful",
+    "Conquistadors, and her people have been leaders in Pernambuco for",
+    "generations.  She married the aged German sugar king, Klein, and",
+    "presently found herself the richest as well as the most lovely widow",
+    "upon earth.  Then there was an interval of adventure when she pleased",
+    "her own tastes.  She had several lovers, and Douglas Maberley, one of",
+    "the most striking men in London, was one of them.  It was by all",
+    "accounts more than an adventure with him.  He was not a Society",
+    "butterfly, but a strong, proud man who gave and expected all.  But she",
+    "is the '_belle dame sans merci_' of fiction.  When her caprice is",
+    "satisfied, the matter is ended, and if the other party in the matter",
+    "can't take her word for it, she knows how to bring it home to him.\""
+   ],
+   "text": "\"Exactly!  But does the name Isadora Klein convey nothing to you?  She was, of course, the celebrated beauty.  There was never a woman to touch her.  She is pure Spanish, the real blood of the masterful Conquistadors, and her people have been leaders in Pernambuco for generations.  She married the aged German sugar king, Klein, and presently found herself the richest as well as the most lovely widow upon earth.  Then there was an interval of adventure when she pleased her own tastes.  She had several lovers, and Douglas Maberley, one of the most striking men in London, was one of them.  It was by all accounts more than an adventure with him.  He was not a Society butterfly, but a strong, proud man who gave and expected all.  But she is the '_belle dame sans merci_' of fiction.  When her caprice is satisfied, the matter is ended, and if the other party in the matter can't take her word for it, she knows how to bring it home to him.\""
+  },
+  {
+   "i": 175,
+   "before": 1,
+   "lines": [
+    "\"Then that was his own story----\""
+   ],
+   "text": "\"Then that was his own story----\""
+  },
+  {
+   "i": 176,
+   "before": 1,
+   "lines": [
+    "\"Ah! you are piecing it together now.  I hear that she is about to",
+    "marry the young Duke of Lomond, who might almost be her son.  His",
+    "Grace's ma might overlook the age, but a big scandal would be a",
+    "different matter, so it is imperative----  Ah! here we are.\""
+   ],
+   "text": "\"Ah! you are piecing it together now.  I hear that she is about to marry the young Duke of Lomond, who might almost be her son.  His Grace's ma might overlook the age, but a big scandal would be a different matter, so it is imperative----  Ah! here we are.\""
+  },
+  {
+   "i": 177,
+   "before": 1,
+   "lines": [
+    "It was one of the finest corner-houses of the West End.  A machine-like",
+    "footman took up our cards and returned with word that the lady was not",
+    "at home.  \"Then we shall wait until she is,\" said Holmes cheerfully."
+   ],
+   "text": "It was one of the finest corner-houses of the West End.  A machine-like footman took up our cards and returned with word that the lady was not at home.  \"Then we shall wait until she is,\" said Holmes cheerfully."
+  },
+  {
+   "i": 178,
+   "before": 1,
+   "lines": [
+    "The machine broke down."
+   ],
+   "text": "The machine broke down."
+  },
+  {
+   "i": 179,
+   "before": 1,
+   "lines": [
+    "\"Not at home means not at home to _you_,\" said the footman."
+   ],
+   "text": "\"Not at home means not at home to _you_,\" said the footman."
+  },
+  {
+   "i": 180,
+   "before": 1,
+   "lines": [
+    "\"Good,\" Holmes answered.  \"That means that we shall not have to wait.",
+    "Kindly give this note to your mistress.\""
+   ],
+   "text": "\"Good,\" Holmes answered.  \"That means that we shall not have to wait. Kindly give this note to your mistress.\""
+  },
+  {
+   "i": 181,
+   "before": 1,
+   "lines": [
+    "He scribbled three or four words upon a sheet of his notebook, folded",
+    "it, and handed it to the man."
+   ],
+   "text": "He scribbled three or four words upon a sheet of his notebook, folded it, and handed it to the man."
+  },
+  {
+   "i": 182,
+   "before": 1,
+   "lines": [
+    "\"What did you say, Holmes?\" I asked."
+   ],
+   "text": "\"What did you say, Holmes?\" I asked."
+  },
+  {
+   "i": 183,
+   "before": 1,
+   "lines": [
+    "\"I simply wrote 'Shall it be the police, then?' I think that should",
+    "pass us in.\""
+   ],
+   "text": "\"I simply wrote 'Shall it be the police, then?' I think that should pass us in.\""
+  },
+  {
+   "i": 184,
+   "before": 1,
+   "lines": [
+    "It did--with amazing celerity.  A minute later we were in an",
+    "Arabian-nights' drawing-room, vast and wonderful, in a half gloom,",
+    "picked out with an occasional pink electric light.  The lady had come,",
+    "I felt, to that time of life when even the proudest beauty finds the",
+    "half-light more welcome.  She rose from a settee as we entered: tall,",
+    "queenly, a perfect figure, a lovely mask-like face, with two wonderful",
+    "Spanish eyes which looked murder at us both."
+   ],
+   "text": "It did--with amazing celerity.  A minute later we were in an Arabian-nights' drawing-room, vast and wonderful, in a half gloom, picked out with an occasional pink electric light.  The lady had come, I felt, to that time of life when even the proudest beauty finds the half-light more welcome.  She rose from a settee as we entered: tall, queenly, a perfect figure, a lovely mask-like face, with two wonderful Spanish eyes which looked murder at us both."
+  },
+  {
+   "i": 185,
+   "before": 1,
+   "lines": [
+    "\"What is this intrusion--and this insulting message?\" she asked,",
+    "holding up the slip of paper."
+   ],
+   "text": "\"What is this intrusion--and this insulting message?\" she asked, holding up the slip of paper."
+  },
+  {
+   "i": 186,
+   "before": 1,
+   "lines": [
+    "\"I need not explain, madame.  I have too much respect for your",
+    "intelligence to do so--though I confess that intelligence has been",
+    "surprisingly at fault of late.\""
+   ],
+   "text": "\"I need not explain, madame.  I have too much respect for your intelligence to do so--though I confess that intelligence has been surprisingly at fault of late.\""
+  },
+  {
+   "i": 187,
+   "before": 1,
+   "lines": [
+    "\"How so, sir?\""
+   ],
+   "text": "\"How so, sir?\""
+  },
+  {
+   "i": 188,
+   "before": 1,
+   "lines": [
+    "\"By supposing that your hired bullies could frighten me from my work.",
+    "Surely no man would take up my profession if it were not that danger",
+    "attracts him.  It was you, then, who forced me to examine the case of",
+    "young Maberley.\""
+   ],
+   "text": "\"By supposing that your hired bullies could frighten me from my work. Surely no man would take up my profession if it were not that danger attracts him.  It was you, then, who forced me to examine the case of young Maberley.\""
+  },
+  {
+   "i": 189,
+   "before": 1,
+   "lines": [
+    "\"I have no idea what you are talking about.  What have I to do with",
+    "hired bullies?\""
+   ],
+   "text": "\"I have no idea what you are talking about.  What have I to do with hired bullies?\""
+  },
+  {
+   "i": 190,
+   "before": 1,
+   "lines": [
+    "Holmes turned away wearily."
+   ],
+   "text": "Holmes turned away wearily."
+  },
+  {
+   "i": 191,
+   "before": 1,
+   "lines": [
+    "\"Yes, I have underrated your intelligence.  Well, good afternoon!\""
+   ],
+   "text": "\"Yes, I have underrated your intelligence.  Well, good afternoon!\""
+  },
+  {
+   "i": 192,
+   "before": 1,
+   "lines": [
+    "\"Stop!  Where are you going?\""
+   ],
+   "text": "\"Stop!  Where are you going?\""
+  },
+  {
+   "i": 193,
+   "before": 1,
+   "lines": [
+    "\"To Scotland Yard.\""
+   ],
+   "text": "\"To Scotland Yard.\""
+  },
+  {
+   "i": 194,
+   "before": 1,
+   "lines": [
+    "We had not got half-way to the door before she had overtaken us and was",
+    "holding his arm.  She had turned in a moment from steel to velvet."
+   ],
+   "text": "We had not got half-way to the door before she had overtaken us and was holding his arm.  She had turned in a moment from steel to velvet."
+  },
+  {
+   "i": 195,
+   "before": 1,
+   "lines": [
+    "\"Come and sit down, gentlemen.  Let us talk this matter over.  I feel",
+    "that I may be frank with you, Mr. Holmes.  You have the feelings of a",
+    "gentleman.  How quick a woman's instinct is to find it out.  I will",
+    "treat you as a friend.\""
+   ],
+   "text": "\"Come and sit down, gentlemen.  Let us talk this matter over.  I feel that I may be frank with you, Mr. Holmes.  You have the feelings of a gentleman.  How quick a woman's instinct is to find it out.  I will treat you as a friend.\""
+  },
+  {
+   "i": 196,
+   "before": 1,
+   "lines": [
+    "\"I cannot promise to reciprocate, madame.  I am not the law, but I",
+    "represent justice so far as my feeble powers go.  I am ready to listen,",
+    "and then I will tell you how I will act.\""
+   ],
+   "text": "\"I cannot promise to reciprocate, madame.  I am not the law, but I represent justice so far as my feeble powers go.  I am ready to listen, and then I will tell you how I will act.\""
+  },
+  {
+   "i": 197,
+   "before": 1,
+   "lines": [
+    "\"No doubt it was foolish of me to threaten a brave man like yourself.\""
+   ],
+   "text": "\"No doubt it was foolish of me to threaten a brave man like yourself.\""
+  },
+  {
+   "i": 198,
+   "before": 1,
+   "lines": [
+    "\"What was really foolish, madame, is that you have placed yourself in",
+    "the power of a band of rascals who may blackmail or give you away.\""
+   ],
+   "text": "\"What was really foolish, madame, is that you have placed yourself in the power of a band of rascals who may blackmail or give you away.\""
+  },
+  {
+   "i": 199,
+   "before": 1,
+   "lines": [
+    "\"No, no!  I am not so simple.  Since I have promised to be frank, I may",
+    "say that no one, save Barney Stockdale and Susan, his wife, have the",
+    "least idea who their employer is.  As to them, well, it is not the",
+    "first----\"  She smiled and nodded, with a charming coquettish intimacy."
+   ],
+   "text": "\"No, no!  I am not so simple.  Since I have promised to be frank, I may say that no one, save Barney Stockdale and Susan, his wife, have the least idea who their employer is.  As to them, well, it is not the first----\"  She smiled and nodded, with a charming coquettish intimacy."
+  },
+  {
+   "i": 200,
+   "before": 1,
+   "lines": [
+    "\"I see.  You've tested them before.\""
+   ],
+   "text": "\"I see.  You've tested them before.\""
+  },
+  {
+   "i": 201,
+   "before": 1,
+   "lines": [
+    "\"They are good hounds who run silent.\""
+   ],
+   "text": "\"They are good hounds who run silent.\""
+  },
+  {
+   "i": 202,
+   "before": 1,
+   "lines": [
+    "\"Such hounds have a way sooner or later of biting the hand that feeds",
+    "them.  They will be arrested for this burglary.  The police are already",
+    "after them.\""
+   ],
+   "text": "\"Such hounds have a way sooner or later of biting the hand that feeds them.  They will be arrested for this burglary.  The police are already after them.\""
+  },
+  {
+   "i": 203,
+   "before": 1,
+   "lines": [
+    "\"They will take what comes to them.  That is what they are paid for.  I",
+    "shall not appear in the matter.\""
+   ],
+   "text": "\"They will take what comes to them.  That is what they are paid for.  I shall not appear in the matter.\""
+  },
+  {
+   "i": 204,
+   "before": 1,
+   "lines": [
+    "\"Unless I bring you into it.\""
+   ],
+   "text": "\"Unless I bring you into it.\""
+  },
+  {
+   "i": 205,
+   "before": 1,
+   "lines": [
+    "\"No, no; you would not.  You are a gentleman.  It is a woman's secret.\""
+   ],
+   "text": "\"No, no; you would not.  You are a gentleman.  It is a woman's secret.\""
+  },
+  {
+   "i": 206,
+   "before": 1,
+   "lines": [
+    "\"In the first place you must give back this manuscript.\""
+   ],
+   "text": "\"In the first place you must give back this manuscript.\""
+  },
+  {
+   "i": 207,
+   "before": 1,
+   "lines": [
+    "She broke into a ripple of laughter, and walked to the fireplace.",
+    "There was a calcined mass which she broke up with the poker.  \"Shall I",
+    "give this back?\" she asked.  So roguish and exquisite did she look as",
+    "she stood before us with a challenging smile that I felt of all",
+    "Holmes's criminals this was the one whom he would find it hardest to",
+    "face.  However, he was immune from sentiment."
+   ],
+   "text": "She broke into a ripple of laughter, and walked to the fireplace. There was a calcined mass which she broke up with the poker.  \"Shall I give this back?\" she asked.  So roguish and exquisite did she look as she stood before us with a challenging smile that I felt of all Holmes's criminals this was the one whom he would find it hardest to face.  However, he was immune from sentiment."
+  },
+  {
+   "i": 208,
+   "before": 1,
+   "lines": [
+    "\"That seals your fate,\" he said coldly.  \"You are very prompt in your",
+    "actions, madame, but you have overdone it on this occasion.\""
+   ],
+   "text": "\"That seals your fate,\" he said coldly.  \"You are very prompt in your actions, madame, but you have overdone it on this occasion.\""
+  },
+  {
+   "i": 209,
+   "before": 1,
+   "lines": [
+    "She threw the poker down with a clatter."
+   ],
+   "text": "She threw the poker down with a clatter."
+  },
+  {
+   "i": 210,
+   "before": 1,
+   "lines": [
+    "\"How hard you are!\" she cried.  \"May I tell you the whole story?\""
+   ],
+   "text": "\"How hard you are!\" she cried.  \"May I tell you the whole story?\""
+  },
+  {
+   "i": 211,
+   "before": 1,
+   "lines": [
+    "\"I fancy I could tell it to you.\""
+   ],
+   "text": "\"I fancy I could tell it to you.\""
+  },
+  {
+   "i": 212,
+   "before": 1,
+   "lines": [
+    "\"But you must look at it with my eyes, Mr. Holmes.  You must realize it",
+    "from the point of view of a woman who sees all her life's ambition",
+    "about to be ruined at the last moment.  Is such a woman to be blamed if",
+    "she protects herself?\""
+   ],
+   "text": "\"But you must look at it with my eyes, Mr. Holmes.  You must realize it from the point of view of a woman who sees all her life's ambition about to be ruined at the last moment.  Is such a woman to be blamed if she protects herself?\""
+  },
+  {
+   "i": 213,
+   "before": 1,
+   "lines": [
+    "\"The original sin was yours.\""
+   ],
+   "text": "\"The original sin was yours.\""
+  },
+  {
+   "i": 214,
+   "before": 1,
+   "lines": [
+    "\"Yes, yes!  I admit it.  He was a dear boy, Douglas, but it so chanced",
+    "that he could not fit into my plans.  He wanted marriage--marriage, Mr.",
+    "Holmes--with a penniless commoner.  Nothing less would serve him.  Then",
+    "he became pertinacious.  Because I had given he seemed to think that I",
+    "still must give, and to him only.  It was intolerable.  At last I had",
+    "to make him realize it.\""
+   ],
+   "text": "\"Yes, yes!  I admit it.  He was a dear boy, Douglas, but it so chanced that he could not fit into my plans.  He wanted marriage--marriage, Mr. Holmes--with a penniless commoner.  Nothing less would serve him.  Then he became pertinacious.  Because I had given he seemed to think that I still must give, and to him only.  It was intolerable.  At last I had to make him realize it.\""
+  },
+  {
+   "i": 215,
+   "before": 1,
+   "lines": [
+    "\"By hiring ruffians to beat him under your own window.\""
+   ],
+   "text": "\"By hiring ruffians to beat him under your own window.\""
+  },
+  {
+   "i": 216,
+   "before": 1,
+   "lines": [
+    "\"You do indeed seem to know everything.  Well, it is true.  Barney and",
+    "the boys drove him away, and were, I admit, a little rough in doing so.",
+    "But what did he do then?  Could I have believed that a gentleman would",
+    "do such an act?  He wrote a book in which he described his own story.",
+    "I, of course, was the wolf; he the lamb.  It was all there, under",
+    "different names, of course; but who in all London would have failed to",
+    "recognize it?  What do you say to that, Mr. Holmes?\""
+   ],
+   "text": "\"You do indeed seem to know everything.  Well, it is true.  Barney and the boys drove him away, and were, I admit, a little rough in doing so. But what did he do then?  Could I have believed that a gentleman would do such an act?  He wrote a book in which he described his own story. I, of course, was the wolf; he the lamb.  It was all there, under different names, of course; but who in all London would have failed to recognize it?  What do you say to that, Mr. Holmes?\""
+  },
+  {
+   "i": 217,
+   "before": 1,
+   "lines": [
+    "\"Well, he was within his rights.\""
+   ],
+   "text": "\"Well, he was within his rights.\""
+  },
+  {
+   "i": 218,
+   "before": 1,
+   "lines": [
+    "\"It was as if the air of Italy had got into his blood and brought with",
+    "it the old cruel Italian spirit.  He wrote to me and sent me a copy of",
+    "his book that I might have the torture of anticipation.  There were two",
+    "copies, he said--one for me, one for his publisher.\""
+   ],
+   "text": "\"It was as if the air of Italy had got into his blood and brought with it the old cruel Italian spirit.  He wrote to me and sent me a copy of his book that I might have the torture of anticipation.  There were two copies, he said--one for me, one for his publisher.\""
+  },
+  {
+   "i": 219,
+   "before": 1,
+   "lines": [
+    "\"How did you know the publisher's had not reached him?\""
+   ],
+   "text": "\"How did you know the publisher's had not reached him?\""
+  },
+  {
+   "i": 220,
+   "before": 1,
+   "lines": [
+    "\"I knew who his publisher was.  It is not his only novel, you know.  I",
+    "found out that he had not heard from Italy.  Then came Douglas's sudden",
+    "death.  So long as that other manuscript was in the world there was no",
+    "safety for me.  Of course, it must be among his effects, and these",
+    "would be returned to his mother.  I set the gang at work.  One of them",
+    "got into the house as servant.  I wanted to do the thing honestly.  I",
+    "really and truly did.  I was ready to buy the house and everything in",
+    "it.  I offered any price she cared to ask.  I only tried the other way",
+    "when everything else had failed.  Now, Mr. Holmes, granting that I was",
+    "too hard on Douglas--and, God knows, I am sorry for it!--what else",
+    "could I do with my whole future at stake?\""
+   ],
+   "text": "\"I knew who his publisher was.  It is not his only novel, you know.  I found out that he had not heard from Italy.  Then came Douglas's sudden death.  So long as that other manuscript was in the world there was no safety for me.  Of course, it must be among his effects, and these would be returned to his mother.  I set the gang at work.  One of them got into the house as servant.  I wanted to do the thing honestly.  I really and truly did.  I was ready to buy the house and everything in it.  I offered any price she cared to ask.  I only tried the other way when everything else had failed.  Now, Mr. Holmes, granting that I was too hard on Douglas--and, God knows, I am sorry for it!--what else could I do with my whole future at stake?\""
+  },
+  {
+   "i": 221,
+   "before": 1,
+   "lines": [
+    "Sherlock Holmes shrugged his shoulders."
+   ],
+   "text": "Sherlock Holmes shrugged his shoulders."
+  },
+  {
+   "i": 222,
+   "before": 1,
+   "lines": [
+    "\"Well, well,\" said he, \"I suppose I shall have to compound a felony as",
+    "usual.  How much does it cost to go round the world in first-class",
+    "style?\""
+   ],
+   "text": "\"Well, well,\" said he, \"I suppose I shall have to compound a felony as usual.  How much does it cost to go round the world in first-class style?\""
+  },
+  {
+   "i": 223,
+   "before": 1,
+   "lines": [
+    "The lady stared in amazement."
+   ],
+   "text": "The lady stared in amazement."
+  },
+  {
+   "i": 224,
+   "before": 1,
+   "lines": [
+    "\"Could it be done on five thousand pounds?\""
+   ],
+   "text": "\"Could it be done on five thousand pounds?\""
+  },
+  {
+   "i": 225,
+   "before": 1,
+   "lines": [
+    "\"Well, I should think so, indeed!\""
+   ],
+   "text": "\"Well, I should think so, indeed!\""
+  },
+  {
+   "i": 226,
+   "before": 1,
+   "lines": [
+    "\"Very good.  I think you will sign me a cheque for that, and I will see",
+    "that it comes to Mrs. Maberley.  You owe her a little change of air.",
+    "Meantime, lady\"--he wagged a cautionary forefinger--\"have a care!  Have",
+    "a care!  You can't play with edged tools for ever without cutting those",
+    "dainty hands.\""
+   ],
+   "text": "\"Very good.  I think you will sign me a cheque for that, and I will see that it comes to Mrs. Maberley.  You owe her a little change of air. Meantime, lady\"--he wagged a cautionary forefinger--\"have a care!  Have a care!  You can't play with edged tools for ever without cutting those dainty hands.\""
+  }
+ ]
+}

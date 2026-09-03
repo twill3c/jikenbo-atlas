@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>対訳 — 事件簿アトラス</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header id="taiyaku-head">
+    <p class="backlink"><a href="./">← 事件簿アトラス</a></p>
+    <h1 id="t-title">読み込み中…</h1>
+    <div class="meta" id="t-meta"></div>
+    <div class="fill" id="t-fill"></div>
+    <nav class="modes" id="t-modes" aria-label="表示切替">
+      <button type="button" data-mode="parallel">並列</button>
+      <button type="button" data-mode="alternate">交互</button>
+      <button type="button" data-mode="ja">訳のみ</button>
+      <button type="button" data-mode="en">原文のみ</button>
+    </nav>
+  </header>
+  <main id="taiyaku-body"></main>
+  <footer id="taiyaku-foot"></footer>
+</div>
+<footer class="app-footer">
+  <a href="https://github.com/twill3c/jikenbo-atlas/blob/main/LICENSE">MIT License</a>
+  <span>© 2026 坂田哲朗</span>
+  <span class="fsep">・</span><a href="https://github.com/twill3c/jikenbo-atlas">GitHub</a>
+  <span class="fsep">・</span><a id="link-howto" href="https://claude.ai/code/artifact/b86e776b-0192-4883-8d22-09c72c272e27">事件簿アトラスの歩き方</a>
+  <span class="fsep">・</span><a id="link-design" href="https://claude.ai/code/artifact/f86403ca-7333-45a6-839f-3c2a25de6cc7">事件簿アトラス設計図</a>
+  <span class="fsep">・</span><a href="https://app-menu-amber.vercel.app/">App Menu</a>
+</footer>
+<script src="taiyaku.js"></script>
+</body>
+</html>

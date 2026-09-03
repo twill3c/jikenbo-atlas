@@ -2,3 +2,8 @@
 data/raw/** -text
 data/aozora_works.json -text
 tests/fixtures/** -text
+# PG 由来の原文と自前和訳。行の中身がデータの一部なので正規化させない
+data/pg/** -text
+data/yaku/** -text
+data/pg_sources.json -text
+data/pg_plan.json -text

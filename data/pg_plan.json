@@ -1,0 +1,92 @@
+{
+  "note": "Project Gutenberg の巻 → 正典事件の対応表(F-13/F-14)。entries は各巻の目次項目の 1 始まり通番の閉区間で、長編は全項目が 1 事件になる。title_en は 2026-09-04 に各巻の目次から実測した文字列で、分割時に実際の目次と一致することを検算する(一致しなければ例外で止める — HC-075)。収録巻は正典分類と一致しない: ボール箱(CARD)は本プロジェクトが英国流で『最後の挨拶』に置くが、PG では #834『回想』の第 II 篇である",
+  "measured_at": "2026-09-04",
+  "volumes": [
+    {
+      "ebook_id": "1661",
+      "volume_title": "The Adventures of Sherlock Holmes",
+      "works": [
+        {"case_id": "BOSC", "entries": [4, 4], "title_en": "The Boscombe Valley Mystery"},
+        {"case_id": "ENGR", "entries": [9, 9], "title_en": "The Adventure of the Engineer’s Thumb"},
+        {"case_id": "NOBL", "entries": [10, 10], "title_en": "The Adventure of the Noble Bachelor"},
+        {"case_id": "BERY", "entries": [11, 11], "title_en": "The Adventure of the Beryl Coronet"},
+        {"case_id": "COPP", "entries": [12, 12], "title_en": "The Adventure of the Copper Beeches"}
+      ]
+    },
+    {
+      "ebook_id": "834",
+      "volume_title": "The Memoirs of Sherlock Holmes",
+      "works": [
+        {"case_id": "CARD", "entries": [2, 2], "title_en": "The Adventure of the Cardboard Box"},
+        {"case_id": "MUSG", "entries": [6, 6], "title_en": "The Musgrave Ritual"},
+        {"case_id": "GREE", "entries": [10, 10], "title_en": "The Greek Interpreter"},
+        {"case_id": "NAVA", "entries": [11, 11], "title_en": "The Naval Treaty"}
+      ]
+    },
+    {
+      "ebook_id": "108",
+      "volume_title": "The Return of Sherlock Holmes",
+      "works": [
+        {"case_id": "NORW", "entries": [2, 2], "title_en": "The Adventure of the Norwood Builder"},
+        {"case_id": "PRIO", "entries": [5, 5], "title_en": "The Adventure of the Priory School"},
+        {"case_id": "BLAC", "entries": [6, 6], "title_en": "The Adventure of Black Peter."},
+        {"case_id": "CHAS", "entries": [7, 7], "title_en": "The Adventure of Charles Augustus Milverton"},
+        {"case_id": "SIXN", "entries": [8, 8], "title_en": "The Adventure of the Six Napoleons"},
+        {"case_id": "GOLD", "entries": [10, 10], "title_en": "The Adventure of the Golden Pince-Nez"},
+        {"case_id": "MISS", "entries": [11, 11], "title_en": "The Adventure of the Missing Three-Quarter"},
+        {"case_id": "ABBE", "entries": [12, 12], "title_en": "The Adventure of the Abbey Grange"},
+        {"case_id": "SECO", "entries": [13, 13], "title_en": "The Adventure of the Second Stain"}
+      ]
+    },
+    {
+      "ebook_id": "2350",
+      "volume_title": "His Last Bow",
+      "works": [
+        {"case_id": "WIST", "entries": [1, 1], "title_en": "The Adventure of Wisteria Lodge"},
+        {"case_id": "BRUC", "entries": [2, 2], "title_en": "The Adventure of the Bruce-Partington Plans"},
+        {"case_id": "DEVI", "entries": [3, 3], "title_en": "The Adventure of the Devil’s Foot"},
+        {"case_id": "REDC", "entries": [4, 4], "title_en": "The Adventure of the Red Circle"},
+        {"case_id": "LADY", "entries": [5, 5], "title_en": "The Disappearance of Lady Frances Carfax"},
+        {"case_id": "LAST", "entries": [7, 7], "title_en": "His Last Bow: The War Service of Sherlock Holmes"}
+      ]
+    },
+    {
+      "ebook_id": "69700",
+      "volume_title": "The Case-Book of Sherlock Holmes",
+      "works": [
+        {"case_id": "ILLU", "entries": [1, 1], "title_en": "The Adventure of the Illustrious Client"},
+        {"case_id": "BLAN", "entries": [2, 2], "title_en": "The Adventure of the Blanched Soldier"},
+        {"case_id": "MAZA", "entries": [3, 3], "title_en": "The Adventure of the Mazarin Stone"},
+        {"case_id": "3GAB", "entries": [4, 4], "title_en": "The Adventure of the Three Gables"},
+        {"case_id": "3GAR", "entries": [6, 6], "title_en": "The Adventure of the Three Garridebs"},
+        {"case_id": "THOR", "entries": [7, 7], "title_en": "The Problem of Thor Bridge"},
+        {"case_id": "CREE", "entries": [8, 8], "title_en": "The Adventure of the Creeping Man"},
+        {"case_id": "LION", "entries": [9, 9], "title_en": "The Adventure of the Lion's Mane"},
+        {"case_id": "VEIL", "entries": [10, 10], "title_en": "The Adventure of the Veiled Lodger"},
+        {"case_id": "SHOS", "entries": [11, 11], "title_en": "The Adventure of Shoscombe Old Place"},
+        {"case_id": "RETI", "entries": [12, 12], "title_en": "The Adventure of the Retired Colourman"}
+      ]
+    },
+    {
+      "ebook_id": "2097",
+      "volume_title": "The Sign of the Four",
+      "works": [
+        {"case_id": "SIGN", "entries": [1, 12], "title_en": "Chapter I. The Science of Deduction"}
+      ]
+    },
+    {
+      "ebook_id": "2852",
+      "volume_title": "The Hound of the Baskervilles",
+      "works": [
+        {"case_id": "HOUN", "entries": [1, 15], "title_en": "Chapter 1  Mr. Sherlock Holmes"}
+      ]
+    },
+    {
+      "ebook_id": "3289",
+      "volume_title": "The Valley of Fear",
+      "works": [
+        {"case_id": "VALL", "entries": [1, 17], "title_en": "PART I—The Tragedy of Birlstone"}
+      ]
+    }
+  ]
+}

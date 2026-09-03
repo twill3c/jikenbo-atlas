@@ -150,3 +150,37 @@ header.site .sub { color: var(--ink-2); font-size: .9rem; margin-top: 6px; }
   margin: 0 -0.3rem;
   user-select: none;
 }
+
+.case .read.partial { color: var(--ink-2); }
+
+/* ---- 英日対訳ビュー(F-16)---- */
+.fill { display: flex; align-items: center; gap: 10px; margin: 10px 0 4px; font-size: .8rem; color: var(--ink-2); }
+.fill-bar { display: inline-block; width: 180px; height: 7px; background: var(--remain); border-radius: 4px; overflow: hidden; }
+.fill-bar i { display: block; height: 100%; background: var(--accent-2); }
+.fill-num { font-variant-numeric: tabular-nums; }
+
+.modes { display: flex; gap: 6px; margin: 12px 0 4px; flex-wrap: wrap; }
+.modes button {
+  font: inherit; font-size: .82rem; padding: 4px 12px; cursor: pointer;
+  color: var(--ink-2); background: var(--card);
+  border: 1px solid var(--line); border-radius: 14px;
+}
+.modes button.on { color: var(--paper); background: var(--accent-2); border-color: var(--accent-2); }
+
+#taiyaku-body { margin-top: 18px; }
+.t-row { margin: 0 0 1.05em; }
+.t-row.m-par { display: grid; grid-template-columns: 1fr 1fr; gap: 0 26px; align-items: start; }
+.t-en { color: var(--ink-2); font-size: .92rem; line-height: 1.72; }
+.t-ja { color: var(--ink); line-height: 1.95; }
+.m-alt .t-en { margin-top: .35em; padding-left: .9em; border-left: 2px solid var(--line); }
+.t-ja.untranslated { color: var(--ink-3); font-size: .85rem; }
+.t-row.t-head { margin-bottom: 1.6em; }
+.t-head .t-ja { font-size: 1.15rem; font-weight: 600; line-height: 1.5; }
+.t-head .t-en { font-style: italic; letter-spacing: .04em; }
+.m-alt.t-head .t-en { border-left: none; padding-left: 0; }
+#taiyaku-foot { margin-top: 2.4rem; padding-top: 1rem; border-top: 1px solid var(--line); font-size: .78rem; color: var(--ink-3); }
+#taiyaku-foot p { margin: .35em 0; }
+@media (max-width: 720px) {
+  .t-row.m-par { grid-template-columns: 1fr; gap: 0; }
+  .t-row.m-par .t-en { margin-top: .35em; padding-left: .9em; border-left: 2px solid var(--line); }
+}
