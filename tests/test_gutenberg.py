@@ -485,18 +485,43 @@ def test_t708_no_truncated_paragraphs(pg_works):
 
 @needs_pg
 @pytest.mark.validation
-def test_t708_glossary_is_grounded_in_corpus(glossary):
-    """訳語基準そのものが、青空文庫本文の実測に裏づけられている(思いつきで決めない)。"""
+def test_t708_glossary_is_grounded(glossary):
+    """訳語基準そのものに裏づけがある(思いつきで決めない)。
+
+    裏づけは二層ある。混ぜると「既存訳がそう書いている」と「自分の出力が揃っている」
+    の区別が消えるので、entry ごとに grounding を明示させる。
+
+      corpus   … 青空文庫の既存訳 29 テキストの実測。基準表記が実在し、
+                 禁じた異表記より多いこと
+      internal … 既存訳に出てこない語。自前訳が複数作で同じ表記に揃っていることが根拠。
+                 外部権威がないことを認めたうえで先へ進めるので、reason を必須にする
+
+    実測 2026-09-05: バーミンガム と バーミングハム は既存訳で 10 回対 10 回の同数で、
+    この名については外部権威そのものが割れている。だから corpus では裏づけられない。
+    """
     raw = ROOT / "data" / "raw"
     if not any(raw.glob("*.txt")):
         pytest.skip("青空文庫コーパス未取得")
     corpus = "\n".join(p.read_text(encoding="utf-8", newline="") for p in raw.glob("*.txt"))
+    own = {}
+    for p in sorted(YAKU_DIR.glob("*.json")):
+        y = json.loads(p.read_text(encoding="utf-8"))
+        own[y["case_id"]] = "\n".join(t["ja"] for t in y["paragraphs"])
+
     for e in glossary["entries"]:
-        n = corpus.count(e["ja"])
-        assert n > 0, f"{e['ja']}: 既存訳に一度も現れない表記を基準にしている"
-        for bad in e["forbidden"]:
-            assert corpus.count(bad) < n, \
-                f"{bad} が基準 {e['ja']} より多い({corpus.count(bad)} 対 {n})— 基準の取り違え"
+        g = e.get("grounding")
+        assert g in ("corpus", "internal"), f"{e['ja']}: grounding が corpus/internal でない"
+        if g == "corpus":
+            n = corpus.count(e["ja"])
+            assert n > 0, f"{e['ja']}: 既存訳に一度も現れない表記を corpus 裏づけにしている"
+            for bad in e["forbidden"]:
+                assert corpus.count(bad) < n, \
+                    f"{bad} が基準 {e['ja']} より多い({corpus.count(bad)} 対 {n})— 基準の取り違え"
+        else:
+            assert e.get("reason"), f"{e['ja']}: internal 裏づけに reason がない"
+            works = [cid for cid, txt in own.items() if e["ja"] in txt]
+            assert len(works) >= 2, \
+                f"{e['ja']}: 自前訳 {len(works)} 作にしか現れず、internal の根拠に足りない"
 
 
 # ---- T-712: 訳了した事件への到達経路(F-07 / F-15 / F-16)----
