@@ -6,10 +6,10 @@
  "title_en_display": "The Adventure of the Retired Colourman",
  "heading": "XII  The Adventure of the Retired Colourman",
  "start_line": 9305,
- "end_line": 10038,
- "tail_blanks": 3,
- "n_paragraphs": 159,
- "n_words": 5698,
+ "end_line": 9978,
+ "tail_blanks": 0,
+ "n_paragraphs": 154,
+ "n_words": 5502,
  "paragraphs": [
   {
    "i": 0,
@@ -1598,85 +1598,6 @@
     "story may be told.\""
    ],
    "text": "\"Well, well, MacKinnon is a good fellow,\" said Holmes, with a tolerant smile.  \"You can file it in our archives, Watson.  Some day the true story may be told.\""
-  },
-  {
-   "i": 154,
-   "before": 3,
-   "lines": [
-    "Printed in Great Britain by Butler & Tanner Ltd., Frome and London"
-   ],
-   "text": "Printed in Great Britain by Butler & Tanner Ltd., Frome and London"
-  },
-  {
-   "i": 155,
-   "before": 4,
-   "lines": [
-    "      *      *      *      *      *"
-   ],
-   "text": "*      *      *      *      *"
-  },
-  {
-   "i": 156,
-   "before": 4,
-   "lines": [
-    "  By A. CONAN DOYLE"
-   ],
-   "text": "By A. CONAN DOYLE"
-  },
-  {
-   "i": 157,
-   "before": 1,
-   "lines": [
-    "  THE ADVENTURES OF SHERLOCK HOLMES.",
-    "  THE MEMOIRS OF SHERLOCK HOLMES.",
-    "  THE RETURN OF SHERLOCK HOLMES.",
-    "  MICAH CLARKE.",
-    "  THE CAPTAIN OF THE POLE STAR.",
-    "  THE SIGN OF FOUR.",
-    "  THE WHITE COMPANY",
-    "  THE REFUGEES.",
-    "  THE STARK MUNRO LETTERS.",
-    "  THE EXPLOITS OF BRIGADIER GERARD.",
-    "  RODNEY STONE.",
-    "  UNCLE BERNAC.",
-    "  THE TRAGEDY OF THE \"KOROSKO.\"",
-    "  A DUET, WITH AN OCCASIONAL CHORUS.",
-    "  THE GREEN FLAG.",
-    "  THE HOUND OF THE BASKERVILLES.",
-    "  THE ADVENTURES OF GERARD.",
-    "  SIR NIGEL.",
-    "  THROUGH THE MAGIC DOOR.",
-    "  ROUND THE FIRE STORIES.",
-    "  THE LAST GALLEY.",
-    "  THE LOST WORLD.",
-    "  ROUND THE RED LAMP.",
-    "  THE VALLEY OF FEAR.",
-    "  HIS LAST BOW.",
-    "  DANGER! AND OTHER STORIES.",
-    "  THE FIRM OF GIRDLESTONE.",
-    "  TALES OF ADVENTURE AND MEDICAL LIFE.",
-    "  TALES OF LONG AGO.",
-    "  TALES OF PIRATES AND BLUE WATER.",
-    "  TALES OF THE RING AND CAMP.",
-    "  TALES OF TERROR AND MYSTERY.",
-    "  TALES OF TWILIGHT AND THE UNSEEN.",
-    "  SONGS OF ACTION.",
-    "  SONGS OF THE  ROAD.",
-    "  THE GUARDS CAME THROUGH, AND OTHER POEMS.",
-    "  POEMS: COLLECTED EDITION.",
-    "  THREE OF THEM: A REMINISCENCE."
-   ],
-   "text": "THE ADVENTURES OF SHERLOCK HOLMES. THE MEMOIRS OF SHERLOCK HOLMES. THE RETURN OF SHERLOCK HOLMES. MICAH CLARKE. THE CAPTAIN OF THE POLE STAR. THE SIGN OF FOUR. THE WHITE COMPANY THE REFUGEES. THE STARK MUNRO LETTERS. THE EXPLOITS OF BRIGADIER GERARD. RODNEY STONE. UNCLE BERNAC. THE TRAGEDY OF THE \"KOROSKO.\" A DUET, WITH AN OCCASIONAL CHORUS. THE GREEN FLAG. THE HOUND OF THE BASKERVILLES. THE ADVENTURES OF GERARD. SIR NIGEL. THROUGH THE MAGIC DOOR. ROUND THE FIRE STORIES. THE LAST GALLEY. THE LOST WORLD. ROUND THE RED LAMP. THE VALLEY OF FEAR. HIS LAST BOW. DANGER! AND OTHER STORIES. THE FIRM OF GIRDLESTONE. TALES OF ADVENTURE AND MEDICAL LIFE. TALES OF LONG AGO. TALES OF PIRATES AND BLUE WATER. TALES OF THE RING AND CAMP. TALES OF TERROR AND MYSTERY. TALES OF TWILIGHT AND THE UNSEEN. SONGS OF ACTION. SONGS OF THE  ROAD. THE GUARDS CAME THROUGH, AND OTHER POEMS. POEMS: COLLECTED EDITION. THREE OF THEM: A REMINISCENCE."
-  },
-  {
-   "i": 158,
-   "before": 1,
-   "lines": [
-    "  THE MYSTERY OF JOAN OF ARC.  BY LÉON",
-    "  DENIS.  Translated from the French by",
-    "  A. CONAN DOYLE."
-   ],
-   "text": "THE MYSTERY OF JOAN OF ARC.  BY LÉON DENIS.  Translated from the French by A. CONAN DOYLE."
   }
  ]
 }

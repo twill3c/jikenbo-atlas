@@ -64,7 +64,9 @@
         {"case_id": "LION", "entries": [9, 9], "title_en": "The Adventure of the Lion's Mane"},
         {"case_id": "VEIL", "entries": [10, 10], "title_en": "The Adventure of the Veiled Lodger"},
         {"case_id": "SHOS", "entries": [11, 11], "title_en": "The Adventure of Shoscombe Old Place"},
-        {"case_id": "RETI", "entries": [12, 12], "title_en": "The Adventure of the Retired Colourman"}
+        {"case_id": "RETI", "entries": [12, 12], "title_en": "The Adventure of the Retired Colourman",
+         "ends_before": "Printed in Great Britain by",
+         "ends_before_note": "巻の最終篇なので終端が PG 本文マーカーまで伸び、巻末の非本文(印刷所の奥付・区切り・著作一覧広告)5 段落を巻き込んでいた(実測 2026-09-04)。奥付の冒頭で切る"}
       ]
     },
     {

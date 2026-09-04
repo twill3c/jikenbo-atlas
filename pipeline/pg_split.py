@@ -204,6 +204,19 @@ def split_volume(vol):
         start = resolved[a - 1]["start_line"]
         end = resolved[b]["start_line"] if b < len(resolved) else bend
         paragraphs, tail = to_paragraphs(lines[start:end])
+        # 巻の最終篇は、終端が PG の本文マーカーまで伸びるので巻末の非本文
+        # (奥付・区切り・著作一覧広告)を巻き込むことがある。実測 2026-09-04 で
+        # #69700 の最終篇 RETI に 5 段落の混入があった。計画に実測した終端行を
+        # 持たせて切る。見つからなければ例外にする(仮定が崩れたら止まる — HC-075)
+        if w.get("ends_before"):
+            cut = next((q["i"] for q in paragraphs
+                        if q["text"].startswith(w["ends_before"])), None)
+            if cut is None:
+                raise SplitError(
+                    f"{w['case_id']}: 計画の終端 {w['ends_before']!r} が本文に見つからない")
+            paragraphs = paragraphs[:cut]
+            end = start + sum(q["before"] + len(q["lines"]) for q in paragraphs)
+            tail = 0
         if join_paragraphs(paragraphs, eol, tail) != eol.join(lines[start:end]):
             raise SplitError(f"{w['case_id']}: 段落分割が往復しない")
         # 末尾が裸の通番なら、次の見出しの一部を取り込んでいる(実測 2026-09-04 に

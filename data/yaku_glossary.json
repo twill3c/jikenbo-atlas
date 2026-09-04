@@ -1,0 +1,15 @@
+{
+  "note": "自前和訳(data/yaku)の訳語基準(F-15)。表記は**青空文庫の既存訳 29 テキストの全数実測**(2026-09-04)で多数を占めたものを採る。同じサイトの本文層(リーダー)と対訳層で人名の書き方が食い違うと読者が別人と取り違えるため、既存訳を外部権威として揃える。canon_cases.json と pipeline/analyze_text.py も同じ表記を用いている。en は原文の照合鍵で、原文を鍵にするので循環しない",
+  "measured_at": "2026-09-04",
+  "measured_from": "data/raw/*.txt(青空文庫ドイル訳 29 テキスト)",
+  "entries": [
+    {"en": "Holmes", "ja": "ホームズ", "corpus_count": 1438, "forbidden": ["ホルムズ", "ホウムズ"]},
+    {"en": "Watson", "ja": "ワトソン", "corpus_count": 333, "forbidden": ["ワトスン", "ウォトスン", "ワトスン君"]},
+    {"en": "Hudson", "ja": "ハドソン", "corpus_count": 57, "forbidden": ["ハドスン"]},
+    {"en": "Lestrade", "ja": "レストレード", "corpus_count": 60, "forbidden": ["レストレイド", "レストレッド", "レストラード"]},
+    {"en": "Moriarty", "ja": "モリアーティ", "corpus_count": 35, "forbidden": ["モリアティ", "モリアーテイ"]},
+    {"en": "Baker Street", "ja": "ベイカー街", "corpus_count": 61, "forbidden": ["ベーカー街", "ベイカー通り"]},
+    {"en": "Scotland Yard", "ja": "スコットランド・ヤード", "corpus_count": 14, "forbidden": ["スコットランドヤード", "スコットランド・ヤード警視庁"]},
+    {"en": "Mycroft", "ja": "マイクロフト", "corpus_count": 2, "forbidden": ["マイクロフト・ホームズ兄"]}
+  ]
+}

@@ -16,6 +16,7 @@ ROOT = Path(__file__).parent.parent
 PG_DIR = ROOT / "data" / "pg"
 YAKU_DIR = ROOT / "data" / "yaku"
 SOURCES = ROOT / "data" / "pg_sources.json"
+GLOSSARY = ROOT / "data" / "yaku_glossary.json"
 CANON = ROOT / "data" / "canon_cases.json"
 PG_CACHE = ROOT / "data" / "cache" / "pg"
 
@@ -118,6 +119,26 @@ def test_t703_paragraphs_roundtrip_to_source_slice(sources, pg_works):
         assert vol["ebook_id"] == w["ebook_id"]
 
 
+@needs_pg
+@pytest.mark.validation
+def test_t709_no_publisher_back_matter_in_works(pg_works):
+    """作品に巻末の非本文(奥付・区切り・著作一覧広告)が混じっていない。
+
+    期待値の出所: 実測 2026-09-04。巻の最終篇は終端が PG の本文マーカーまで伸びるため、
+    #69700 の RETI に 5 段落の巻末広告が入っていた。全単射(T-701)も往復(T-703)も
+    緑のまま通る欠陥だったので、別の述語で止める。
+    """
+    markers = re.compile(
+        r"^(Printed in Great Britain|By A\. CONAN DOYLE$|\*(\s+\*)+\s*$"
+        r"|End of (the )?Project Gutenberg|Updated editions will replace)")
+    hits = []
+    for cid, w in sorted(pg_works.items()):
+        for q in w["paragraphs"]:
+            if markers.match(q["text"].strip()):
+                hits.append(f"{cid}#{q['i']}: {q['text'][:60]!r}")
+    assert hits == [], hits
+
+
 # ---- T-704/705: 自前和訳層(F-15) ----
 
 @needs_pg
@@ -204,6 +225,98 @@ def test_t706_taiyaku_page_skeleton():
     assert "data/taiyaku/" in js
     for mode in ("parallel", "alternate", "ja", "en"):
         assert mode in js, f"表示モード {mode} がない"
+
+
+# ---- T-707: 訳語の一貫性(F-15)----
+#
+# オラクルの出所: 青空文庫の既存訳 29 テキストの全数実測(data/yaku_glossary.json)。
+# 同じサイトの本文層(リーダー)と対訳層で人名の書き方が食い違うと、読者が別人と
+# 取り違える。照合の鍵は**原文の英語名**なので、こちらの訳を正解に使う循環がない。
+
+@pytest.fixture(scope="module")
+def glossary():
+    return json.loads(GLOSSARY.read_text(encoding="utf-8"))
+
+
+@needs_pg
+@pytest.mark.validation
+def test_t707_forbidden_name_variants_absent(glossary, pg_works):
+    """禁じた異表記が訳文に一つも現れない。"""
+    hits = []
+    for p in sorted(YAKU_DIR.glob("*.json")):
+        y = json.loads(p.read_text(encoding="utf-8"))
+        joined = "\n".join(t["ja"] for t in y["paragraphs"])
+        for e in glossary["entries"]:
+            for bad in e["forbidden"]:
+                if bad in joined:
+                    hits.append(f"{p.stem}: {bad!r}(基準は {e['ja']!r})")
+    assert hits == [], hits
+
+
+@needs_pg
+@pytest.mark.validation
+def test_t707_registered_rendering_used_where_source_has_name(glossary, pg_works):
+    """原文にその名が繰り返し出る作品では、基準表記が訳文にも現れる。
+
+    日本語は主語を落とすので段落ごとの対応は求めない。作品単位で、原文に 3 回以上
+    現れる名は訳文にも現れる、という緩い不変量にする(訳し落としの取りこぼしを防ぐ)。
+    """
+    misses = []
+    for p in sorted(YAKU_DIR.glob("*.json")):
+        y = json.loads(p.read_text(encoding="utf-8"))
+        src = "\n".join(q["text"] for q in pg_works[y["case_id"]]["paragraphs"])
+        joined = "\n".join(t["ja"] for t in y["paragraphs"])
+        # 訳が全段落そろっている作品だけを対象にする(部分訳では当然落ちる)
+        if len(y["paragraphs"]) != len(pg_works[y["case_id"]]["paragraphs"]):
+            continue
+        for e in glossary["entries"]:
+            if src.count(e["en"]) >= 3 and e["ja"] not in joined:
+                misses.append(f"{p.stem}: 原文に {e['en']} が {src.count(e['en'])} 回あるが "
+                              f"訳文に {e['ja']} がない")
+    assert misses == [], misses
+
+
+# ---- T-708: 訳し漏れの検出(F-15)----
+
+@needs_pg
+@pytest.mark.validation
+def test_t708_no_truncated_paragraphs(pg_works):
+    """段落の「日本語文字数 / 英語語数」比が下限を下回らない。
+
+    期待値の出所: 実測 2026-09-04。自前訳 4 篇・10 語以上の 363 段落で
+    最小 1.59 / p1 1.64 / 中央 2.28 / p95 3.00。**下限 1.20 は観測最小の下に置く** ——
+    正常な訳を落とすためでなく、段落の一部しか訳していない(冒頭一文だけ等)状態を
+    捕まえるための番人であり、その場合の比は 1 を大きく割る。
+    """
+    LOWER = 1.20
+    thin = []
+    for p in sorted(YAKU_DIR.glob("*.json")):
+        y = json.loads(p.read_text(encoding="utf-8"))
+        src = {q["i"]: q["text"] for q in pg_works[y["case_id"]]["paragraphs"]}
+        for t in y["paragraphs"]:
+            n_words = len(src[t["i"]].split())
+            if n_words < 10:
+                continue
+            ratio = len(t["ja"]) / n_words
+            if ratio < LOWER:
+                thin.append(f"{p.stem}#{t['i']}: {n_words}語 → {len(t['ja'])}字(比 {ratio:.2f})")
+    assert thin == [], thin
+
+
+@needs_pg
+@pytest.mark.validation
+def test_t708_glossary_is_grounded_in_corpus(glossary):
+    """訳語基準そのものが、青空文庫本文の実測に裏づけられている(思いつきで決めない)。"""
+    raw = ROOT / "data" / "raw"
+    if not any(raw.glob("*.txt")):
+        pytest.skip("青空文庫コーパス未取得")
+    corpus = "\n".join(p.read_text(encoding="utf-8", newline="") for p in raw.glob("*.txt"))
+    for e in glossary["entries"]:
+        n = corpus.count(e["ja"])
+        assert n > 0, f"{e['ja']}: 既存訳に一度も現れない表記を基準にしている"
+        for bad in e["forbidden"]:
+            assert corpus.count(bad) < n, \
+                f"{bad} が基準 {e['ja']} より多い({corpus.count(bad)} 対 {n})— 基準の取り違え"
 
 
 @needs_pg
