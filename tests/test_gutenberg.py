@@ -499,6 +499,59 @@ def test_t708_glossary_is_grounded_in_corpus(glossary):
                 f"{bad} が基準 {e['ja']} より多い({corpus.count(bad)} 対 {n})— 基準の取り違え"
 
 
+# ---- T-712: 訳了した事件への到達経路(F-07 / F-15 / F-16)----
+#
+# 訳し終えた事件が「対訳(和訳 0%)」のリンクの列に埋もれて、読者から見つからない
+# という穴を塞ぐ。充填率をダッシュボード最上位に出し、翻訳状態で絞り込めるようにする。
+
+@pytest.mark.unit
+def test_t712_dashboard_has_translation_filter():
+    """ダッシュボードに翻訳状態の絞り込み軸がある。"""
+    html = (ROOT / "web" / "index.html").read_text(encoding="utf-8")
+    js = (ROOT / "web" / "app.js").read_text(encoding="utf-8")
+    assert 'id="f-ja"' in html, "翻訳状態の絞り込みが index.html にない"
+    for value in ('value="done"', 'value="wip"', 'value="none"'):
+        assert value in html, f"選択肢 {value} がない"
+    assert "#f-ja" in js, "app.js の絞り込みが f-ja を見ていない"
+
+
+@needs_pg
+@pytest.mark.validation
+def test_t712_fill_rate_on_dashboard(pg_works):
+    """充填率タイルの数が index.json の実測と一致する(定数で書かない)。"""
+    js = (ROOT / "web" / "app.js").read_text(encoding="utf-8")
+    assert "n_pg_translated" in js and "n_pg_paragraphs" in js, \
+        "app.js の統計タイルが充填率を出していない"
+    index = json.loads((ROOT / "web" / "data" / "index.json").read_text(encoding="utf-8"))
+    stats = index["stats"]
+    done = sum(1 for c in index["cases"]
+               if c.get("pg") and c["pg"]["n_translated"] == c["pg"]["n_paragraphs"])
+    assert stats["n_pg_cases_done"] == done
+    assert stats["n_pg_translated"] == sum(
+        c["pg"]["n_translated"] for c in index["cases"] if c.get("pg"))
+
+
+@needs_pg
+@pytest.mark.validation
+def test_t712_status_partition_is_total(pg_works):
+    """3 つの状態(訳了 / 訳出中 / 対象外)が全 60 事件を過不足なく分割する。
+
+    どれにも当たらない事件が出ると、絞り込んだ読者から事件が消える。
+    """
+    index = json.loads((ROOT / "web" / "data" / "index.json").read_text(encoding="utf-8"))
+    done = wip = none = 0
+    for c in index["cases"]:
+        pg = c.get("pg")
+        if not pg:
+            none += 1
+        elif pg["n_translated"] == pg["n_paragraphs"]:
+            done += 1
+        else:
+            wip += 1
+    assert done + wip + none == len(index["cases"])
+    assert none == len(index["cases"]) - len(pg_works)
+
+
 @needs_pg
 @pytest.mark.validation
 def test_t706_taiyaku_payloads_built(pg_works):

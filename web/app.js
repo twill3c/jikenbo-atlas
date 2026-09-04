@@ -37,15 +37,24 @@ function readingMin(c) {
   return w && w.reading_minutes ? w.reading_minutes : null;
 }
 
+// 自前和訳の状態。3 つで全事件を過不足なく分割する(T-712)——
+// どれにも当たらない事件があると、絞り込んだ読者からその事件が消えてしまう。
+function jaStatus(c) {
+  if (!c.pg) return "none";                                   // 青空文庫の本文がある
+  return c.pg.n_translated === c.pg.n_paragraphs ? "done" : "wip";
+}
+
 function filtered() {
   const col = $("#f-col").value, ty = $("#f-type").value, rg = $("#f-region").value;
   const de = $("#f-death").value, tx = $("#f-text").value, q = $("#f-q").value.trim();
+  const ja = $("#f-ja").value;
   return CASES.filter((c) =>
     (!col || c.collection === col) &&
     (!ty || c.case_type === ty) &&
     (!rg || c.region === rg) &&
     (!de || (de === "yes") === c.deaths) &&
     (!tx || (tx === "yes") === readable(c)) &&
+    (!ja || jaStatus(c) === ja) &&
     (!q || c.title_ja.includes(q) || c.title_en.toLowerCase().includes(q.toLowerCase()) || c.id.toLowerCase() === q.toLowerCase())
   );
 }
@@ -53,9 +62,17 @@ function filtered() {
 function renderStats(stats) {
   const box = $("#stats");
   box.replaceChildren();
+  // 充填率は分子と分母の両方を出す(F-15)。途中でも「訳せた分だけ」と分かるように
+  const pct = stats.n_pg_paragraphs
+    ? (stats.n_pg_translated / stats.n_pg_paragraphs) * 100
+    : 0;
   const items = [
     [stats.n_cases, "正典の事件(短編56+長編4)"],
     [stats.n_texts, "青空文庫で読める本文"],
+    [stats.n_pg_cases_done + " / " + stats.n_pg_cases, "自前和訳が訳了した事件"],
+    [pct.toFixed(1) + "%", "和訳の充填率(" +
+      stats.n_pg_translated.toLocaleString() + " / " +
+      stats.n_pg_paragraphs.toLocaleString() + " 段落)"],
     [stats.n_no_death_shorts + " / " + stats.n_shorts, "死者の出ない短編"],
     ["1887–1927", "発表年の幅"],
   ];
@@ -192,7 +209,7 @@ async function main() {
   fillSelect("#f-col", "短編集", COLLECTIONS.map(([k, v]) => [k, v]));
   fillSelect("#f-type", "種別", TYPES.map((t) => [t, t]));
   fillSelect("#f-region", "舞台", REGIONS.map((r) => [r, r]));
-  for (const s of ["#f-col", "#f-type", "#f-region", "#f-death", "#f-text"])
+  for (const s of ["#f-col", "#f-type", "#f-region", "#f-death", "#f-text", "#f-ja"])
     $(s).addEventListener("change", rerender);
   $("#f-q").addEventListener("input", rerender);
   rerender();
