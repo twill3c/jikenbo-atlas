@@ -194,6 +194,84 @@ def test_t705_translation_is_japanese():
             assert ja.search(t["ja"]), f"{p.stem}#{t['i']}: 日本語の文字がない"
 
 
+# ---- T-710: 台詞の取りこぼし(F-15)----
+#
+# 原文の引用開始記号の数と、訳文の 「 の数を作品単位で比べる。照合の鍵は原文なので循環しない。
+# 段落単位では入れ子や地の文への回収でずれるため、作品単位の比で見る。
+
+_OPEN_EN = re.compile(r'(?:^|[\s(\[])["“]')
+
+
+def _speech_ratio(yaku, pg):
+    src = {q["i"]: q["text"] for q in pg["paragraphs"]}
+    en = sum(len(_OPEN_EN.findall(src[t["i"]])) for t in yaku["paragraphs"])
+    ja = sum(t["ja"].count("「") for t in yaku["paragraphs"])
+    return en, ja
+
+
+@needs_pg
+@pytest.mark.validation
+def test_t710_speech_is_not_dropped(pg_works):
+    """作品単位で、訳文の鉤括弧の数が原文の引用符の数から大きく離れない。
+
+    期待値の出所: 実測 2026-09-04。訳了 8 篇の作品別の比は 最小 0.994 / 最大 1.086
+    (1.086 は入れ子の鉤括弧を持つ MUSG)。帯 [0.85, 1.25] は観測の外側に置いた番人で、
+    正常な訳を落とすためではなく、台詞をまとめたり落としたりした状態を捕まえるためのもの。
+    """
+    LO, HI = 0.85, 1.25
+    bad = []
+    for p in sorted(YAKU_DIR.glob("*.json")):
+        y = json.loads(p.read_text(encoding="utf-8"))
+        pg = pg_works[y["case_id"]]
+        # 部分訳では原文全体と比べられないので、全訳済みのみ対象
+        if len(y["paragraphs"]) != len(pg["paragraphs"]):
+            continue
+        en, ja = _speech_ratio(y, pg)
+        if en < 20:
+            continue
+        r = ja / en
+        if not (LO <= r <= HI):
+            bad.append(f"{p.stem}: 原文 {en} / 訳文 {ja}(比 {r:.3f})")
+    assert bad == [], bad
+
+
+@needs_pg
+@pytest.mark.validation
+def test_t710_gate_has_teeth(pg_works):
+    """変異体でゲートが実際に火を噴くことを確かめる。
+
+    このゲートは既存データでは最初から通るので、通ること自体は何も保証しない。
+    「台詞を三つに一つ落とした訳」を作って食わせ、帯の外に出ることを確認する。
+    """
+    LO, HI = 0.85, 1.25
+    p = next(iter(sorted(YAKU_DIR.glob("*.json"))))
+    y = json.loads(p.read_text(encoding="utf-8"))
+    pg = pg_works[y["case_id"]]
+
+    en, ja = _speech_ratio(y, pg)
+    assert LO <= ja / en <= HI, "前提: 元の訳は帯の中にある"
+
+    # 変異体: 鉤括弧を三つに一つ取り除く(台詞を地の文に溶かした状態の代理)
+    n = 0
+
+    def drop(s):
+        nonlocal n
+        out = []
+        for ch in s:
+            if ch == "「":
+                n += 1
+                if n % 3 == 0:
+                    continue
+            out.append(ch)
+        return "".join(out)
+
+    mutant = {"paragraphs": [{"i": t["i"], "ja": drop(t["ja"])} for t in y["paragraphs"]]}
+    _, ja2 = _speech_ratio(mutant, pg)
+    assert ja2 < ja, "変異体で鉤括弧が減っていない"
+    assert not (LO <= ja2 / en <= HI), \
+        f"変異体({ja2}/{en} = {ja2 / en:.3f})が帯 [{LO}, {HI}] を出ない — ゲートが緩すぎる"
+
+
 # ---- T-706: 充填率と web への伝搬(F-15 / F-16) ----
 
 @needs_pg
