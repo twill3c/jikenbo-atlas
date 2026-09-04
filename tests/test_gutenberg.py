@@ -272,6 +272,108 @@ def test_t710_gate_has_teeth(pg_works):
         f"変異体({ja2}/{en} = {ja2 / en:.3f})が帯 [{LO}, {HI}] を出ない — ゲートが緩すぎる"
 
 
+# ---- T-711: 数の取り違え(F-15)----
+#
+# 原文の数(金額・年・時刻・人数)が、対応する訳文段落に同じ値として現れるかを見る。
+# 照合の鍵は原文なので循環しない。
+#
+# **このゲートが捕まえないもの**(較正で分かったこと、実測 2026-09-04):
+#   日本語は対の身体部位や慣用句で数詞を落とす —— two arms→両腕、a day or two→一両日、
+#   Two can play at that game→お互いさま、six months→半年。訳了 11 篇 301 例のうち
+#   外れ 6 件はすべてこれで、訳の誤りは 0 件だった。つまり下限を決めているのは
+#   訳の忠実さではなく日本語の慣用である。捕まえられるのは**系統的な数の破壊**であって、
+#   個々の訳し方の当否ではない。
+
+@needs_pg
+@pytest.mark.validation
+def test_t711_numbers_survive_translation(pg_works):
+    """全訳済み作品で、原文の数の値が訳文に現れる率が 0.85 を下回らない。
+
+    期待値の出所: 実測 2026-09-04。訳了 11 篇で全体 295/301 = 0.980、
+    作品別は最小 0.933 / 最大 1.000。下限 0.85 は観測最小の下に置いた番人。
+    """
+    from pipeline.numerals import en_numbers, ja_numbers
+
+    LOWER = 0.85
+    bad = []
+    for p in sorted(YAKU_DIR.glob("*.json")):
+        y = json.loads(p.read_text(encoding="utf-8"))
+        pg = pg_works[y["case_id"]]
+        if len(y["paragraphs"]) != len(pg["paragraphs"]):
+            continue
+        src = {q["i"]: q["text"] for q in pg["paragraphs"]}
+        n = hit = 0
+        for t in y["paragraphs"]:
+            ens = en_numbers(src[t["i"]])
+            if not ens:
+                continue
+            jas = ja_numbers(t["ja"])
+            n += len(ens)
+            hit += sum(1 for v in ens if v in jas)
+        if n < 20:
+            continue
+        if hit / n < LOWER:
+            bad.append(f"{p.stem}: {hit}/{n} = {hit / n:.3f}")
+    assert bad == [], bad
+
+
+@pytest.mark.unit
+def test_t711_numeral_conversion():
+    """漢数字→値の変換が、羅列読みと位取り読みの双方で正しい。
+
+    期待値の出所: 日本語の数詞の規則(外部権威の定数)。
+    """
+    from pipeline.numerals import en_numbers, ja_numbers, kanji_to_int
+
+    assert kanji_to_int("一九〇七") == 1907      # 羅列読み(年)
+    assert kanji_to_int("二十三") == 23
+    assert kanji_to_int("五百") == 500
+    assert kanji_to_int("二百四十五") == 245
+    assert kanji_to_int("八万") == 80000
+    assert 245 in ja_numbers("二百四十五です")
+    assert 500 in ja_numbers("五百ポンド")
+    # 原文側: and をまたぐ並び、時刻の綴り、冠詞の one
+    assert 245 in en_numbers("two hundred and forty-five pages")
+    assert en_numbers("one of the finest houses") == set()   # 冠詞の one は数えない
+    assert 9 not in en_numbers("It is now nine-thirty.")      # 時刻を 9+30=39 と読まない
+
+
+@needs_pg
+@pytest.mark.validation
+def test_t711_gate_has_teeth(pg_works):
+    """変異体でゲートが火を噴くことを確かめる。
+
+    数をすべて別の値にずらした訳を食わせ、率が下限を割ることを確認する。
+    T-710 と同じく、通ること自体は何も保証しないため。
+    """
+    from pipeline.numerals import en_numbers, ja_numbers
+
+    LOWER = 0.85
+    p = sorted(YAKU_DIR.glob("*.json"))[0]
+    y = json.loads(p.read_text(encoding="utf-8"))
+    pg = pg_works[y["case_id"]]
+    src = {q["i"]: q["text"] for q in pg["paragraphs"]}
+
+    def rate(paras):
+        n = hit = 0
+        for t in paras:
+            ens = en_numbers(src[t["i"]])
+            if not ens:
+                continue
+            jas = ja_numbers(t["ja"])
+            n += len(ens)
+            hit += sum(1 for v in ens if v in jas)
+        return hit / n if n else 1.0
+
+    assert rate(y["paragraphs"]) >= LOWER, "前提: 元の訳は下限を上回る"
+
+    # 変異体: 漢数字を一律に別の字へ置き換え、値を壊す
+    table = str.maketrans("一二三四五六七八九", "九八七六五四三二一")
+    mutant = [{"i": t["i"], "ja": t["ja"].translate(table)} for t in y["paragraphs"]]
+    r = rate(mutant)
+    assert r < LOWER, f"変異体の率 {r:.3f} が下限 {LOWER} を割らない — ゲートが緩すぎる"
+
+
 # ---- T-706: 充填率と web への伝搬(F-15 / F-16) ----
 
 @needs_pg
