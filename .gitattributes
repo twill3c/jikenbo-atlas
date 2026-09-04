@@ -7,3 +7,4 @@ data/pg/** -text
 data/yaku/** -text
 data/pg_sources.json -text
 data/pg_plan.json -text
+data/yaku_glossary.json -text
