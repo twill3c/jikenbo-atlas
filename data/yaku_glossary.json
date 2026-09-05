@@ -500,6 +500,53 @@
     "ブラックヒス"
    ],
    "reason": "既存訳では 1 回の薄い裏づけだが、自前訳 MISS/NORW/RETI の 3 作が揃っており外部の 1 例とも一致する"
+  },
+  {
+   "en": "Robert",
+   "ja": "ロバート",
+   "grounding": "corpus",
+   "corpus_count": 5,
+   "forbidden": [
+    "ロバァト"
+   ],
+   "reason": "既存訳 5 回・自前訳 NOBL/SHOS の 2 作で一致"
+  },
+  {
+   "en": "Eustace",
+   "ja": "ユースタス",
+   "grounding": "internal",
+   "forbidden": [
+    "ユウスタス"
+   ],
+   "reason": "既存訳に 0 回。自前訳 ABBE(ユースタス・ブラッケンストール卿)と NOBL(ユースタス卿)の 2 作で揃っている"
+  },
+  {
+   "en": "Duke",
+   "ja": "公爵",
+   "grounding": "corpus",
+   "corpus_count": 3,
+   "forbidden": [
+    "大公"
+   ],
+   "reason": "称号。既存訳 3 回・自前訳 4 作で一致。大公 は既存訳 1 回で基準より少ないので禁止形に置ける"
+  },
+  {
+   "en": "Liverpool",
+   "ja": "リヴァプール",
+   "grounding": "corpus",
+   "corpus_count": 4,
+   "forbidden": [
+    "リバプール"
+   ],
+   "reason": "既存訳は リヴァプール 4 回・リバプール 2 回で、多いほうを基準にした。自前訳 CARD/MAZA/RETI の 3 作も リヴァプール で揃っている"
+  },
+  {
+   "en": "Tuesday",
+   "ja": "火曜",
+   "grounding": "corpus",
+   "corpus_count": 15,
+   "forbidden": [],
+   "reason": "曜日名。既存訳 15 回・自前訳 5 作で一致。**固有名の判定(小文字形を持たない大文字語)は曜日名も拾う** —— July と同じく判定の網の性質なので、除外語で隠さず登録として残す。基準は『火曜』とし、『火曜日』もこれを含む"
   }
  ]
 }
