@@ -71,8 +71,10 @@ async function main() {
   }
 
   let index = null;
+  let cases = [];
   try {
-    index = (await (await fetch("data/index.json")).json()).cases.find((c) => c.id === cid);
+    cases = (await (await fetch("data/index.json")).json()).cases;
+    index = cases.find((c) => c.id === cid);
   } catch {
     index = null;
   }
@@ -105,6 +107,26 @@ async function main() {
     });
   });
   draw();
+
+  // 訳了作どうしの前後移動(F-16)。並びは index.json の正典順そのままで、
+  // 別の並び順を持ち込まない。端は片側だけ出す
+  // 変数名は doneCases。上の充填率表示がすでに done を使っており、
+  // 同名で宣言すると同一関数スコープの重複宣言で main() 全体が死ぬ(HC-158)
+  const doneCases = cases.filter(
+    (c) => c.pg && c.pg.n_translated === c.pg.n_paragraphs);
+  const at = doneCases.findIndex((c) => c.id === cid);
+  if (at >= 0) {
+    const link = (c, label) =>
+      `<a class="t-nav-${label === "前" ? "prev" : "next"}" href="taiyaku.html?c=${esc(c.id)}">` +
+      `${label === "前" ? "← " : ""}${esc(c.title_ja)}${label === "次" ? " →" : ""}</a>`;
+    const parts = [];
+    parts.push(at > 0 ? link(doneCases[at - 1], "前") : `<span class="t-nav-end">最初の訳了作</span>`);
+    parts.push(`<span class="t-nav-pos">訳了 ${at + 1} / ${doneCases.length}</span>`);
+    parts.push(at + 1 < doneCases.length
+      ? link(doneCases[at + 1], "次")
+      : `<span class="t-nav-end">最後の訳了作</span>`);
+    $("#t-nav").innerHTML = parts.join("");
+  }
 
   const t = d.translation;
   $("#taiyaku-foot").innerHTML =

@@ -178,7 +178,23 @@ header.site .sub { color: var(--ink-2); font-size: .9rem; margin-top: 6px; }
 .t-head .t-ja { font-size: 1.15rem; font-weight: 600; line-height: 1.5; }
 .t-head .t-en { font-style: italic; letter-spacing: .04em; }
 .m-alt.t-head .t-en { border-left: none; padding-left: 0; }
-#taiyaku-foot { margin-top: 2.4rem; padding-top: 1rem; border-top: 1px solid var(--line); font-size: .78rem; color: var(--ink-3); }
+.t-nav {
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px;
+  margin-top: 2.4rem; padding-top: 1rem; border-top: 1px solid var(--line);
+  font-size: .88rem;
+}
+.t-nav a { color: var(--accent-2); text-decoration: none; }
+.t-nav a:hover { text-decoration: underline; }
+.t-nav .t-nav-next { text-align: right; }
+.t-nav .t-nav-end { color: var(--ink-3); font-size: .8rem; }
+.t-nav .t-nav-next.t-nav-end, .t-nav span:last-child { text-align: right; }
+.t-nav .t-nav-pos { color: var(--ink-2); font-size: .8rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
+@media (max-width: 560px) {
+  .t-nav { grid-template-columns: 1fr; }
+  .t-nav .t-nav-next, .t-nav span:last-child { text-align: left; }
+}
+
+#taiyaku-foot { margin-top: 1.4rem; padding-top: 1rem; border-top: 1px solid var(--line); font-size: .78rem; color: var(--ink-3); }
 #taiyaku-foot p { margin: .35em 0; }
 @media (max-width: 720px) {
   .t-row.m-par { grid-template-columns: 1fr; gap: 0; }

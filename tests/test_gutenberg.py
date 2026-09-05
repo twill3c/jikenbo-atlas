@@ -577,6 +577,78 @@ def test_t712_status_partition_is_total(pg_works):
     assert none == len(index["cases"]) - len(pg_works)
 
 
+# ---- T-714: 配布する JS が実行できること(HC-158)----
+
+@pytest.mark.integration
+def test_t714_shipped_js_parses():
+    """web/ の JS 全数を実際に構文解析する。
+
+    HC-158(2026-09-05): 対訳ページに前後移動を足したとき、既存の `done` と
+    重複宣言になって `main()` 全体が実行されなくなったが、**pytest 59 件は
+    全て緑のまま素通りした**。この層の検査が JS を文字列として grep しており、
+    「何が書かれているか」しか見ず「実行できるか」を見ていなかったためである。
+    素の JS を配るこのプロジェクトには、構文エラーを検出する工程が
+    パイプライン上に一つも無かった。ここで実際に解析させる。
+    """
+    import shutil
+    import subprocess
+
+    node = shutil.which("node")
+    if not node:
+        pytest.skip("node が無い(実ブラウザ検品の pageerror 監視が代替になる)")
+    bad = []
+    js_files = sorted((ROOT / "web").glob("*.js"))
+    assert js_files, "web/ に JS が一つも無い — 検査対象の取り違え"
+    for p in js_files:
+        r = subprocess.run([node, "--check", str(p)], capture_output=True, text=True)
+        if r.returncode != 0:
+            bad.append(f"{p.name}: {r.stderr.strip().splitlines()[0] if r.stderr else '構文エラー'}")
+    assert bad == [], bad
+
+
+# ---- T-713: 訳了作どうしの前後移動(F-16)----
+
+@pytest.mark.unit
+def test_t713_taiyaku_has_prev_next_nav():
+    """対訳ページに前後移動の枠と、それを組み立てる処理がある。"""
+    html = (ROOT / "web" / "taiyaku.html").read_text(encoding="utf-8")
+    js = (ROOT / "web" / "taiyaku.js").read_text(encoding="utf-8")
+    assert 'id="t-nav"' in html, "前後移動の枠が taiyaku.html にない"
+    assert "#t-nav" in js, "taiyaku.js が t-nav を組み立てていない"
+    # 並びは index.json の訳了作から作る(別の並び順を持ち込まない)
+    assert "n_translated" in js and "n_paragraphs" in js, \
+        "訳了かどうかを index.json の実データから判定していない"
+
+
+@needs_pg
+@pytest.mark.validation
+def test_t713_translated_sequence_is_navigable(pg_works):
+    """訳了作の並びが前後移動として成立する。
+
+    端は片側だけ、中間は両側。並びに重複や欠落があると読者が同じ作品を
+    行き来したり、途中の作品に永久に辿り着けなくなる。
+    """
+    index = json.loads((ROOT / "web" / "data" / "index.json").read_text(encoding="utf-8"))
+    done = [c["id"] for c in index["cases"]
+            if c.get("pg") and c["pg"]["n_translated"] == c["pg"]["n_paragraphs"]]
+    assert len(done) == len(set(done)), "訳了作の並びに重複がある"
+    assert len(done) >= 2, "前後移動を論じるには訳了が 2 件以上必要"
+    # 前後の対応が対称であること(a の次が b なら b の前は a)
+    for i, cid in enumerate(done):
+        prev = done[i - 1] if i > 0 else None
+        nxt = done[i + 1] if i + 1 < len(done) else None
+        if nxt is not None:
+            assert done[done.index(nxt) - 1] == cid, f"{cid} → {nxt} の対応が非対称"
+        if prev is not None:
+            assert done[done.index(prev) + 1] == cid, f"{prev} → {cid} の対応が非対称"
+    # 全訳了作が並びのどこかに現れる(どれかが到達不能にならない)
+    n_done = sum(1 for cid, w in pg_works.items()
+                 if (YAKU_DIR / f"{cid}.json").exists()
+                 and len(json.loads((YAKU_DIR / f"{cid}.json").read_text(encoding="utf-8"))["paragraphs"])
+                 == len(w["paragraphs"]))
+    assert len(done) == n_done, f"index の訳了 {len(done)} 件と実データの {n_done} 件が食い違う"
+
+
 @needs_pg
 @pytest.mark.validation
 def test_t706_taiyaku_payloads_built(pg_works):

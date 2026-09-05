@@ -19,10 +19,18 @@ _SCALE = {"hundred": 100, "thousand": 1000, "million": 10 ** 6}
 _WORDS = set(_ONES) | set(_TENS) | set(_SCALE)
 _TOKEN = re.compile(r"[a-z]+", re.I)
 # 時刻の綴り(nine-thirty など)。数詞の並びとして読むと 9+30=39 になるので先に潰す
-_CLOCK = re.compile(
-    r"\b(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)"
-    r"[- ](five|ten|fifteen|twenty|twenty[- ]five|thirty|thirty[- ]five|forty|"
-    r"forty[- ]five|fifty|fifty[- ]five)\b", re.I)
+_HOUR = (r"one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve")
+# 複合(thirty-six)を単独(thirty)より先に置く。順序を逆にすると thirty だけが
+# 食われて -six が数詞として残る(実測 2026-09-05: MISS の "ten thirty-six")
+_MIN = (r"(?:twenty|thirty|forty|fifty)[- ](?:one|two|three|four|five|six|seven|eight|nine)"
+        r"|five|ten|fifteen|twenty|thirty|forty|fifty")
+# 時刻の綴り(nine-thirty / ten thirty-six)。数詞の並びとして読むと 9+30 や
+# 10+30+6 になってしまうので先に潰す。分は複合(thirty-six)まで拾う
+_CLOCK = re.compile(rf"\b({_HOUR})[- ](?:{_MIN})\b", re.I)
+# 数でない複合語。three-quarter はラグビーの位置(訳語は「スリー・クォーター」)で
+# あって数詞ではない。実測 2026-09-05: MISS で 5 件をこれで誤検出していた
+_NOT_NUMBER = re.compile(
+    r"\b(?:one|two|three|four)[- ](?:quarter|quarters|half|halves)s?\b", re.I)
 
 _K = {"〇": 0, "零": 0, "一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6,
       "七": 7, "八": 8, "九": 9}
@@ -74,7 +82,7 @@ def en_numbers(text):
     大量に紛れ込み、較正では外れの過半を占めたため(実測 2026-09-04)。
     数詞の並びの途中の and は許す(two hundred and forty-five → 245)。
     """
-    text = _CLOCK.sub(" ", text)
+    text = _NOT_NUMBER.sub(" ", _CLOCK.sub(" ", text))
     vals = set()
     for m in re.finditer(r"\d[\d,]*", text):
         vals.add(int(m.group().replace(",", "")))
@@ -89,7 +97,11 @@ def en_numbers(text):
         saw = False
         while j < len(toks):
             w = toks[j]
-            if w == "and" and saw and j + 1 < len(toks) and toks[j + 1] in _WORDS:
+            # and をまたげるのは "X hundred and Y" の形のときだけ。英語の数詞で
+            # and が数をつなぐのは位取り語の直後に限られる。この条件を外すと
+            # "two and two"(諺)を 4 に合成してしまう(実測 2026-09-05: CREE)
+            if (w == "and" and saw and toks[j - 1] in _SCALE
+                    and j + 1 < len(toks) and toks[j + 1] in _WORDS):
                 j += 1
                 continue
             if w not in _WORDS:
