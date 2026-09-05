@@ -1,53 +1,425 @@
 {
-  "note": "自前和訳(data/yaku)の訳語基準(F-15)。読者は同じサイトのリーダー(青空文庫の既存訳)と対訳ページを行き来するので、人名・地名の書き方が食い違うと別人・別地と取り違えられる。照合の鍵は原文の英語名であり、こちらの訳を正解に使う循環がない。**裏づけは二層あり、entry ごとに grounding で明示する** — 混ぜると『既存訳がそう書いている』と『自分の出力が揃っている』の区別が消えるため",
-  "grounding_kinds": {
-    "corpus": "青空文庫の既存訳 29 テキスト(data/raw)の全数実測。基準表記が実在し、禁じた異表記より多いこと。corpus_count は実測日 2026-09-04/09-05 の値",
-    "internal": "既存訳に出てこない、あるいは既存訳が割れている語。自前訳が 2 作以上で同じ表記に揃っていることが根拠。外部権威がないことを認めたうえで先へ進めるので reason を必須にする"
+ "note": "自前和訳(data/yaku)の訳語基準(F-15)。読者は同じサイトのリーダー(青空文庫の既存訳)と対訳ページを行き来するので、人名・地名の書き方が食い違うと別人・別地と取り違えられる。照合の鍵は原文の英語名であり、こちらの訳を正解に使う循環がない。**裏づけは二層あり、entry ごとに grounding で明示する** — 混ぜると『既存訳がそう書いている』と『自分の出力が揃っている』の区別が消えるため",
+ "grounding_kinds": {
+  "corpus": "青空文庫の既存訳 29 テキスト(data/raw)の全数実測。基準表記が実在し、禁じた異表記より多いこと。corpus_count は実測日 2026-09-04/09-05 の値",
+  "internal": "既存訳に出てこない、あるいは既存訳が割れている語。自前訳が 2 作以上で同じ表記に揃っていることが根拠。外部権威がないことを認めたうえで先へ進めるので reason を必須にする"
+ },
+ "measured_at": "2026-09-05",
+ "measured_from": "data/raw/*.txt(青空文庫ドイル訳 29 テキスト)/ data/yaku/*.json(自前訳)",
+ "entries": [
+  {
+   "en": "Holmes",
+   "ja": "ホームズ",
+   "grounding": "corpus",
+   "corpus_count": 1438,
+   "forbidden": [
+    "ホルムズ",
+    "ホウムズ"
+   ]
   },
-  "measured_at": "2026-09-05",
-  "measured_from": "data/raw/*.txt(青空文庫ドイル訳 29 テキスト)/ data/yaku/*.json(自前訳)",
-  "entries": [
-    {"en": "Holmes", "ja": "ホームズ", "grounding": "corpus", "corpus_count": 1438,
-     "forbidden": ["ホルムズ", "ホウムズ"]},
-    {"en": "Watson", "ja": "ワトソン", "grounding": "corpus", "corpus_count": 333,
-     "forbidden": ["ワトスン", "ウォトスン", "ワトスン君"]},
-    {"en": "Hudson", "ja": "ハドソン", "grounding": "corpus", "corpus_count": 57,
-     "forbidden": ["ハドスン"]},
-    {"en": "Lestrade", "ja": "レストレード", "grounding": "corpus", "corpus_count": 60,
-     "forbidden": ["レストレイド", "レストレッド", "レストラード"]},
-    {"en": "Moriarty", "ja": "モリアーティ", "grounding": "corpus", "corpus_count": 35,
-     "forbidden": ["モリアティ", "モリアーテイ"]},
-    {"en": "Baker Street", "ja": "ベイカー街", "grounding": "corpus", "corpus_count": 61,
-     "forbidden": ["ベーカー街", "ベイカー通り"]},
-    {"en": "Scotland Yard", "ja": "スコットランド・ヤード", "grounding": "corpus", "corpus_count": 14,
-     "forbidden": ["スコットランドヤード", "スコットランド・ヤード警視庁"]},
-    {"en": "Mycroft", "ja": "マイクロフト", "grounding": "corpus", "corpus_count": 2,
-     "forbidden": ["マイクロフト・ホームズ兄"]},
-
-    {"en": "London", "ja": "ロンドン", "grounding": "corpus", "corpus_count": 152,
-     "forbidden": []},
-    {"en": "England", "ja": "イングランド", "grounding": "corpus", "corpus_count": 25,
-     "forbidden": [],
-     "note": "England と Britain は別概念なので『イギリス』を禁止表記にはしない。原文がどちらを書いているかで訳し分ける"},
-    {"en": "Brixton", "ja": "ブリクストン", "grounding": "corpus", "corpus_count": 21,
-     "forbidden": ["ブリックストン"]},
-    {"en": "Oxford", "ja": "オックスフォード", "grounding": "corpus", "corpus_count": 8,
-     "forbidden": ["オクスフォード"]},
-    {"en": "Victoria", "ja": "ヴィクトリア", "grounding": "corpus", "corpus_count": 8,
-     "forbidden": ["ビクトリア"]},
-    {"en": "violin", "ja": "ヴァイオリン", "grounding": "corpus", "corpus_count": 10,
-     "forbidden": ["バイオリン"]},
-    {"en": "Europe", "ja": "ヨーロッパ", "grounding": "corpus", "corpus_count": 9,
-     "forbidden": []},
-
-    {"en": "Birmingham", "ja": "バーミンガム", "grounding": "internal",
-     "forbidden": ["バーミングハム"],
-     "reason": "既存訳では バーミンガム 10 回・バーミングハム 10 回の**同数**で、外部権威そのものが割れている(実測 2026-09-05)。多数決が取れないので、自前訳が 3GAB・3GAR の 2 作でバーミンガムに揃っていることを根拠に、こちらへ寄せる"},
-    {"en": "St. James's", "ja": "セント・ジェームズ", "grounding": "internal",
-     "forbidden": ["セント・ジェイムズ"],
-     "reason": "既存訳に 0 回で、コーパスでは裏づけられない。自前訳が 3GAB・GREE の 2 作で揃っている"},
-    {"en": "chloroform", "ja": "クロロホルム", "grounding": "internal",
-     "forbidden": ["クロロフォルム"],
-     "reason": "既存訳に 0 回。自前訳が 3GAB・LADY・LAST の 3 作で揃っている。日本語の医学用語としてもクロロホルムが標準"}
-  ]
+  {
+   "en": "Watson",
+   "ja": "ワトソン",
+   "grounding": "corpus",
+   "corpus_count": 333,
+   "forbidden": [
+    "ワトスン",
+    "ウォトスン",
+    "ワトスン君"
+   ]
+  },
+  {
+   "en": "Hudson",
+   "ja": "ハドソン",
+   "grounding": "corpus",
+   "corpus_count": 57,
+   "forbidden": [
+    "ハドスン"
+   ]
+  },
+  {
+   "en": "Lestrade",
+   "ja": "レストレード",
+   "grounding": "corpus",
+   "corpus_count": 60,
+   "forbidden": [
+    "レストレイド",
+    "レストレッド",
+    "レストラード"
+   ]
+  },
+  {
+   "en": "Moriarty",
+   "ja": "モリアーティ",
+   "grounding": "corpus",
+   "corpus_count": 35,
+   "forbidden": [
+    "モリアティ",
+    "モリアーテイ"
+   ]
+  },
+  {
+   "en": "Baker Street",
+   "ja": "ベイカー街",
+   "grounding": "corpus",
+   "corpus_count": 61,
+   "forbidden": [
+    "ベーカー街",
+    "ベイカー通り"
+   ]
+  },
+  {
+   "en": "Scotland Yard",
+   "ja": "スコットランド・ヤード",
+   "grounding": "corpus",
+   "corpus_count": 14,
+   "forbidden": [
+    "スコットランドヤード",
+    "スコットランド・ヤード警視庁"
+   ]
+  },
+  {
+   "en": "Mycroft",
+   "ja": "マイクロフト",
+   "grounding": "corpus",
+   "corpus_count": 2,
+   "forbidden": [
+    "マイクロフト・ホームズ兄"
+   ]
+  },
+  {
+   "en": "London",
+   "ja": "ロンドン",
+   "grounding": "corpus",
+   "corpus_count": 152,
+   "forbidden": []
+  },
+  {
+   "en": "England",
+   "ja": "イングランド",
+   "grounding": "corpus",
+   "corpus_count": 25,
+   "forbidden": [],
+   "note": "England と Britain は別概念なので『イギリス』を禁止表記にはしない。原文がどちらを書いているかで訳し分ける"
+  },
+  {
+   "en": "Brixton",
+   "ja": "ブリクストン",
+   "grounding": "corpus",
+   "corpus_count": 21,
+   "forbidden": [
+    "ブリックストン"
+   ]
+  },
+  {
+   "en": "Oxford",
+   "ja": "オックスフォード",
+   "grounding": "corpus",
+   "corpus_count": 8,
+   "forbidden": [
+    "オクスフォード"
+   ]
+  },
+  {
+   "en": "Victoria",
+   "ja": "ヴィクトリア",
+   "grounding": "corpus",
+   "corpus_count": 8,
+   "forbidden": [
+    "ビクトリア"
+   ]
+  },
+  {
+   "en": "violin",
+   "ja": "ヴァイオリン",
+   "grounding": "corpus",
+   "corpus_count": 10,
+   "forbidden": [
+    "バイオリン"
+   ]
+  },
+  {
+   "en": "Europe",
+   "ja": "ヨーロッパ",
+   "grounding": "corpus",
+   "corpus_count": 9,
+   "forbidden": []
+  },
+  {
+   "en": "Birmingham",
+   "ja": "バーミンガム",
+   "grounding": "internal",
+   "forbidden": [
+    "バーミングハム"
+   ],
+   "reason": "既存訳では バーミンガム 10 回・バーミングハム 10 回の**同数**で、外部権威そのものが割れている(実測 2026-09-05)。多数決が取れないので、自前訳が 3GAB・3GAR の 2 作でバーミンガムに揃っていることを根拠に、こちらへ寄せる"
+  },
+  {
+   "en": "St. James's",
+   "ja": "セント・ジェームズ",
+   "grounding": "internal",
+   "forbidden": [
+    "セント・ジェイムズ"
+   ],
+   "reason": "既存訳に 0 回で、コーパスでは裏づけられない。自前訳が 3GAB・GREE の 2 作で揃っている"
+  },
+  {
+   "en": "chloroform",
+   "ja": "クロロホルム",
+   "grounding": "internal",
+   "forbidden": [
+    "クロロフォルム"
+   ],
+   "reason": "既存訳に 0 回。自前訳が 3GAB・LADY・LAST の 3 作で揃っている。日本語の医学用語としてもクロロホルムが標準"
+  },
+  {
+   "en": "Sherlock",
+   "ja": "シャーロック",
+   "grounding": "corpus",
+   "corpus_count": 186,
+   "forbidden": [
+    "シヤーロック"
+   ]
+  },
+  {
+   "en": "Mrs",
+   "ja": "夫人",
+   "grounding": "corpus",
+   "corpus_count": 124,
+   "forbidden": []
+  },
+  {
+   "en": "John",
+   "ja": "ジョン",
+   "grounding": "corpus",
+   "corpus_count": 87,
+   "forbidden": []
+  },
+  {
+   "en": "America",
+   "ja": "アメリカ",
+   "grounding": "corpus",
+   "corpus_count": 56,
+   "forbidden": [
+    "亜米利加"
+   ]
+  },
+  {
+   "en": "American",
+   "ja": "アメリカ",
+   "grounding": "corpus",
+   "corpus_count": 56,
+   "forbidden": [
+    "亜米利加"
+   ]
+  },
+  {
+   "en": "Gregson",
+   "ja": "グレグソン",
+   "grounding": "corpus",
+   "corpus_count": 46,
+   "forbidden": [
+    "グレグスン",
+    "グレッグソン"
+   ],
+   "reason": "実測 2026-09-05 で見つけた層をまたぐずれの是正。既存訳は 46 回すべて グレグソン なのに、自前訳は グレグスン 18 回で、同じ警部が同じサイトの二つの層に別名で並んでいた"
+  },
+  {
+   "en": "German",
+   "ja": "ドイツ",
+   "grounding": "corpus",
+   "corpus_count": 22,
+   "forbidden": [
+    "独逸"
+   ]
+  },
+  {
+   "en": "James",
+   "ja": "ジェイムズ",
+   "grounding": "corpus",
+   "corpus_count": 19,
+   "forbidden": [
+    "ジェームス"
+   ],
+   "reason": "**ジェームズ を禁止形にできない** —— 登録済みの地名『セント・ジェームズ』の一部だからである。人名としての ジェームズ だけを禁じる書き方が無いので、禁止形は ジェームス に限った。自前訳の中で ジェイムズ 25 / ジェームズ 3 と割れていたのを是正した(残る 2 件はセント・ジェームズで正しい)"
+  },
+  {
+   "en": "Ralph",
+   "ja": "ラルフ",
+   "grounding": "corpus",
+   "corpus_count": 11,
+   "forbidden": [],
+   "reason": "**ラーフ を禁止形にできない** —— LAST の『グラーフェンシュタイン』の一部として現れるため。部分文字列の重なりで偽陽性が出る型なので禁止形を置かない"
+  },
+  {
+   "en": "York",
+   "ja": "ヨーク",
+   "grounding": "corpus",
+   "corpus_count": 6,
+   "forbidden": []
+  },
+  {
+   "en": "Sussex",
+   "ja": "サセックス",
+   "grounding": "corpus",
+   "corpus_count": 5,
+   "forbidden": []
+  },
+  {
+   "en": "Italian",
+   "ja": "イタリア",
+   "grounding": "corpus",
+   "corpus_count": 5,
+   "forbidden": [
+    "伊太利"
+   ]
+  },
+  {
+   "en": "Kent",
+   "ja": "ケント",
+   "grounding": "corpus",
+   "corpus_count": 4,
+   "forbidden": []
+  },
+  {
+   "en": "Baron",
+   "ja": "男爵",
+   "grounding": "corpus",
+   "corpus_count": 3,
+   "forbidden": []
+  },
+  {
+   "en": "Hopkins",
+   "ja": "ホプキンズ",
+   "grounding": "corpus",
+   "corpus_count": 2,
+   "forbidden": [
+    "ホプキンス"
+   ]
+  },
+  {
+   "en": "Sam",
+   "ja": "サム",
+   "grounding": "corpus",
+   "corpus_count": 2,
+   "forbidden": []
+  },
+  {
+   "en": "Charles",
+   "ja": "チャールズ",
+   "grounding": "corpus",
+   "corpus_count": 1,
+   "forbidden": [
+    "チャールス"
+   ],
+   "reason": "既存訳では 1 回しか出てこない薄い裏づけだが、自前訳 2 作(CHAS/MUSG)が同じ表記に揃っており、外部の 1 例とも一致する"
+  },
+  {
+   "en": "Godfrey",
+   "ja": "ゴドフリー",
+   "grounding": "internal",
+   "forbidden": [
+    "ゴッドフリー"
+   ],
+   "reason": "既存訳に 0 回。自前訳 BLAN・MISS の 2 作で揃っている"
+  },
+  {
+   "en": "Susan",
+   "ja": "スーザン",
+   "grounding": "internal",
+   "forbidden": [
+    "スザン"
+   ],
+   "reason": "既存訳に 0 回。自前訳 3GAB・LADY の 2 作で揃っている"
+  },
+  {
+   "en": "Stanley",
+   "ja": "スタンリー",
+   "grounding": "internal",
+   "forbidden": [
+    "スタンレー"
+   ],
+   "reason": "既存訳に 0 回。自前訳 BLAC・MISS の 2 作で揃っている"
+  },
+  {
+   "en": "Harold",
+   "ja": "ハロルド",
+   "grounding": "internal",
+   "forbidden": [
+    "ハロールド"
+   ],
+   "reason": "既存訳に 0 回。自前訳 GREE・LION・MAZA の 3 作で揃っている"
+  },
+  {
+   "en": "Josiah",
+   "ja": "ジョサイア",
+   "grounding": "internal",
+   "forbidden": [
+    "ジョサイヤ"
+   ],
+   "reason": "既存訳に 0 回。自前訳 RETI・SHOS の 2 作で揃っている"
+  },
+  {
+   "en": "Latimer",
+   "ja": "ラティマー",
+   "grounding": "internal",
+   "forbidden": [
+    "ラチマー"
+   ],
+   "reason": "既存訳に 0 回。自前訳 GREE・LADY の 2 作で揃っている"
+  },
+  {
+   "en": "Prince",
+   "ja": "プリンス",
+   "grounding": "internal",
+   "forbidden": [],
+   "reason": "称号ではなく競走馬の名(SHOS の『ショスコム・プリンス』)。既存訳に 0 回、自前訳 SHOS・REDC の 2 作で揃っている"
+  },
+  {
+   "en": "Evans",
+   "ja": "エヴァンズ",
+   "grounding": "internal",
+   "forbidden": [
+    "エバンス",
+    "エバンズ"
+   ],
+   "reason": "既存訳は エヴァンズ 3 / エヴァンス 3 の**同数**で、外部権威そのものが割れている(バーミンガムと同じ型)。だから corpus では裏づけられない。自前訳 3GAR・SHOS の 2 作で エヴァンズ に揃えた。**エヴァンス は禁止形に置けない** —— 既存訳で同数のため、これを誤りと呼ぶ根拠がない"
+  },
+  {
+   "en": "English",
+   "ja": "イングランド",
+   "grounding": "corpus",
+   "corpus_count": 25,
+   "context_dependent": true,
+   "forbidden": [],
+   "reason": "**揺れではなく訳し分け**。地としての England は『イングランド』、国民・国家としては『イギリス』、言語は『英語』。既存訳も 英国 39 / イングランド 25 / イギリス 12 / 英語 8 と使い分けている。一つに固定すると誤訳になるので、基準表記を一つに決めない。決めなかったことをここに記録しておくのは、本物の揺れと区別するためである"
+  },
+  {
+   "en": "British",
+   "ja": "イギリス",
+   "grounding": "corpus",
+   "corpus_count": 12,
+   "context_dependent": true,
+   "forbidden": [],
+   "reason": "English と同じ理由で訳し分ける。『イギリスの』『英国の』『ブリテンの』は文脈で選ぶ(BLAC 段落76 の the bulwark of Britain は森の来歴の話なので『ブリテンの防壁』とした)"
+  },
+  {
+   "en": "Kennington",
+   "ja": "ケニントン",
+   "grounding": "corpus",
+   "corpus_count": 1,
+   "forbidden": [
+    "ケニングトン"
+   ],
+   "reason": "既存訳では 1 回しか出てこない薄い裏づけだが、自前訳 LADY・SIXN の 2 作が同じ表記に揃っており、外部の 1 例とも一致する(チャールズと同じ扱い)"
+  },
+  {
+   "en": "Jove",
+   "ja": "これはたまげた",
+   "grounding": "internal",
+   "context_dependent": true,
+   "forbidden": [],
+   "reason": "**これは名前ではない**。By Jove! という間投詞で、訳は毎回変わる(『なるほど!』『これはたまげた』『これは!』)。固有名の判定を『コーパスのどこにも小文字形を持たない大文字語』で行っている以上、名前と間投詞は区別できない —— これはその限界そのものである。除外語リストを作って隠すのではなく、**判定に引っかかったことを登録として残し、訳し分ける語だと明示する**。ja に置いた表記は LION・MUSG で実際に使った一例にすぎず、基準ではない"
+  }
+ ]
 }

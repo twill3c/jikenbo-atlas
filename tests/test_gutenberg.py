@@ -463,10 +463,104 @@ def test_t707_registered_rendering_used_where_source_has_name(glossary, pg_works
         if len(y["paragraphs"]) != len(pg_works[y["case_id"]]["paragraphs"]):
             continue
         for e in glossary["entries"]:
+            # 文脈で訳し分ける語(English を イングランド / イギリス / 英語 と
+            # 使い分けるなど)は基準表記が一つに決まらないので対象外にする。
+            # 決めなかったこと自体は用語集に reason つきで残してある(T-716)
+            if e.get("context_dependent"):
+                continue
             if src.count(e["en"]) >= 3 and e["ja"] not in joined:
                 misses.append(f"{p.stem}: 原文に {e['en']} が {src.count(e['en'])} 回あるが "
                               f"訳文に {e['ja']} がない")
     assert misses == [], misses
+
+
+# ---- T-717: 訳ファイルの体裁を一つに保つ ----
+
+@pytest.mark.unit
+def test_t717_yaku_files_are_canonically_formatted():
+    """訳ファイルが正しい体裁で書かれている(段落は一行に一つ)。
+
+    起こした理由: 訳文の一括是正を json.dump(indent=2) でやったら、段落が一行ずつに
+    展開されて 3 ファイルだけ体裁が変わった(実測 2026-09-05、224 行 → 742 行)。
+    中身は正しいので検査は全部緑のまま、差分だけが「どの段落を直したか」として
+    読めなくなる。整形を人手に委ねるとこうなるので、正しい形を関数に閉じ込めて呼ぶ。
+    直し方: `python pipeline/yaku_format.py`
+    """
+    from pipeline.yaku_format import canonical_text
+
+    bad = []
+    for p in sorted(YAKU_DIR.glob("*.json")):
+        text = p.read_text(encoding="utf-8")
+        if text != canonical_text(json.loads(text)):
+            bad.append(f"{p.name}: 体裁が正本と違う(python pipeline/yaku_format.py で直る)")
+    assert bad == [], bad
+
+
+# ---- T-716: 作品をまたぐ固有名は登録を強制する(F-15)----
+#
+# ワトスン/ワトソンで一度踏んだ型。一つの作品の中では表記が揃っていても、
+# 別の作品で同じ人物を別表記にすると、読者だけが気づく食い違いになる。
+# 文字列を作品間で突き合わせる方法は使えない —— 実測 2026-09-05、部分文字列の
+# 重なりで偽陽性が出た(LAST の「ラーフ」は Ralph ではなくグラーフェンシュタインの一部)。
+# 比較ではなく**登録を強制**し、実際の照合は T-707 に任せる。
+
+def _corpus_proper_nouns():
+    """コーパス自身から固有名を決める。
+
+    「全 8 巻のどこにも小文字で現れない大文字語」を固有名とみなす。手作りの
+    除外語リストを置かないので、判定の根拠が外部の思いつきでなくコーパスにある。
+    """
+    lower = set()
+    for p in sorted(PG_DIR.glob("*.json")):
+        for q in json.loads(p.read_text(encoding="utf-8"))["paragraphs"]:
+            lower.update(re.findall(r"\b[a-z]{2,}\b", q["text"]))
+    cnt, works = {}, {}
+    for p in sorted(YAKU_DIR.glob("*.json")):
+        cid = json.loads(p.read_text(encoding="utf-8"))["case_id"]
+        for q in json.loads((PG_DIR / f"{cid}.json").read_text(encoding="utf-8"))["paragraphs"]:
+            for w in re.findall(r"\b([A-Z][a-zA-Z]{2,})\b", q["text"]):
+                if w.lower() in lower:
+                    continue
+                cnt[w] = cnt.get(w, 0) + 1
+                works.setdefault(w, set()).add(cid)
+    return cnt, works
+
+
+@needs_pg
+@pytest.mark.validation
+def test_t716_recurring_names_are_registered(glossary):
+    """複数の訳了作にまたがって頻出する固有名は、すべて用語集に登録されている。
+
+    期待値の出所: 実測 2026-09-05。訳了 17 篇で「2 作品以上・通算 8 回以上」に
+    当てはまる固有名は 35 語だった。閾値は「一度きりの登場人物まで登録させない」
+    ためのもので、**訳を足すたびに対象は増える。増えたら登録してから先へ進む**。
+    """
+    cnt, works = _corpus_proper_nouns()
+    known = set()
+    for e in glossary["entries"]:
+        known.update(e["en"].split())
+    unregistered = sorted(
+        (w for w in cnt if len(works[w]) >= 2 and cnt[w] >= 8 and w not in known),
+        key=lambda w: -cnt[w])
+    assert unregistered == [], \
+        [f"{w}({cnt[w]}回/{len(works[w])}作品)" for w in unregistered]
+
+
+@pytest.mark.unit
+def test_t716_context_dependent_entries_give_a_reason(glossary):
+    """文脈で訳し分ける語は、そう決めた理由を必ず書いている。
+
+    English を「イギリス/イングランド/英語」と訳し分けるのは揺れではなく正しさだが、
+    理由を書かずに例外にすると、本物の揺れと区別がつかなくなる。
+    """
+    bad = []
+    for e in glossary["entries"]:
+        if e.get("context_dependent"):
+            if not e.get("reason"):
+                bad.append(f"{e['en']}: context_dependent なのに reason がない")
+            if e.get("forbidden"):
+                bad.append(f"{e['en']}: 文脈で訳し分ける語に禁止表記は置けない")
+    assert bad == [], bad
 
 
 # ---- T-708: 訳し漏れの検出(F-15)----
