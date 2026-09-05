@@ -332,10 +332,23 @@ def test_t711_numeral_conversion():
     assert kanji_to_int("八万") == 80000
     assert 245 in ja_numbers("二百四十五です")
     assert 500 in ja_numbers("五百ポンド")
-    # 原文側: and をまたぐ並び、時刻の綴り、冠詞の one
-    assert 245 in en_numbers("two hundred and forty-five pages")
+    # 原文側の契約(2026-09-05 の再設計):一義に決まるものだけを採り、決まらぬ並びは捨てる
     assert en_numbers("one of the finest houses") == set()   # 冠詞の one は数えない
-    assert 9 not in en_numbers("It is now nine-thirty.")      # 時刻を 9+30=39 と読まない
+    assert 16 in en_numbers("sixteen feet by ten")           # 孤立した数詞は採る
+    assert 10 in en_numbers("sixteen feet by ten")
+    assert 26 in en_numbers("Twenty-six voyages")            # 十位+一位の複合は一義
+    assert 100 in en_numbers("a few hundred yards")
+    # ここから下は「捨てる」側。合成すると作り話になるので、値を一つも出さないのが正しい
+    assert en_numbers("two hundred and forty-five pages") == set()   # 合成は一義でない
+    assert en_numbers("It is now nine-thirty.") == set()             # 時刻を 9+30 と読まない
+    assert en_numbers("the train at ten thirty-six") == set()
+    assert en_numbers("two and two make four") == {4}    # "two and two" は捨て、four だけ採る
+    # 諺の "Two can play at that game" は孤立した数詞なので 2 を出す。訳文の「お互いさま」に
+    # 数が無いのは日本語の慣用であって抽出器の誤りではない(この外れは既知・是正しない)
+    assert en_numbers("Two can play at that game") == {2}
+    # 読点をまたいで数はつながらない(旧版はこれを 7+1=8 と読んでいた。実測: BLAC 段落33)
+    assert en_numbers("On rising at seven, one of the maids") == {7}
+    assert en_numbers("he plays three-quarter for the county") == set()  # 数ではない語彙
 
 
 @needs_pg
@@ -575,6 +588,83 @@ def test_t712_status_partition_is_total(pg_works):
             wip += 1
     assert done + wip + none == len(index["cases"])
     assert none == len(index["cases"]) - len(pg_works)
+
+
+# ---- T-715: 訳注が読者に届くこと(F-15 / F-16)----
+#
+# 差別的表現をどう訳したか、なぜそうしたかを作品ごとの note に書いてきたが、
+# データの中に埋もれて画面に一度も出ていなかった。判断を書いておきながら
+# 読者に見せないのは、書いていないのとほとんど変わらない。
+
+@pytest.mark.unit
+def test_t715_note_is_rendered():
+    """対訳ページに訳注の枠と、それを描く処理がある。"""
+    html = (ROOT / "web" / "taiyaku.html").read_text(encoding="utf-8")
+    js = (ROOT / "web" / "taiyaku.js").read_text(encoding="utf-8")
+    assert 'id="t-note"' in html, "訳注の枠が taiyaku.html にない"
+    assert "#t-note" in js and "translation.note" in js.replace("t.note", "translation.note"), \
+        "taiyaku.js が訳注を描いていない"
+    # 篇ごとに違うのは見出し語より後ろ。共通の断り書きを先に出すと中身に届かない
+    assert "訳出" in js, "taiyaku.js が篇固有の訳注を切り出していない"
+    assert "t-note-common" in js, "共通の断り書きを別扱いにしていない"
+
+
+# taiyaku.js が篇固有部を切り出すのに使う見出し語の型。JS 側と同じものを置く
+NOTE_MARK = re.compile(r"訳出(?:上の注|方針)[^:：]*[:：]\s*")
+
+
+@needs_pg
+@pytest.mark.validation
+def test_t715_every_policy_note_is_split():
+    """篇固有の訳注を持つファイルは、すべて画面側が切り出せる見出し語を使っている。
+
+    見出し語は書き手(私)が篇ごとに手で書くので、揺れると画面は黙って共通部だけを
+    見せる。ブラウザ検品で 3GAB・BLAN が「底本と表記について」に落ちていたのが実例で、
+    最も読ませたい差別的表現の扱いが、いちばん読まれない位置に沈んでいた。
+    """
+    bad = []
+    for p in sorted(YAKU_DIR.glob("*.json")):
+        note = json.loads(p.read_text(encoding="utf-8")).get("note", "")
+        # 「訳出」で始まる見出しらしき文字列があるのに、型に合わなければ切り出せない
+        if "訳出" in note and not NOTE_MARK.search(note):
+            bad.append(f"{p.stem}: 篇固有の訳注が画面側の見出し語の型に合わない")
+    assert bad == [], bad
+
+
+@needs_pg
+@pytest.mark.validation
+def test_t715_note_reaches_payload(pg_works):
+    """訳のある全事件で、note が配信データまで届いている(途中で落ちない)。"""
+    out = ROOT / "web" / "data" / "taiyaku"
+    missing = []
+    for p in sorted(YAKU_DIR.glob("*.json")):
+        y = json.loads(p.read_text(encoding="utf-8"))
+        payload = json.loads((out / f"{y['case_id']}.json").read_text(encoding="utf-8"))
+        note = payload.get("translation", {}).get("note")
+        if y.get("note") and not note:
+            missing.append(f"{y['case_id']}: 訳注が配信データに無い")
+        elif note and note != y["note"]:
+            missing.append(f"{y['case_id']}: 訳注が原本と違う(途中で書き換わっている)")
+    assert missing == [], missing
+
+
+@needs_pg
+@pytest.mark.validation
+def test_t715_editorial_policy_notes_exist():
+    """差別的表現を含む篇には、訳出方針が訳注に書かれている。
+
+    期待値の出所: 実測 2026-09-05。3GAB(人種呼称)・SHOS(the Jews)・
+    BLAN(ハンセン病)の 3 篇で、原文の時代性を消さずに訳す方針と、その但し書きを
+    訳注に置いた。**方針を書いた篇を後から減らさないための番人**であって、
+    新しい篇に方針を強いるものではない。
+    """
+    need = ["3GAB", "SHOS", "BLAN"]
+    for cid in need:
+        p = YAKU_DIR / f"{cid}.json"
+        if not p.exists():
+            continue
+        note = json.loads(p.read_text(encoding="utf-8")).get("note", "")
+        assert "訳出方針" in note, f"{cid}: 訳出方針が訳注から消えている"
 
 
 # ---- T-714: 配布する JS が実行できること(HC-158)----

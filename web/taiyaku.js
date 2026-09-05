@@ -129,6 +129,29 @@ async function main() {
   }
 
   const t = d.translation;
+  // 訳注。この篇をどう訳したか(差別的表現をどう扱ったか、原文の何を残したか)を
+  // 本文の手前に置く。畳んであるが、開けば必ず読める場所にある
+  // 訳注の前半は全篇共通の底本・表記の断り書きで、篇ごとに違うのは「訳出上の注」以降。
+  // そのまま並べると、どの篇を開いても同じ百字を読まされて中身に届かないので、
+  // 固有の判断を先に出し、共通の断り書きは後ろに小さく置く
+  const noteBox = $("#t-note");
+  if (t.note) {
+    // 篇固有の部分の始まりを示す見出し語。データ側は「訳出上の注:」と
+    // 「訳出方針(本篇固有):」の二通りを使っているので、両方を一つの型で拾う。
+    // 見出し語が増えたら T-715 が落ちる(tests 側に同じ型がある)
+    const MARK = /訳出(?:上の注|方針)[^::]*[::]\s*/;
+    const m = t.note.match(MARK);
+    const own = m ? t.note.slice(m.index + m[0].length).trim() : "";
+    const common = m ? t.note.slice(0, m.index).trim() : t.note;
+    noteBox.innerHTML =
+      `<summary>訳注 — ${own ? "この篇で判断したこと" : "底本と表記について"}</summary>` +
+      (own ? `<p>${esc(own)}</p>` : "") +
+      `<p class="t-note-common">${esc(common)}</p>`;
+    noteBox.hidden = false;
+  } else {
+    noteBox.hidden = true;
+  }
+
   $("#taiyaku-foot").innerHTML =
     `<p>原文: <a href="${esc(d.source.url)}">Project Gutenberg #${esc(d.source.ebook_id)} ` +
     `${esc(d.source.volume_title)}</a>（${esc(d.source.fetched_at)} 取得）。` +

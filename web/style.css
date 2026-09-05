@@ -178,6 +178,22 @@ header.site .sub { color: var(--ink-2); font-size: .9rem; margin-top: 6px; }
 .t-head .t-ja { font-size: 1.15rem; font-weight: 600; line-height: 1.5; }
 .t-head .t-en { font-style: italic; letter-spacing: .04em; }
 .m-alt.t-head .t-en { border-left: none; padding-left: 0; }
+/* 訳注。details は既定が display:block なので [hidden] を明示的に効かせる
+   (要素の既定表示に hidden 属性が負けることがある。kasane-kairo で踏んだ罠) */
+.t-note[hidden] { display: none; }
+.t-note {
+  margin: 0 0 1.4rem;
+  padding: .6rem .9rem;
+  border-left: 3px solid var(--accent-2);
+  background: var(--card);
+  border-radius: 0 4px 4px 0;
+  font-size: .9rem;
+  line-height: 1.8;
+}
+.t-note > summary { cursor: pointer; color: var(--accent-2); font-weight: 600; }
+.t-note > p { margin: .6rem 0 0; color: var(--ink-2); }
+.t-note > .t-note-common { color: var(--ink-3); font-size: .84rem; }
+
 .t-nav {
   display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px;
   margin-top: 2.4rem; padding-top: 1rem; border-top: 1px solid var(--line);

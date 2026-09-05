@@ -71,6 +71,9 @@ def taiyaku_payload(pg, yaku, volume):
             "translator": yaku["translator"] if yaku else None,
             "model": yaku["model"] if yaku else None,
             "translated_at": yaku["translated_at"] if yaku else None,
+            # 訳注は読者に見せる。差別的表現の扱いなど、訳出の判断を書いておいて
+            # 画面に出さないのは、書いていないのとほとんど変わらない(T-715)
+            "note": (yaku.get("note") or None) if yaku else None,
         },
         "rows": rows,
     }
