@@ -463,6 +463,43 @@
    "grounding": "internal",
    "forbidden": [],
    "reason": "月名。既存訳に 0 回だが、自前訳 ABBE・BLAC・CREE・LION の 4 作で揃っている。**固有名の判定(小文字形を持たない大文字語)は月名も拾う**。By Jove! と同じく、判定の網の性質そのものなので、除外語で隠さず登録として残す"
+  },
+  {
+   "en": "Cambridge",
+   "ja": "ケンブリッジ",
+   "grounding": "internal",
+   "forbidden": [
+    "ケンブリヂ"
+   ],
+   "reason": "既存訳に 0 回。自前訳 GOLD・MISS の 2 作で揃っている"
+  },
+  {
+   "en": "Abbey",
+   "ja": "修道院",
+   "grounding": "internal",
+   "context_dependent": true,
+   "forbidden": [],
+   "reason": "**同じ語が固有名でも普通名詞でもある例**。ABBE では屋敷の名の一部(Abbey Grange = アビイ屋敷)、GOLD と BLAN では普通名詞の修道院として出てくる。一つの基準表記に固定すると、どちらかが必ず誤訳になるので決めない。ja に置いた『修道院』は普通名詞側の訳(自前訳 BLAN・GOLD の 2 作)で、固有名側は『アビイ屋敷』"
+  },
+  {
+   "en": "Kensington",
+   "ja": "ケンジントン",
+   "grounding": "corpus",
+   "corpus_count": 2,
+   "forbidden": [
+    "ケンシントン"
+   ],
+   "reason": "既存訳 2 回・自前訳 GREE/NORW/SIXN の 3 作で一致"
+  },
+  {
+   "en": "Blackheath",
+   "ja": "ブラックヒース",
+   "grounding": "corpus",
+   "corpus_count": 1,
+   "forbidden": [
+    "ブラックヒス"
+   ],
+   "reason": "既存訳では 1 回の薄い裏づけだが、自前訳 MISS/NORW/RETI の 3 作が揃っており外部の 1 例とも一致する"
   }
  ]
 }
